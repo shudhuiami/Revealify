@@ -10,12 +10,12 @@
 
 
 <body
-    style="border: 1px solid; margin:0;padding:0;box-sizing:border-box;font-family: 'fontRegular', sans-serif;font-size: 13px">
+    style="border: 1px solid; margin:0;padding:0;box-sizing:border-box;font-family: sans-serif;font-size: 13px">
 
 <!--main Content start-->
-<table
-    style="width:100%;position:relative;border-collapse: collapse;">
+<table style="width:100%;position:relative;border-collapse: collapse;">
     <tbody>
+
     <tr>
         <!--Left start-->
         <td style="padding:30px;background-color:#3a3939;overflow: hidden">
@@ -38,8 +38,7 @@
                 src="./images/template-1/image/user.jpg"
                 alt="user">
 
-            <table
-                style="border-left:1px solid #dadada;margin-top: 25px;position: relative;color: #fff;">
+            <table style="border-left:1px solid #dadada;margin-top: 25px;position: relative;color: #fff;">
                 <tbody>
                 <!--Contact section start-->
                 <tr>
@@ -57,8 +56,9 @@
                 <!--Number-->
                 <tr>
                     <td style="padding-left: 20px;padding-top: 20px;position: relative">
-                    <span
-                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -5px;top: 35px"></span>
+                       <span
+                           style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -5px;top: 35px">
+                       </span>
 
                         <img style="margin-right: 5px;width: 20px;height: 20px;position: relative;top: 15px"
                              src="./images/template-1/icon/telephone-call.png" alt="telephone">
@@ -72,8 +72,9 @@
                 <!--Email/website-->
                 <tr>
                     <td style="padding-left: 20px;padding-top: 20px;position: relative">
-                    <span
-                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -5px;top: 35px"></span>
+                       <span
+                           style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -5px;top: 35px">
+                       </span>
 
                         <img style="margin-right: 5px;width: 20px;height: 20px;position: relative;top: 15px"
                              src="./images/template-1/icon/globe.png" alt="globe">
@@ -220,7 +221,6 @@
                 <tr>
                     <td style="padding-left: 20px;padding-bottom: 4px">2011 - 2013</td>
                 </tr>
-
 
                 </tbody>
             </table>
@@ -481,7 +481,6 @@
 
     </tr>
     </tbody>
-
 </table>
 <!--main Content end  -->
 
