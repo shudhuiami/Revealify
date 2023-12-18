@@ -12,26 +12,28 @@
     <tbody>
     <tr>
         {{--left--}}
-        <td style="width: 40%;padding: 0; margin: 0;">
+        <td style="width: 35%;padding: 0; margin: 0; vertical-align: top;">
             <div style="background-color: #f0f0f0;">
 
-        {{--top--}}
+                {{--top--}}
                 <div style="background-color: #333333; border-radius: 0 0 150px 150px;">
-                    <div style="padding: 40px 17px 0; text-align: center;">
-                        <h2 style="text-transform: uppercase;color: #fbfbfb; margin: 0; padding: 0 0 10px;">Noel
+                    <div style="padding: 20px 17px 0; text-align: center;">
+                        <h2 style="text-transform: uppercase;color: #fbfbfb; margin: 0; padding: 0 0 5px; font-size: 14px;">
+                            Noel
                             Taylor</h2>
-                        <div style="text-transform: uppercase;color: #cfcfcf; margin: 0; padding: 0;">graphic & web
+                        <div style="text-transform: uppercase;color: #cfcfcf; margin: 0; padding: 0; font-size: 12px;">
+                            graphic & web
                             designer
                         </div>
-                        <div style="padding: 15px 0;">
-                            <img src="https://decisionsystemsgroup.github.io/workshop-html/img/john-doe.jpg" alt=""
-                                 style="max-width: 100%; border: 10px solid #ffffff; border-radius: 50%; height: 200px; width: 200px;">
+                        <div style="padding: 10px 0;">
+                            <img src="./images/template-two/images/person.jpg" alt=""
+                                 style="max-width: 100%; border: 8px solid #ffffff; border-radius: 50%; height: 150px; width: 150px; object-fit: contain;">
                         </div>
                     </div>
                 </div>
 
                 {{--middle--}}
-                <div style="padding: 30px 30px 20px;">
+                <div style="padding: 10px 20px 10px;">
                     <div>
                         <div
                             style="height: 40px; width: 40px; text-align: center; background-color: #343434; border-radius: 50%; display: inline-block;">
@@ -39,7 +41,7 @@
                                  style="position: relative; top: 7px;">
                         </div>
                         <div
-                            style="text-transform: uppercase; display: inline-block; padding-left: 10px; position: relative; top: -10px; font-weight: 700; font-size: 18px;">
+                            style="text-transform: uppercase; display: inline-block; padding-left: 10px; position: relative; top: -10px; font-weight: 700; font-size: 14px;">
                             contact me
                         </div>
                     </div>
@@ -62,9 +64,9 @@
                     </div>
                 </div>
 
-               {{-- bottom--}}
+                {{-- bottom--}}
                 <div style="padding: 0 10px;">
-                    <div style="background-color: #333333; padding: 80px 20px; border-radius: 150px 150px 0 0;">
+                    <div style="background-color: #333333; padding: 70px 20px; border-radius: 150px 150px 0 0;">
                         <div>
                             <div
                                 style="height: 40px; width: 40px; text-align: center; background-color: #ffffff; border-radius: 50%; display: inline-block;">
@@ -72,72 +74,72 @@
                                      style="position: relative; top: 7px;">
                             </div>
                             <div
-                                style="text-transform: uppercase; display: inline-block; padding-left: 10px; font-weight: 700; font-size: 20px; color: #ffffff; position: relative; top: -7px">
+                                style="text-transform: uppercase; display: inline-block; padding-left: 10px; font-weight: 700; font-size: 14px; color: #ffffff; position: relative; top: -10px">
                                 education
                             </div>
                         </div>
-                        <div style="color: #ffffff; margin: 20px 0;">
+                        <div style="color: #ffffff; margin: 10px 0;">
                             <div
-                                style="text-transform: uppercase; font-weight: bold; font-size: 16px;margin-bottom: 5px;">
+                                style="text-transform: uppercase; font-weight: bold; font-size: 12px;margin-bottom: 5px;">
                                 stanford university
                             </div>
-                            <div style="margin-bottom: 5px;">Master Degree Graduate</div>
-                            <div>2011 - 2013</div>
+                            <div style="margin-bottom: 5px; font-size: 12px;">Master Degree Graduate</div>
+                            <div style="font-size: 12px;">2011 - 2013</div>
                         </div>
                         <div style="color: #ffffff; margin-bottom: 20px;">
                             <div
-                                style="text-transform: uppercase; font-weight: bold; font-size: 16px;margin-bottom: 5px;">
+                                style="text-transform: uppercase; font-weight: bold; font-size: 12px;margin-bottom: 5px;">
                                 university of chicago
                             </div>
-                            <div style="margin-bottom: 5px;">Bachelor Degree Graduate</div>
-                            <div>2011 - 2013</div>
+                            <div style="margin-bottom: 5px; font-size: 12px;">Bachelor Degree Graduate</div>
+                            <div style="font-size: 12px;">2011 - 2013</div>
                         </div>
-                        <div style="margin-top: 40px;">
+                        <div style="margin-top: 30px;">
                             <div
                                 style="height: 40px; width: 40px; text-align: center; background-color: #ffffff; border-radius: 50%; display: inline-block;">
-                                <img src="./images/template-two/icons/mortarboard.png" alt=""
+                                <img src="./images/template-two/icons/user-group.png" alt=""
                                      style="position: relative; top: 7px;">
                             </div>
                             <div
-                                style="text-transform: uppercase; display: inline-block; padding-left: 10px; font-weight: 700; font-size: 20px; color: #ffffff; position: relative; top: -7px">
+                                style="text-transform: uppercase; display: inline-block; padding-left: 10px; font-weight: 700; font-size: 14px; color: #ffffff; position: relative; top: -10px">
                                 references
                             </div>
                         </div>
-                        <div style="color: #ffffff; margin: 20px 0;">
+                        <div style="color: #ffffff; margin: 10px 0;">
                             <div
-                                style="text-transform: uppercase; font-weight: bold; font-size: 16px;margin-bottom: 5px;">
+                                style="text-transform: uppercase; font-weight: bold; font-size: 12px;margin-bottom: 5px;">
                                 Darwin b.magana
                             </div>
-                            <div style="margin-bottom: 5px;">2018 Shobe Lane Mancos, CO.</div>
-                            <div style="margin-bottom: 5px;">Tel: +1-970-533-3393</div>
-                            <div>Email: www.yourwebsite.com</div>
+                            <div style="margin-bottom: 5px; font-size: 12px;">2018 Shobe Lane Mancos, CO.</div>
+                            <div style="margin-bottom: 5px; font-size: 12px;">Tel: +1-970-533-3393</div>
+                            <div style="font-size: 14px;">Email: www.yourwebsite.com</div>
                         </div>
-                        <div style="color: #ffffff; margin-bottom: 20px;">
+                        <div style="color: #ffffff; margin-bottom: 10px;">
                             <div
-                                style="text-transform: uppercase; font-weight: bold; font-size: 16px;margin-bottom: 5px;">
+                                style="text-transform: uppercase; font-weight: bold; font-size: 12px;margin-bottom: 5px;">
                                 robert j.belvin
                             </div>
-                            <div style="margin-bottom: 5px;">2119 Fairfax Drive Newark, NJ.</div>
-                            <div style="margin-bottom: 5px;">Tel: +1-908-987-5103</div>
-                            <div>Email: www.yourwebsite.com</div>
+                            <div style="margin-bottom: 5px; font-size: 12px;">2119 Fairfax Drive Newark, NJ.</div>
+                            <div style="margin-bottom: 5px; font-size: 12px;">Tel: +1-908-987-5103</div>
+                            <div style="font-size: 12px;">Email: www.yourwebsite.com</div>
                         </div>
                     </div>
                 </div>
             </div>
         </td>
 
-{{--        right--}}
-        <td style="width: 60%; padding-left: 40px; vertical-align: top;">
-            <div style="padding: 40px 0;">
-                <div style="margin-bottom: 40px">
+        {{--        right--}}
+        <td style="width: 65%; padding-left: 40px; vertical-align: top;">
+            <div style="padding: 20px 0;">
+                <div style="margin-bottom: 20px">
                     <div>
                         <div
                             style="height: 40px; width: 40px; text-align: center; background-color: #343434; border-radius: 50%; display: inline-block;">
-                            <img src="./images/template-two/icons/user.png" alt=""
+                            <img src="./images/template-two/icons/teacher.png" alt=""
                                  style="position: relative; top: 7px;">
                         </div>
                         <div
-                            style="text-transform: uppercase; display: inline-block; padding-left: 10px; position: relative; top: -10px; font-weight: 700; font-size: 22px;">
+                            style="text-transform: uppercase; display: inline-block; padding-left: 10px; position: relative; top: -10px; font-weight: 700; font-size: 14px;">
                             About me
                         </div>
                     </div>
@@ -153,18 +155,19 @@
                     <div>
                         <div
                             style="height: 40px; width: 40px; text-align: center; background-color: #343434; border-radius: 50%; display: inline-block;">
-                            <img src="./images/template-two/icons/user.png" alt=""
+                            <img src="./images/template-two/icons/suitcase.png" alt=""
                                  style="position: relative; top: 7px;">
                         </div>
                         <div
-                            style="text-transform: uppercase; display: inline-block; padding-left: 10px; position: relative; top: -10px; font-weight: 700; font-size: 22px;">
+                            style="text-transform: uppercase; display: inline-block; padding-left: 10px; position: relative; top: -10px; font-weight: 700; font-size: 14px;">
                             job experience
                         </div>
                     </div>
                 </div>
                 <div style="margin-top: 20px;">
                     <div>
-                        <div style="text-transform: uppercase; display: inline-block;font-weight: 700;">senior web
+                        <div style="text-transform: uppercase; display: inline-block;font-weight: 700;font-size: 16px;">
+                            senior web
                             designer
                         </div>
                         <div style="display: inline-block; float: right;">2020 -Present</div>
@@ -177,7 +180,10 @@
                 </div>
                 <div style="margin-top: 15px;">
                     <div>
-                        <div style="text-transform: uppercase; display: inline-block;font-weight: 700;">graphic designer</div>
+                        <div style="text-transform: uppercase; display: inline-block;font-weight: 700;font-size: 16px;">
+                            graphic
+                            designer
+                        </div>
                         <div style="display: inline-block; float: right;">2015 -2020</div>
                     </div>
                     <div style="font-style: italic;">Creative Market / Chicago</div>
@@ -188,7 +194,10 @@
                 </div>
                 <div style="margin-top: 15px;">
                     <div>
-                        <div style="text-transform: uppercase; display: inline-block;font-weight: 700;">marketing manager</div>
+                        <div style="text-transform: uppercase; display: inline-block;font-weight: 700;font-size: 16px;">
+                            marketing
+                            manager
+                        </div>
                         <div style="display: inline-block; float: right;">2013 -2015</div>
                     </div>
                     <div style="font-style: italic;">Manufacturing Agency / NJ</div>
@@ -197,96 +206,164 @@
                         qui.
                     </div>
                 </div>
-                <div style="margin-top: 50px">
+                <div style="margin-top: 20px">
                     <div style="margin-bottom: 20px">
                         <div
                             style="height: 40px; width: 40px; text-align: center; background-color: #343434; border-radius: 50%; display: inline-block;">
-                            <img src="./images/template-two/icons/user.png" alt=""
+                            <img src="./images/template-two/icons/skill.png" alt=""
                                  style="position: relative; top: 7px;">
                         </div>
                         <div
-                            style="text-transform: uppercase; display: inline-block; padding-left: 10px; position: relative; top: -10px; font-weight: 700; font-size: 22px;">
+                            style="text-transform: uppercase; display: inline-block; padding-left: 10px; position: relative; top: -10px; font-weight: 700; font-size: 14px;">
                             skills
                         </div>
                     </div>
                     <div style="margin-bottom: 30px">
                         <div style="width: 50%;float: left">
-                            <div style="display: inline-block; padding-right: 5px; font-size: 12px;">Adobe Photoshop</div>
+                            <div style="display: inline-block; padding-right: 5px; font-size: 13px;">Adobe Photoshop
+                            </div>
                             <div style="position: relative; display: inline-block; top: -5px;">
-                                <div style="background-color: #c5c5c5; height: 5px; border-radius: 120px; width: 70px; z-index: -1;"></div>
-                                <div style="position: absolute; top: 0; left: 0; z-index: 1; background-color: #333333; height: 5px; width: 70%; border-radius: 10px;"></div>
+                                <div
+                                    style="background-color: #c5c5c5; height: 5px; border-radius: 120px; width: 70px; z-index: -1;"></div>
+                                <div
+                                    style="position: absolute; top: 0; left: 0; z-index: 1; background-color: #333333; height: 5px; width: 70%; border-radius: 10px;"></div>
                             </div>
                         </div>
                         <div style="width: 50%; float: left;">
-                            <div style="display: inline-block; padding-right: 28px; font-size: 12px;">Adobe Illustrator</div>
+                            <div style="display: inline-block; padding-right: 28px; font-size: 13px;">Adobe
+                                Illustrator
+                            </div>
                             <div style="position: relative; display: inline-block; top: -5px;">
-                                <div style="background-color: #c5c5c5; height: 5px; border-radius: 120px; width: 70px; z-index: -1;"></div>
-                                <div style="position: absolute; top: 0; left: 0; z-index: 1; background-color: #333333; height: 5px; width: 70%; border-radius: 10px;"></div>
+                                <div
+                                    style="background-color: #c5c5c5; height: 5px; border-radius: 120px; width: 70px; z-index: -1;"></div>
+                                <div
+                                    style="position: absolute; top: 0; left: 0; z-index: 1; background-color: #333333; height: 5px; width: 70%; border-radius: 10px;"></div>
                             </div>
                         </div>
                     </div>
-                    <div style="margin-bottom: 30px">
+                    <div style="margin-bottom: 20px">
                         <div style="width: 50%;float: left">
-                            <div style="display: inline-block; padding-right: 13px; font-size: 12px;">Microsoft Word</div>
+                            <div style="display: inline-block; padding-right: 13px; font-size: 13px;">Microsoft Word
+                            </div>
                             <div style="position: relative; display: inline-block; top: -5px;">
-                                <div style="background-color: #c5c5c5; height: 5px; border-radius: 120px; width: 70px; z-index: -1;"></div>
-                                <div style="position: absolute; top: 0; left: 0; z-index: 1; background-color: #333333; height: 5px; width: 70%; border-radius: 10px;"></div>
+                                <div
+                                    style="background-color: #c5c5c5; height: 5px; border-radius: 120px; width: 70px; z-index: -1;"></div>
+                                <div
+                                    style="position: absolute; top: 0; left: 0; z-index: 1; background-color: #333333; height: 5px; width: 70%; border-radius: 10px;"></div>
                             </div>
                         </div>
                         <div style="width: 50%; float: left;">
-                            <div style="display: inline-block; padding-right: 5px; font-size: 12px;">Microsoft Powerpoint</div>
+                            <div style="display: inline-block; padding-right: 5px; font-size: 13px;">Microsoft
+                                Powerpoint
+                            </div>
                             <div style="position: relative; display: inline-block; top: -5px;">
-                                <div style="background-color: #c5c5c5; height: 5px; border-radius: 120px; width: 70px; z-index: -1;"></div>
-                                <div style="position: absolute; top: 0; left: 0; z-index: 1; background-color: #333333; height: 5px; width: 70%; border-radius: 10px;"></div>
+                                <div
+                                    style="background-color: #c5c5c5; height: 5px; border-radius: 120px; width: 70px; z-index: -1;"></div>
+                                <div
+                                    style="position: absolute; top: 0; left: 0; z-index: 1; background-color: #333333; height: 5px; width: 70%; border-radius: 10px;"></div>
                             </div>
                         </div>
                     </div>
                     <div>
                         <div style="width: 50%;float: left">
-                            <div style="display: inline-block; padding-right: 13px; font-size: 12px;">HTML-5/CSS-3</div>
+                            <div style="display: inline-block; padding-right: 13px; font-size: 13px;">HTML-5/CSS-3</div>
                             <div style="position: relative; display: inline-block; top: -5px;">
-                                <div style="background-color: #c5c5c5; height: 5px; border-radius: 120px; width: 70px; z-index: -1;"></div>
-                                <div style="position: absolute; top: 0; left: 0; z-index: 1; background-color: #333333; height: 5px; width: 70%; border-radius: 10px;"></div>
+                                <div
+                                    style="background-color: #c5c5c5; height: 5px; border-radius: 120px; width: 70px; z-index: -1;"></div>
+                                <div
+                                    style="position: absolute; top: 0; left: 0; z-index: 1; background-color: #333333; height: 5px; width: 70%; border-radius: 10px;"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div style="margin-top: 50px;">
+                <div style="margin-top: 20px;">
                     <div style="width: 50%; float: left;">
                         <div
                             style="height: 40px; width: 40px; text-align: center; background-color: #343434; border-radius: 50%; display: inline-block;">
-                            <img src="./images/template-two/icons/user.png" alt=""
+                            <img src="./images/template-two/icons/earth.png" alt=""
                                  style="position: relative; top: 7px;">
                         </div>
                         <div
-                            style="text-transform: uppercase; display: inline-block; padding-left: 10px; position: relative; top: -10px; font-weight: bold; font-size: 22px;">
+                            style="text-transform: uppercase; display: inline-block; padding-left: 10px; position: relative; top: -10px; font-weight: bold; font-size: 14px;">
                             language
                         </div>
                     </div>
                     <div style="width: 50%; float: left; text-align: right;">
                         <div
                             style="height: 40px; width: 40px; text-align: center; background-color: #343434; border-radius: 50%; display: inline-block;">
-                            <img src="./images/template-two/icons/user.png" alt=""
+                            <img src="./images/template-two/icons/racing-flag.png" alt=""
                                  style="position: relative; top: 7px;">
                         </div>
                         <div
-                            style="text-transform: uppercase; display: inline-block; padding-left: 10px; position: relative; top: -10px; font-weight: bold; font-size: 22px;">
+                            style="text-transform: uppercase; display: inline-block; padding-left: 10px; position: relative; top: -10px; font-weight: bold; font-size: 14px;">
                             hobbies
                         </div>
                     </div>
                 </div>
                 <div style="margin-top: 20px;">
-                    <div style="width: 25%; float: left;">
-                        <div style="height: 10px; width: 10px; border-radius: 50%; background-color: #333333; padding-right: 5px; display: inline-block;"></div>
-                        <div style="text-transform: uppercase; display: inline-block;">english</div>
+                    <div style="clear: both; margin-bottom: 30px;">
+                        <div style="width: 30%; float: left;">
+                            <div
+                                style="height: 10px; width: 10px; border-radius: 50%; background-color: #333333; display: inline-block; position: relative; top: -4px;"></div>
+                            <div
+                                style="text-transform: uppercase; display: inline-block; padding-left: 5px; font-weight: 500; font-size: 14px;">
+                                english
+                            </div>
+                        </div>
+                        <div style="width: 30%; float: left;">
+                            <div
+                                style="height: 10px; width: 10px; border-radius: 50%; background-color: #333333; display: inline-block; position: relative; top: -4px;"></div>
+                            <div
+                                style="text-transform: uppercase; display: inline-block; padding-left: 5px; font-weight: 500; font-size: 14px;">
+                                spanish
+                            </div>
+                        </div>
+                        <div style="width: 40%; float: left;">
+                            <div
+                                style="height: 10px; width: 10px; border-radius: 50%; background-color: #333333; display: inline-block; position: relative; top: -4px;"></div>
+                            <div
+                                style="text-transform: uppercase; display: inline-block; padding-left: 5px; font-weight: 500; font-size: 14px;">
+                                reading books
+                            </div>
+                        </div>
                     </div>
-                    <div style="width: 25%; float: left;">
-                        <div style="height: 10px; width: 10px; border-radius: 50%; background-color: #333333; padding-right: 5px; display: inline-block;"></div>
-                        <div style="text-transform: uppercase; display: inline-block;">english</div>
+                    <div style="clear: both; margin-bottom: 30px;">
+                        <div style="width: 30%; float: left;">
+                            <div
+                                style="height: 10px; width: 10px; border-radius: 50%; background-color: #333333; display: inline-block; position: relative; top: -4px;"></div>
+                            <div
+                                style="text-transform: uppercase; display: inline-block; padding-left: 5px; font-weight: 500; font-size: 14px;">
+                                french
+                            </div>
+                        </div>
+                        <div style="width: 30%; float: left;">
+                            <div
+                                style="height: 10px; width: 10px; border-radius: 50%; background-color: #333333; display: inline-block; position: relative; top: -4px;"></div>
+                            <div
+                                style="text-transform: uppercase; display: inline-block; padding-left: 5px; font-weight: 500; font-size: 14px;">
+                                german
+                            </div>
+                        </div>
+                        <div style="width: 40%; float: left;">
+                            <div
+                                style="height: 10px; width: 10px; border-radius: 50%; background-color: #333333; display: inline-block; position: relative; top: -4px;"></div>
+                            <div
+                                style="text-transform: uppercase; display: inline-block; padding-left: 5px; font-weight: 500; font-size: 14px;">
+                                traveling
+                            </div>
+                        </div>
                     </div>
-                    <div style="width: 50%; float: left;">
-                        <div style="height: 10px; width: 10px; border-radius: 50%; background-color: #333333; padding-right: 5px; display: inline-block;"></div>
-                        <div style="text-transform: uppercase; display: inline-block;">english</div>
+                    <div style="clear: both;">
+                        <div style="width: 30%; float: left;"></div>
+                        <div style="width: 30%; float: left;"></div>
+                        <div style="width: 40%; float: left;">
+                            <div
+                                style="height: 10px; width: 10px; border-radius: 50%; background-color: #333333; display: inline-block; position: relative; top: -4px;"></div>
+                            <div
+                                style="text-transform: uppercase; display: inline-block; padding-left: 5px; font-weight: 500; font-size: 14px;">
+                                playing chess
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
