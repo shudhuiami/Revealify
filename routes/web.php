@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [FrontController::class, 'home'])->name('template.one');
-Route::get('template-1', [FrontController::class, 'template_1'])->name('template.one');
+
+Route::get('template-1', [FrontController::class, 'template_1'])->name('template.one.1');
 Route::get('template-2', [FrontController::class, 'template_2'])->name('template.two');
 Route::get('template-3', [FrontController::class, 'template_3'])->name('template.three');
 Route::get('template-4', [FrontController::class, 'template_4'])->name('template.four');
