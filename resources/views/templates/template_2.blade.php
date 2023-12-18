@@ -12,7 +12,7 @@
     <tbody>
     <tr>
         {{--left--}}
-        <td style="width: 35%;padding: 0; margin: 0;">
+        <td style="width: 40%;padding: 0; margin: 0;">
             <div style="background-color: #f0f0f0;">
 
                 {{--top--}}
@@ -33,17 +33,56 @@
                 {{--middle--}}
                 <div style="padding: 20px 30px;">
                     <div>
-                        <div style="height: 40px; width: 40px; text-align: center; line-height: 40px; background-color: #000000; border-radius: 50%; display: inline-block;">
-                            <img src="./images/template-two/icons/user.png" alt="">
+                        <div
+                            style="height: 40px; width: 40px; text-align: center; background-color: #343434; border-radius: 50%; display: inline-block;">
+                            <img src="./images/template-two/icons/user.png" alt=""
+                                 style="position: relative; top: 7px;">
                         </div>
-                        <div style="text-transform: uppercase; display: inline-block;">contact me</div>
+                        <div
+                            style="text-transform: uppercase; display: inline-block; padding-left: 10px; position: relative; top: -10px; font-weight: 700; font-size: 18px;">
+                            contact me
+                        </div>
+                    </div>
+                    <div style="padding-top: 20px;">
+                        <div style="margin-bottom: 10px;">
+                            <img src="./images/template-two/icons/telephone-call.png" alt=""
+                                 style="display: inline-block; height: 16px; width: 16px; display: inline-block; padding-right: 10px;">
+                            <div style="display: inline-block; font-size: 14px;">+017-000000-00000</div>
+                        </div>
+                        <div style="margin-bottom: 10px;">
+                            <img src="./images/template-two/icons/internet.png" alt=""
+                                 style="display: inline-block; height: 16px; width: 16px; display: inline-block; padding-right: 10px;">
+                            <div style="display: inline-block; font-size: 14px;">www.yourwebsite.com</div>
+                        </div>
+                        <div style="margin-bottom: 10px;">
+                            <img src="./images/template-two/icons/pin.png" alt=""
+                                 style="display: inline-block; height: 16px; width: 16px; display: inline-block; padding-right: 10px;">
+                            <div style="display: inline-block; font-size: 14px;">769 PrudenciLincoln Park, MI</div>
+                        </div>
+                    </div>
+                </div>
+
+                {{--bottom--}}
+                <div style="padding: 0 20px;">
+                    <div style="background-color: #333333; padding: 60px 30px; border-radius: 150px 150px 0 0;">
+                        <div>
+                            <div
+                                style="height: 40px; width: 40px; text-align: center; background-color: #ffffff; border-radius: 50%; display: inline-block;">
+                                <img src="./images/template-two/icons/mortarboard.png" alt=""
+                                     style="position: relative; top: 7px;">
+                            </div>
+                            <div
+                                style="text-transform: uppercase; display: inline-block; padding-left: 10px; font-weight: 700; font-size: 20px; color: #ffffff; position: relative; top: -7px">
+                                education
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </td>
 
         {{--right--}}
-        <td style="width: 65%; padding-left: 60px;">
+        <td style="width: 60%; padding-left: 60px;">
             <div style="background-color: #f0f0f0; max-width: 100%; width: 100%;">
                 <div style="background-color: #333333;">
                     <h3 style="text-transform: uppercase;color: #fbfbfb;">Noel Taylor</h3>
