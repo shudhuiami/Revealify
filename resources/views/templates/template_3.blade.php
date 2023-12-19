@@ -12,17 +12,21 @@
 
 <!--Main content box start-->
 <div style="background-color: #fff;border-radius: 40px">
+    <!--Header section start-->
     <table
-        style="width: 100%;background-color: #eee;padding: 30px;border-top-left-radius: 40px;border-top-right-radius: 40px;position: relative">
+        style="width: 100%;background-color: #eee;padding: 40px;border-top-left-radius: 40px;border-top-right-radius: 40px;position: relative">
         <tbody>
         <tr>
             <td style="">
                 <div
                     style="display:inline-block;padding: 5px;border-radius: 50%;background-color:#313030;margin-right: 5px">
-                    <img style="width: 20px;height: 20px;" src="./images/template-3/man.png" alt="man">
+                    <img style="width: 20px;height: 20px;" src="./images/template-3/icon/man.png" alt="man">
                 </div>
 
-                <div style="font-size: 24px;font-weight: 700;color: #313030;display: inline-block">About Me</div>
+                <div
+                    style="font-size: 24px;font-weight: 700;color: #313030;display: inline-block;text-transform: uppercase">
+                    About Me
+                </div>
 
                 <div style="margin-top: 10px;line-height: 1.5">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, atque aut dolor dolore,
@@ -37,11 +41,47 @@
                 Noel Taylor
                 <div style="font-weight: 400;font-size: 16px">Graphic and web designer</div>
                 <div
-                    style="width: 220px;height: 220px;border-radius: 50%;border: 5px solid #fff;position: absolute; right: 30px; top: 110px"></div>
+                    style="width: 200px;height: 200px;border-radius: 50%;border: 10px solid #fff;position: absolute; right: 40px; top: 140px">
+                    <img style="width:95%;height: 95%;object-fit: cover;border-radius: 50%;border: 5px solid #313030"
+                         src="./images/template-3/image/user.jpg"
+                         alt="user">
+                </div>
             </td>
         </tr>
         </tbody>
     </table>
+    <!--Header section end  -->
+
+    <!--body section start-->
+    <table style="padding: 50px 40px">
+        <tbody>
+        <tr>
+            <td style="">
+                <div
+                    style="display:inline-block;padding: 7px;border-radius: 50%;background-color:#313030;margin-right: 5px">
+                    <img style="width: 16px;height: 16px;" src="./images/template-3/icon/briefcase.png" alt="briefcase">
+                </div>
+
+                <div
+                    style="font-size: 24px;font-weight: 700;color: #313030;display: inline-block;text-transform: uppercase">
+                    Job Experience
+                </div>
+
+                <table>
+                    <tbody>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </td>
+
+            {{--            <td style="background-color: #313030"></td>--}}
+        </tr>
+        </tbody>
+    </table>
+    <!--body section end  -->
 </div>
 <!--Main content box end  -->
 
