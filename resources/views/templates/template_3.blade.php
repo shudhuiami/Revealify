@@ -41,7 +41,7 @@
                 Noel Taylor
                 <div style="font-weight: 400;font-size: 16px">Graphic and web designer</div>
                 <div
-                    style="width: 200px;height: 200px;border-radius: 50%;border: 10px solid #fff;position: absolute; right: 40px; top: 140px">
+                    style="width: 210px;height: 210px;border-radius: 50%;border: 10px solid #fff;position: absolute; right: 30px; top: 130px">
                     <img style="width:95%;height: 95%;object-fit: cover;border-radius: 50%;border: 5px solid #313030"
                          src="./images/template-3/image/user.jpg"
                          alt="user">
@@ -53,9 +53,10 @@
     <!--Header section end  -->
 
     <!--body section start-->
-    <table style="padding: 50px 40px">
+    <table style="padding: 50px 40px;padding-bottom: 0;border-collapse: collapse">
         <tbody>
         <tr>
+            <!--left body section start-->
             <td style="">
                 <div
                     style="display:inline-block;padding: 7px;border-radius: 50%;background-color:#313030;margin-right: 5px">
@@ -70,14 +71,95 @@
                 <table>
                     <tbody>
                     <tr>
-                        <td></td>
+                        <td>
+                            <table style="width:100%;border-collapse: collapse">
+                                <tr>
+                                    <td style="font-weight: 700;font-size:16px;position: relative">
+                                        Senior web designer
+                                    </td>
+                                    <td style="text-align: right;width: 100px;padding: 20px 15px 0;">
+                                        2020 - present
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-style: italic;">Creative agency / Chicago
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td style="padding: 15px 15px 0 0px;">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Commodi, sit?
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table style="width:100%;border-collapse: collapse">
+                                <tr>
+                                    <td style="font-weight: 700;font-size:16px;position: relative">
+                                        Graphic designer
+                                    </td>
+                                    <td style="text-align: right;width: 100px;padding: 20px 15px 0;">
+                                        2015 - 2020
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-style: italic;">Creative market / Chicago
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td style="padding: 15px 15px 0 0px;">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Commodi, sit?
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table style="width:100%;border-collapse: collapse">
+                                <tr>
+                                    <td style="font-weight: 700;font-size:16px;position: relative">
+                                        Marketing Manager
+                                    </td>
+                                    <td style="text-align: right;width: 100px;padding: 20px 15px 0;">
+                                        2013 - 2015
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-style: italic;">Creative agency / Chicago
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td style="padding: 15px 15px 0 0px;">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Commodi, sit?
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
 
             </td>
+            <!--left body section end  -->
 
-            {{--            <td style="background-color: #313030"></td>--}}
+            <!--right body section start-->
+            <td style="background-color: #313030;width: 200px"></td>
+            <!--right body section end  -->
         </tr>
         </tbody>
     </table>
