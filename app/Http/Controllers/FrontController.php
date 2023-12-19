@@ -10,9 +10,6 @@ class FrontController extends Controller
     public static function home(){
         return view('welcome');
     }
-    public static function template_two(){
-        return view('template-two');
-    }
 
     public static function template_1(){
         $pdf = Pdf::loadView('templates.template_1');
