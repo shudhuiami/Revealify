@@ -6,6 +6,17 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Theme Four</title>
+    <style>
+        @page { margin: 0; }
+        body { margin: 0; }
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: none !important;
+        }
+    </style>
 </head>
 <body>
 <table style="width: 100%;">
@@ -128,7 +139,7 @@
                 </div>
             </div>
         </td>
-        <td style="width: 65%; vertical-align: top;">
+        <td style="width: 65%; vertical-align: top; padding-right: 20px">
             <div style="padding: 30px 0 5px 30px;">
                 {{--about--}}
                 <div style="margin-bottom: 40px;">
