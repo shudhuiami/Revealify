@@ -19,8 +19,8 @@
         </td>
         <td style="width: 65%">
             <div style="padding-left: 30px; color: #434343;">
-                <div style="font-size: 30px; line-height: 0">Jennifer</div>
-                <div style="font-size: 30px; font-weight: bold; margin-bottom: 5px;">Anderson</div>
+                <div style="font-size: 40px; line-height: 0">Jennifer</div>
+                <div style="font-size: 40px; font-weight: bold; margin-bottom: 5px;">Anderson</div>
                 <div>User experience designer</div>
             </div>
         </td>
@@ -29,7 +29,7 @@
         <td style="width: 35%; vertical-align: top;">
             <div style="padding: 30px 0 40px 30px; background-color: #404042; border-radius: 0 40px 0 0">
                 {{--contact--}}
-                <div style="color: #ffffff; margin-bottom: 40px;">
+                <div style="color: #ffffff; margin-bottom: 30px;">
                     <div style="border-bottom: 2px solid #b4b4b6; margin-bottom: 15px;">
                         <div
                             style="height: 40px; width: 40px; text-align: center; border-radius: 50%; background-color: #ffffff;display: inline-block;">
@@ -50,6 +50,10 @@
                         <div>02800200</div>
                     </div>
                     <div style="margin-bottom: 10px; font-size: 12px;">
+                        <div>Home:</div>
+                        <div>02800200</div>
+                    </div>
+                    <div style="margin-bottom: 10px; font-size: 12px;">
                         <div>Email:</div>
                         <div>janderson@gmail.com</div>
                     </div>
@@ -64,11 +68,11 @@
                 </div>
 
                 {{--skills--}}
-                <div style="color: #ffffff; margin-bottom: 40px;">
+                <div style="color: #ffffff; margin-bottom: 30px;">
                     <div style="border-bottom: 2px solid #b4b4b6; margin-bottom: 15px;">
                         <div
                             style="height: 40px; width: 40px; text-align: center; border-radius: 50%; background-color: #ffffff;display: inline-block;">
-                            <img src="./images/template-four/icons/phone-book.png" alt=""
+                            <img src="./images/template-four/icons/settings.png" alt=""
                                  style="position:relative; top: 7px;">
                         </div>
                         <div
@@ -101,7 +105,7 @@
                     <div style="border-bottom: 2px solid #b4b4b6; margin-bottom: 15px;">
                         <div
                             style="height: 40px; width: 40px; text-align: center; border-radius: 50%; background-color: #ffffff;display: inline-block;">
-                            <img src="./images/template-four/icons/phone-book.png" alt=""
+                            <img src="./images/template-four/icons/contract.png" alt=""
                                  style="position:relative; top: 7px;">
                         </div>
                         <div
@@ -109,14 +113,14 @@
                             references
                         </div>
                     </div>
-                    <div style="margin-bottom: 20px; font-size: 12px;">
-                        <div style="font-size: 14px; font-weight: bold; margin-bottom: 10px;">William Kleiman</div>
+                    <div style="margin-bottom: 10px; font-size: 12px;">
+                        <div style="font-size: 14px; font-weight: bold; margin-bottom: 5px;">William Kleiman</div>
                         <div>Director, Matrix Media Limited</div>
                         <div>Phone: +555 123 5566</div>
                         <div>Email: williamkleiman@gmail.com</div>
                     </div>
                     <div style="font-size: 12px;">
-                        <div style="font-size: 14px; font-weight: bold; margin-bottom: 10px;">Jensen Smith</div>
+                        <div style="font-size: 14px; font-weight: bold; margin-bottom: 5px;">Jensen Smith</div>
                         <div>Web developer, Design mate LTD</div>
                         <div>Phone: +555 123 4455</div>
                         <div>Email: jensonsmith@gmail.com</div>
@@ -127,7 +131,7 @@
         <td style="width: 65%; vertical-align: top;">
             <div style="padding: 30px 0 5px 30px;">
                 {{--about--}}
-                <div style="margin-bottom: 20px;">
+                <div style="margin-bottom: 40px;">
                     <div style="border-bottom: 2px solid #b4b4b6; margin-bottom: 10px;">
                         <div
                             style="height: 40px; width: 40px; text-align: center; border-radius: 50%; background-color: #3d3d3d;display: inline-block;">
@@ -154,7 +158,7 @@
                 </div>
 
                 {{--experiences--}}
-                <div style="margin-bottom: 10px;">
+                <div style="margin-bottom: 30px;">
                     <div style="border-bottom: 2px solid #b4b4b6; margin-bottom: 10px;">
                         <div
                             style="height: 40px; width: 40px; text-align: center; border-radius: 50%; background-color: #3d3d3d;display: inline-block;">
@@ -177,14 +181,13 @@
                                 <td style="width: 70%; vertical-align: top;">
                                     <div style="margin-bottom: 5px; color: #444444; font-weight: bold;">Soft Design Studio</div>
                                     <div style="color: #adadad;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, inventore,
-                                        nihil! Accusantium eos odit quasi velit. At aut, dolore doloremque, dolorum ipsa
-                                        natus praesentium, quasi quibusdam quo sunt tempore vitae!
+                                        nihil! Accusantium eos odit quasi velit. At aut, dolore doloremque, dolorum ipsa.
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <div style="margin-bottom: 5px"></div>
+                                    <div style="margin-bottom: 10px"></div>
                                 </td>
                             </tr>
                             <tr>
@@ -195,14 +198,13 @@
                                 <td style="width: 70%; vertical-align: top;">
                                     <div style="margin-bottom: 5px; color: #444444; font-weight: bold;">Web Tech Ltd</div>
                                     <div style="color: #adadad;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, inventore,
-                                        nihil! Accusantium eos odit quasi velit. At aut, dolore doloremque, dolorum ipsa
-                                        natus praesentium, quasi quibusdam quo sunt tempore vitae!
+                                        nihil! Accusantium eos odit quasi velit. At aut, dolore doloremque, dolorum ipsa.
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <div style="margin-bottom: 5px"></div>
+                                    <div style="margin-bottom: 10px"></div>
                                 </td>
                             </tr>
                             <tr>
@@ -213,8 +215,7 @@
                                 <td style="width: 70%; vertical-align: top;">
                                     <div style="margin-bottom: 5px; color: #444444; font-weight: bold;">Dev Creative Solution</div>
                                     <div style="color: #adadad;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, inventore,
-                                        nihil! Accusantium eos odit quasi velit. At aut, dolore doloremque, dolorum ipsa
-                                        natus praesentium, quasi quibusdam quo sunt tempore vitae!
+                                        nihil! Accusantium eos odit quasi velit. At aut, dolore doloremque, dolorum ipsa.
                                     </div>
                                 </td>
                             </tr>
@@ -228,7 +229,7 @@
                     <div style="border-bottom: 2px solid #b4b4b6; margin-bottom: 10px;">
                         <div
                             style="height: 40px; width: 40px; text-align: center; border-radius: 50%; background-color: #3d3d3d;display: inline-block;">
-                            <img src="./images/template-four/icons/suitcase.png" alt=""
+                            <img src="./images/template-four/icons/graduate.png" alt=""
                                  style="position:relative; top: 7px;">
                         </div>
                         <div
@@ -247,27 +248,24 @@
                                 <td style="width: 70%; vertical-align: top;">
                                     <div style="margin-bottom: 5px; color: #444444; font-weight: bold;">Certificate of Web Training</div>
                                     <div style="color: #adadad;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, inventore,
-                                        nihil! Accusantium eos odit quasi velit. At aut, dolore doloremque, dolorum ipsa
-                                        natus praesentium, quasi quibusdam quo sunt tempore vitae!
+                                        nihil! Accusantium eos odit quasi velit. At aut, dolore doloremque, dolorum ipsa.
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <div style="margin-bottom: 5px"></div>
+                                    <div style="margin-bottom: 10px"></div>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="width: 30%; color: #444444; vertical-align: top;">
                                     <div style="margin-bottom: 5px; font-weight: bold;">University of Lorem</div>
-                                    <div>2015 -2017</div>
+                                    <div>2007 -2009</div>
                                 </td>
                                 <td style="width: 70%; vertical-align: top;">
                                     <div style="margin-bottom: 5px; color: #444444; font-weight: bold;">Bachelor of Art Director</div>
                                     <div style="color: #adadad;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, inventore,
-                                        nihil! Accusantium eos odit quasi velit. At aut, dolore doloremque, dolorum ipsa
-                                        natus praesentium, quasi quibusdam quo sunt tempore vitae!
-                                    </div>
+                                        nihil! Accusantium eos odit quasi velit. At aut, dolore doloremque, dolorum ipsa.
                                 </td>
                             </tr>
                             </tbody>
