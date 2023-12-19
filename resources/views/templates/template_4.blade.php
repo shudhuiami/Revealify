@@ -265,7 +265,7 @@
                                 <td style="width: 70%; vertical-align: top;">
                                     <div style="margin-bottom: 5px; color: #444444; font-weight: bold;">Bachelor of Art Director</div>
                                     <div style="color: #adadad;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, inventore,
-                                        nihil! Accusantium eos odit quasi velit. At aut, dolore doloremque, dolorum ipsa.
+                                        nihil! Accusantium eos odit quasi velit. At aut, dolore doloremque, dolorum ipsa.</div>
                                 </td>
                             </tr>
                             </tbody>
