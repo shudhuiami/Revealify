@@ -220,48 +220,62 @@
 
 
                     <tr>
-                        <table>
-                            <tbody>
-                            <tr>
-                                <td style="padding-top: 30px;">
-                                    <div
-                                        style="display:inline-block;padding: 5px;border-radius: 50%;background-color:#313030;margin-right: 5px">
-                                        <img style="width: 20px;height: 20px;" src="./images/template-3/icon/world.png" alt="earth">
-                                    </div>
+                       <td style="padding-bottom: 10px;">
+                           <table>
+                               <tbody>
+                               <tr>
+                                   <td style="padding-top: 30px;">
+                                       <div
+                                           style="display:inline-block;padding: 5px;border-radius: 50%;background-color:#313030;margin-right: 5px">
+                                           <img style="width: 20px;height: 20px;" src="./images/template-3/icon/world.png" alt="earth">
+                                       </div>
 
-                                    <div
-                                        style="font-size: 24px;font-weight: 700;color: #313030;display: inline-block;text-transform: uppercase">
-                                        Language
-                                    </div>
+                                       <div
+                                           style="font-size: 24px;font-weight: 700;color: #313030;display: inline-block;text-transform: uppercase">
+                                           Language
+                                       </div>
 
-                                    <ul style="padding: 20px;line-height: 1.7;margin-top: 0;">
-                                        <li>Reading Books</li>
-                                        <li>Traveling</li>
-                                        <li>Playing chess</li>
-                                    </ul>
-                                </td>
+                                       <table>
+                                           <tbody>
+                                           <tr>
+                                               <td>
+                                                   <ul style="padding-left: 20px;line-height: 1.7;margin-top: 0;">
+                                                       <li style="">English</li>
+                                                       <li style="">Spanish</li>
+                                                   </ul>
+                                               </td>     <td>
+                                                   <ul style="padding: 20px;line-height: 1.7;margin-top: 0;">
+                                                       <li style="">French</li>
+                                                       <li style="">German</li>
+                                                   </ul>
+                                               </td>
+                                           </tr>
+                                           </tbody>
+                                       </table>
+                                   </td>
 
-                                <td style="padding-top: 30px;padding-left:15px;">
-                                    <div
-                                        style="display:inline-block;padding: 7px;border-radius: 50%;background-color:#313030;margin-right: 5px">
-                                        <img style="width: 16px;height: 16px;" src="./images/template-3/icon/racing-flag.png" alt="racing flag">
-                                    </div>
+                                   <td style="padding-top: 30px;padding-left:15px;">
+                                       <div
+                                           style="display:inline-block;padding: 7px;border-radius: 50%;background-color:#313030;margin-right: 5px">
+                                           <img style="width: 16px;height: 16px;" src="./images/template-3/icon/racing-flag.png" alt="racing flag">
+                                       </div>
 
-                                    <div
-                                        style="font-size: 24px;font-weight: 700;color: #313030;display: inline-block;text-transform: uppercase">
-                                        Hobbies
-                                    </div>
+                                       <div
+                                           style="font-size: 24px;font-weight: 700;color: #313030;display: inline-block;text-transform: uppercase">
+                                           Hobbies
+                                       </div>
 
-                                    <ul style="padding: 20px;line-height: 1.7;margin-top: 0;">
-                                        <li>Reading Books</li>
-                                        <li>Traveling</li>
-                                        <li>Playing chess</li>
-                                    </ul>
-                                </td>
-                            </tr>
+                                       <ul style="padding: 20px;line-height: 1.7;margin-top: 0;">
+                                           <li>Reading Books</li>
+                                           <li>Traveling</li>
+                                           <li>Playing chess</li>
+                                       </ul>
+                                   </td>
+                               </tr>
 
-                            </tbody>
-                        </table>
+                               </tbody>
+                           </table>
+                       </td>
                     </tr>
                     </tbody>
                 </table>
