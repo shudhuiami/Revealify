@@ -6,6 +6,15 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Template Two</title>
+    <style>
+        @page{
+            margin: 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+    </style>
 </head>
 <body style="padding: 0; margin: 0; box-sizing: border-box;">
 <table style="width: 100%;">
@@ -129,7 +138,7 @@
         </td>
 
         {{--        right--}}
-        <td style="width: 65%; padding-left: 40px; vertical-align: top;">
+        <td style="width: 65%; padding-left: 40px; vertical-align: top; padding-right: 30px">
             <div style="padding: 20px 0;">
                 <div style="margin-bottom: 30px">
                     <div style="margin-bottom: 10px;">
