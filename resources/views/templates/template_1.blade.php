@@ -6,11 +6,19 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Revealify - Template 1</title>
+    <style>
+        @page{
+            margin: 0;
+        }
+        table {
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 
 
 <body
-    style="border: 1px solid; margin:0;padding:0;box-sizing:border-box;font-family: sans-serif;font-size: 13px">
+    style="font-family: sans-serif;font-size: 13px">
 
 <!--main Content start-->
 <table style="width:100%;position:relative;border-collapse: collapse;">
