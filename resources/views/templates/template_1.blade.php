@@ -26,7 +26,7 @@
 
     <tr>
         <!--Left start-->
-        <td style="padding:30px;background-color:#3a3939;overflow: hidden">
+        <td style="padding:30px;background-color:#3a3939;overflow: hidden;">
 
             <!--Triangle shape top-->
             <div style="
@@ -46,7 +46,7 @@
                 src="./images/template-1/image/user.jpg"
                 alt="user">
 
-            <table style="border-left:1px solid #dadada;margin-top: 25px;position: relative;color: #fff;">
+            <table style="border-left:1px solid #888888;margin-top: 25px;position: relative;color: #fff;">
                 <tbody>
                 <!--Contact section start-->
                 <tr>
@@ -65,7 +65,7 @@
                 <tr>
                     <td style="padding-left: 20px;padding-top: 20px;position: relative">
                        <span
-                           style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -5px;top: 35px">
+                           style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 35px">
                        </span>
 
                         <img style="margin-right: 5px;width: 20px;height: 20px;position: relative;top: 15px"
@@ -81,7 +81,7 @@
                 <tr>
                     <td style="padding-left: 20px;padding-top: 20px;position: relative">
                        <span
-                           style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -5px;top: 35px">
+                           style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 35px">
                        </span>
 
                         <img style="margin-right: 5px;width: 20px;height: 20px;position: relative;top: 15px"
@@ -97,7 +97,7 @@
                 <tr>
                     <td style="padding-left: 20px;padding-top: 20px;position: relative">
                     <span
-                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -5px;top: 35px"></span>
+                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 35px"></span>
                         <img style="margin-right: 5px;width: 20px;height: 20px;position: relative;top: 15px"
                              src="./images/template-1/icon/map-pointer.png" alt="map pointer">
                         <span>769 Prudence street</span>
@@ -134,7 +134,7 @@
                 <tr>
                     <td style="font-weight: 700;font-size:16px;padding-left:20px;padding-top:20px;position: relative">
                     <span
-                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -5px;top: 25px"></span>
+                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 25px"></span>
 
                         Darwin B. Magana
                     </td>
@@ -155,7 +155,7 @@
                 <tr>
                     <td style="font-weight: 700;font-size:16px;padding-left:20px;padding-top:20px;position: relative">
                     <span
-                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -5px;top: 25px"></span>
+                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 25px"></span>
 
                         Robert j. Belvin
                     </td>
@@ -199,7 +199,7 @@
                 <tr>
                     <td style="font-weight: 700;font-size:16px;padding-left:20px;padding-top:20px;position: relative">
                     <span
-                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -5px;top: 25px"></span>
+                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 25px"></span>
 
                         Stanford University
                     </td>
@@ -216,7 +216,7 @@
                 <tr>
                     <td style="font-weight: 700;font-size:16px;padding-left:20px;padding-top:20px;position: relative">
                     <span
-                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -5px;top: 25px"></span>
+                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 25px"></span>
 
                         Stanford University
                     </td>
