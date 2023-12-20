@@ -7,9 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Revealify - Template 3</title>
     <style>
-        @page{
+        @page {
             margin: 0;
         }
+
         table {
             border-collapse: collapse;
             width: 100%;
@@ -23,7 +24,7 @@
 <div style="background-color: #fff;border-radius: 40px">
     <!--Header section start-->
     <table
-        style="width: 100%;background-color: #eee;padding: 40px;border-top-left-radius: 40px;border-top-right-radius: 40px;position: relative">
+        style="width: 100%;background-color: #eee;padding: 50px;border-top-left-radius: 40px;border-top-right-radius: 40px;position: relative;height: 200px">
         <tbody>
         <tr>
             <td style="">
@@ -42,7 +43,8 @@
                     dolorum
                     enim eos et excepturi, fugit illum inventore ipsum iste laboriosam maiores minima provident rem
                     suscipit
-                    velit.
+                    velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, minus?
+                    velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, minus?
                 </div>
 
             </td>
@@ -50,7 +52,7 @@
                 Noel Taylor
                 <div style="font-weight: 400;font-size: 16px">Graphic and web designer</div>
                 <div
-                    style="width: 210px;height: 210px;border-radius: 50%;border: 10px solid #fff;position: absolute; right: 30px; top: 130px">
+                    style="width: 250px;height: 250px;border-radius: 50%;border: 10px solid #fff;position: absolute; right: 30px; top: 180px">
                     <img style="width:95%;height: 95%;object-fit: cover;border-radius: 50%;border: 5px solid #313030"
                          src="./images/template-3/image/user.jpg"
                          alt="user">
@@ -62,11 +64,11 @@
     <!--Header section end  -->
 
     <!--body section start-->
-    <table style="padding: 50px 40px;padding-bottom: 0;border-collapse: collapse">
+    <table style="padding: 50px 40px 0 50px;border-collapse: collapse">
         <tbody>
         <tr>
             <!--left body section start-->
-            <td style="">
+            <td>
                 <div
                     style="display:inline-block;padding: 7px;border-radius: 50%;background-color:#313030;margin-right: 5px">
                     <img style="width: 16px;height: 16px;" src="./images/template-3/icon/briefcase.png" alt="briefcase">
@@ -165,7 +167,8 @@
                         <td style="padding-top: 30px">
                             <div
                                 style="display:inline-block;padding: 5px;border-radius: 50%;background-color:#313030;margin-right: 5px">
-                                <img style="width: 20px;height: 20px;" src="./images/template-3/icon/pie-chart.png" alt="chart pie">
+                                <img style="width: 20px;height: 20px;" src="./images/template-3/icon/pie-chart.png"
+                                     alt="chart pie">
                             </div>
 
                             <div
@@ -229,62 +232,65 @@
 
 
                     <tr>
-                       <td style="padding-bottom: 10px;">
-                           <table>
-                               <tbody>
-                               <tr>
-                                   <td style="padding-top: 30px;">
-                                       <div
-                                           style="display:inline-block;padding: 5px;border-radius: 50%;background-color:#313030;margin-right: 5px">
-                                           <img style="width: 20px;height: 20px;" src="./images/template-3/icon/world.png" alt="earth">
-                                       </div>
+                        <td style="padding-bottom: 10px;">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td style="padding-top: 30px;">
+                                        <div
+                                            style="display:inline-block;padding: 5px;border-radius: 50%;background-color:#313030;margin-right: 5px">
+                                            <img style="width: 20px;height: 20px;"
+                                                 src="./images/template-3/icon/world.png" alt="earth">
+                                        </div>
 
-                                       <div
-                                           style="font-size: 24px;font-weight: 700;color: #313030;display: inline-block;text-transform: uppercase">
-                                           Language
-                                       </div>
+                                        <div
+                                            style="font-size: 24px;font-weight: 700;color: #313030;display: inline-block;text-transform: uppercase">
+                                            Language
+                                        </div>
 
-                                       <table>
-                                           <tbody>
-                                           <tr>
-                                               <td>
-                                                   <ul style="padding-left: 20px;line-height: 1.7;margin-top: 0;">
-                                                       <li style="">English</li>
-                                                       <li style="">Spanish</li>
-                                                   </ul>
-                                               </td>     <td>
-                                                   <ul style="padding: 20px;line-height: 1.7;margin-top: 0;">
-                                                       <li style="">French</li>
-                                                       <li style="">German</li>
-                                                   </ul>
-                                               </td>
-                                           </tr>
-                                           </tbody>
-                                       </table>
-                                   </td>
+                                        <table>
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    <ul style="padding-left: 20px;line-height: 1.7;margin-top: 0;">
+                                                        <li style="">English</li>
+                                                        <li style="">Spanish</li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <ul style="padding: 20px;line-height: 1.7;margin-top: 0;">
+                                                        <li style="">French</li>
+                                                        <li style="">German</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
 
-                                   <td style="padding-top: 30px;padding-left:15px;">
-                                       <div
-                                           style="display:inline-block;padding: 7px;border-radius: 50%;background-color:#313030;margin-right: 5px">
-                                           <img style="width: 16px;height: 16px;" src="./images/template-3/icon/racing-flag.png" alt="racing flag">
-                                       </div>
+                                    <td style="padding-top: 30px;padding-left:15px;">
+                                        <div
+                                            style="display:inline-block;padding: 7px;border-radius: 50%;background-color:#313030;margin-right: 5px">
+                                            <img style="width: 16px;height: 16px;"
+                                                 src="./images/template-3/icon/racing-flag.png" alt="racing flag">
+                                        </div>
 
-                                       <div
-                                           style="font-size: 24px;font-weight: 700;color: #313030;display: inline-block;text-transform: uppercase">
-                                           Hobbies
-                                       </div>
+                                        <div
+                                            style="font-size: 24px;font-weight: 700;color: #313030;display: inline-block;text-transform: uppercase">
+                                            Hobbies
+                                        </div>
 
-                                       <ul style="padding: 20px;line-height: 1.7;margin-top: 0;">
-                                           <li>Reading Books</li>
-                                           <li>Traveling</li>
-                                           <li>Playing chess</li>
-                                       </ul>
-                                   </td>
-                               </tr>
+                                        <ul style="padding: 20px;line-height: 1.7;margin-top: 0;">
+                                            <li>Reading Books</li>
+                                            <li>Traveling</li>
+                                            <li>Playing chess</li>
+                                        </ul>
+                                    </td>
+                                </tr>
 
-                               </tbody>
-                           </table>
-                       </td>
+                                </tbody>
+                            </table>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
@@ -293,7 +299,61 @@
             <!--left body section end  -->
 
             <!--right body section start-->
-            <td style="background-color: #313030;width: 200px"></td>
+            <td style="background-color: #313030;width: 200px;border: 1px solid red;vertical-align: top;padding: 150px 20px 20px 20px;color: #fff">
+                <table style="border-collapse: collapse;vertical-align: middle">
+                    <tbody>
+                    <tr>
+                        <td style="padding-bottom: 20px;">
+                            <div
+                                style="display:inline-block;margin-right: 5px;margin-bottom: 5px;">
+                                <img src="./images/template-3/icon/profile-user.png"
+                                     alt="man">
+                            </div>
+
+                            <div
+                                style="font-size: 24px;font-weight: 700;color: #fff;display: inline-block;text-transform: uppercase">
+                                Contact Me
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding-bottom: 5px;">
+                            <img style="margin-right: 5px;width: 14px;height: 14px;" src="./images/template-3/icon/telephone-call.png" alt="telephone">
+                             <div style="display: inline-block;word-break: break-word">+1-718-310-5588</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 5px;">
+                            <img style="margin-right: 5px;width: 14px;height: 14px;" src="./images/template-3/icon/globe.png" alt="globe">
+                            <div style="display: inline-block;word-break: break-word">www.yourwebsite.com</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 5px;">
+                            <img style="margin-right: 5px;width: 14px;height: 14px;" src="./images/template-3/icon/map-pointer.png" alt="map-pointer">
+                            <div style="display: inline-block;word-break: break-word">789 PrudenceLincoIn Park</div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding-bottom: 20px; padding-top: 30px;">
+                            <div
+                                style="display:inline-block;margin-right: 5px;margin-bottom: 5px;">
+                                <img src="./images/template-3/icon/graduation-cap-circular.png"
+                                     alt="graduation cap">
+                            </div>
+
+                            <div
+                                style="font-size: 24px;font-weight: 700;color: #fff;display: inline-block;text-transform: uppercase">
+                                Education
+                            </div>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </td>
             <!--right body section end  -->
         </tr>
         </tbody>
