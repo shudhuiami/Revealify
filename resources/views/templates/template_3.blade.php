@@ -18,10 +18,11 @@
     </style>
 </head>
 <body
-    style="margin: 0;padding: 10px;box-sizing: border-box;font-size: 14px;font-family: sans-serif;background-color: #313030;">
+    style="margin: 0;padding: 10px;box-sizing: border-box;font-size: 12px;font-family: sans-serif;background-color: #313030;position: relative">
 
 <!--Main content box start-->
-<div style="background-color: #fff;border-radius: 40px">
+<div
+    style="background-color: #fff;border-radius: 40px;position: absolute;top: 10px;right: 10px;left: 10px;bottom: 10px;">
     <!--Header section start-->
     <table
         style="width: 100%;background-color: #eee;padding: 50px;border-top-left-radius: 40px;border-top-right-radius: 40px;position: relative;height: 200px">
@@ -53,7 +54,7 @@
                 <div style="font-weight: 400;font-size: 16px">Graphic and web designer</div>
                 <div
                     style="width: 250px;height: 250px;border-radius: 50%;border: 10px solid #fff;position: absolute; right: 30px; top: 180px">
-                    <img style="width:95%;height: 95%;object-fit: cover;border-radius: 50%;border: 5px solid #313030"
+                    <img style="width:96%;height: 96%;object-fit: cover;border-radius: 50%;border: 5px solid #313030"
                          src="./images/template-3/image/user.jpg"
                          alt="user">
                 </div>
@@ -68,7 +69,7 @@
         <tbody>
         <tr>
             <!--left body section start-->
-            <td>
+            <td style="vertical-align: top">
                 <div
                     style="display:inline-block;padding: 7px;border-radius: 50%;background-color:#313030;margin-right: 5px">
                     <img style="width: 16px;height: 16px;" src="./images/template-3/icon/briefcase.png" alt="briefcase">
@@ -299,9 +300,10 @@
             <!--left body section end  -->
 
             <!--right body section start-->
-            <td style="background-color: #313030;width: 200px;border: 1px solid red;vertical-align: top;padding: 150px 20px 20px 20px;color: #fff">
+            <td style="background-color: #313030;width: 200px;vertical-align: top;padding: 130px 20px 20px 20px;color: #fff;">
                 <table style="border-collapse: collapse;vertical-align: middle">
                     <tbody>
+                    <!--Contact section start-->
                     <tr>
                         <td style="padding-bottom: 20px;">
                             <div
@@ -319,23 +321,28 @@
 
                     <tr>
                         <td style="padding-bottom: 5px;">
-                            <img style="margin-right: 5px;width: 14px;height: 14px;" src="./images/template-3/icon/telephone-call.png" alt="telephone">
-                             <div style="display: inline-block;word-break: break-word">+1-718-310-5588</div>
+                            <img style="margin-right: 5px;width: 14px;height: 14px;"
+                                 src="./images/template-3/icon/telephone-call.png" alt="telephone">
+                            <div style="display: inline-block;word-break: break-word">+1-718-310-5588</div>
                         </td>
                     </tr>
                     <tr>
                         <td style="padding-bottom: 5px;">
-                            <img style="margin-right: 5px;width: 14px;height: 14px;" src="./images/template-3/icon/globe.png" alt="globe">
+                            <img style="margin-right: 5px;width: 14px;height: 14px;"
+                                 src="./images/template-3/icon/globe.png" alt="globe">
                             <div style="display: inline-block;word-break: break-word">www.yourwebsite.com</div>
                         </td>
                     </tr>
                     <tr>
                         <td style="padding-bottom: 5px;">
-                            <img style="margin-right: 5px;width: 14px;height: 14px;" src="./images/template-3/icon/map-pointer.png" alt="map-pointer">
+                            <img style="margin-right: 5px;width: 14px;height: 14px;"
+                                 src="./images/template-3/icon/map-pointer.png" alt="map-pointer">
                             <div style="display: inline-block;word-break: break-word">789 PrudenceLincoIn Park</div>
                         </td>
                     </tr>
+                    <!--Contact section end  -->
 
+                    <!--Education section start-->
                     <tr>
                         <td style="padding-bottom: 20px; padding-top: 30px;">
                             <div
@@ -350,6 +357,79 @@
                             </div>
                         </td>
                     </tr>
+
+                    <tr>
+                        <td style="text-transform: uppercase;font-weight: 700;font-size: 16px;padding-bottom: 10px;">
+                            Stanford University
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-transform: uppercase;line-height: 1.5">Master Degree Graduate 2011-2013</td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-transform: uppercase;font-weight: 700;font-size: 16px;padding-bottom: 10px;padding-top: 20px;">
+                            University of chicago
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-transform: uppercase;line-height: 1.5">Bachelor Degree Graduate 2007-2010</td>
+                    </tr>
+                    <!--Education section end  -->
+
+                    <!--Reference section start-->
+                    <tr>
+                        <td style="padding-bottom: 20px; padding-top: 30px;">
+                            <div
+                                style="display:inline-block;margin-right: 5px;margin-bottom: 5px;">
+                                <img src="./images/template-3/icon/users.png"
+                                     alt="graduation cap">
+                            </div>
+
+                            <div
+                                style="font-size: 24px;font-weight: 700;color: #fff;display: inline-block;text-transform: uppercase">
+                                References
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="font-weight: 700;font-size:16px;">
+                            Darwin B. Magana
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2813 Shobe Lane Mancos. CO.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tel: +1-718-310-5588</td>
+                    </tr>
+
+                    <tr>
+                        <td>Email: yourinfo@email.com</td>
+                    </tr>
+
+                    <tr>
+                        <td style="font-weight: 700;font-size:16px;padding-top: 10px;">
+                            Robert j. Belvin
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2813 Shobe Lane Mancos. CO.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tel: +1-718-310-5588</td>
+                    </tr>
+
+                    <tr>
+                        <td>Email: yourinfo@email.com</td>
+                    </tr>
+
+                    <!--Reference section end  -->
 
                     </tbody>
                 </table>
