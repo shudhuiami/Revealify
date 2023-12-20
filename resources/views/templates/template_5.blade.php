@@ -38,7 +38,8 @@
 
                 <tr>
                     <td>
-                        <table>
+                        <table style="border-collapse: collapse;vertical-align:middle">
+                            <!--About me start-->
                             <tr>
                                 <td style="width: 50px;padding-bottom: 20px;">
                                     <div
@@ -61,16 +62,43 @@
                                     praesentium, reprehenderit sit soluta ullam.
                                 </td>
                             </tr>
+                            <!--About me end  -->
 
+                            <!--Contact me start-->
                             <tr>
-                                <td style="width: 50px;padding-bottom: 20px;">
-
-                                </td>
+                                <td style="padding-bottom: 20px;"></td>
 
                                 <td style="padding-bottom: 20px;font-size: 18px;font-weight: 700;color: #0067de;text-transform: uppercase">
                                     Contact
                                 </td>
                             </tr>
+
+                            <tr>
+                                <td style="width: 50px;">
+                                    <div
+                                        style=";border-radius: 50% 50% 0 0;background-color: #0067de;padding:15px 10px;display: inline-block">
+                                        <img style="width: 15px;height: 15px;"
+                                             src="./images/template-5/icon/phone-call.png"
+                                             alt="phone-call">
+                                    </div>
+                                </td>
+
+                                <td style="color: #7e7e7e;line-height: 1.5;padding-bottom: 30px;border: 1px solid;">+000 111 222 3334</td>
+                            </tr>
+
+                            <tr>
+                                <td style="width: 50px;">
+                                    <div
+                                        style="background-color: #0067de;padding: 25px 10px;display: inline-block">
+                                        <img style="width: 15px;height: 15px;" src="./images/template-5/icon/home.png"
+                                             alt="home">
+                                    </div>
+                                </td>
+
+                                <td style="color: #7e7e7e;line-height: 1.5;padding-bottom: 30px;">urname@gmail.com</td>
+                            </tr>
+
+                            <!--Contact me end  -->
                         </table>
                     </td>
                 </tr>
