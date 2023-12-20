@@ -21,28 +21,27 @@
     <tbody>
     <tr>
         {{--left--}}
-        <td style="width: 35%;padding: 0; margin: 0; vertical-align: top;">
+        <td style="width: 40%;padding: 0 0 0 40px; margin: 0; vertical-align: top;">
             <div style="background-color: #f0f0f0;">
-
                 {{--top--}}
                 <div style="background-color: #333333; border-radius: 0 0 150px 150px;">
-                    <div style="padding: 20px 17px 0; text-align: center;">
-                        <h2 style="text-transform: uppercase;color: #fbfbfb; margin: 0; padding: 0 0 5px; font-size: 14px;">
+                    <div style="padding: 40px 15px 0; text-align: center;">
+                        <div style="text-transform: uppercase;color: #fbfbfb; margin: 0; padding: 0 0 5px; font-size: 30px;font-weight: bold;">
                             Noel
-                            Taylor</h2>
-                        <div style="text-transform: uppercase;color: #cfcfcf; margin: 0; padding: 0; font-size: 12px;">
+                            Taylor</div>
+                        <div style="text-transform: uppercase;color: #cfcfcf; margin: 0; padding: 0; font-size: 16px;">
                             graphic & web
                             designer
                         </div>
-                        <div style="padding: 10px 0;">
+                        <div style="padding: 20px 0 15px;">
                             <img src="./images/template-two/images/person2.jpg" alt=""
-                                 style="max-width: 100%; border: 8px solid #ffffff; border-radius: 50%; height: 150px; width: 150px; object-fit: contain;">
+                                 style="max-width: 100%; border: 8px solid #ffffff; border-radius: 50%; height: 220px; width: 220px; object-fit: contain;">
                         </div>
                     </div>
                 </div>
 
                 {{--middle--}}
-                <div style="padding: 10px 20px 10px;">
+                <div style="padding: 20px 0 20px 40px;">
                     <div>
                         <div
                             style="height: 40px; width: 40px; text-align: center; background-color: #343434; border-radius: 50%; display: inline-block;">
@@ -50,11 +49,11 @@
                                  style="position: relative; top: 7px;">
                         </div>
                         <div
-                            style="text-transform: uppercase; display: inline-block; padding-left: 10px; position: relative; top: -10px; font-weight: 700; font-size: 16px;">
+                            style="text-transform: uppercase; display: inline-block; padding-left: 10px; position: relative; top: -10px; font-weight: 700; font-size: 20px;">
                             contact me
                         </div>
                     </div>
-                    <div style="padding-top: 20px;">
+                    <div style="padding-top: 15px;">
                         <div style="margin-bottom: 10px;">
                             <img src="./images/template-two/icons/telephone-call.png" alt=""
                                  style="display: inline-block; height: 16px; width: 16px; display: inline-block; padding-right: 10px;">
@@ -74,8 +73,8 @@
                 </div>
 
                 {{-- bottom--}}
-                <div style="padding: 0 10px;">
-                    <div style="background-color: #333333; padding: 70px 20px; border-radius: 150px 150px 0 0;">
+                <div style="padding: 0 15px;">
+                    <div style="background-color: #333333; padding: 70px 10px 50px 35px; border-radius: 150px 150px 0 0;">
                         <div>
                             <div
                                 style="height: 40px; width: 40px; text-align: center; background-color: #ffffff; border-radius: 50%; display: inline-block;">
@@ -83,7 +82,7 @@
                                      style="position: relative; top: 7px;">
                             </div>
                             <div
-                                style="text-transform: uppercase; display: inline-block; padding-left: 5px; font-weight: 700; font-size: 16px; color: #ffffff; position: relative; top: -10px">
+                                style="text-transform: uppercase; display: inline-block; padding-left: 5px; font-weight: 700; font-size: 20px; color: #ffffff; position: relative; top: -10px">
                                 education
                             </div>
                         </div>
@@ -110,7 +109,7 @@
                                      style="position: relative; top: 7px;">
                             </div>
                             <div
-                                style="text-transform: uppercase; display: inline-block; padding-left: 5px; font-weight: 700; font-size: 16px; color: #ffffff; position: relative; top: -10px">
+                                style="text-transform: uppercase; display: inline-block; padding-left: 5px; font-weight: 700; font-size: 20px; color: #ffffff; position: relative; top: -10px">
                                 references
                             </div>
                         </div>
@@ -138,9 +137,9 @@
         </td>
 
         {{--        right--}}
-        <td style="width: 65%; padding-left: 40px; vertical-align: top; padding-right: 30px">
-            <div style="padding: 20px 0;">
-                <div style="margin-bottom: 30px">
+        <td style="width: 60%; padding: 0 40px; vertical-align: top;">
+            <div>
+                <div style="padding-top: 45px; margin-bottom: 60px">
                     <div style="margin-bottom: 10px;">
                         <div
                             style="height: 40px; width: 40px; text-align: center; background-color: #343434; border-radius: 50%; display: inline-block;">
@@ -148,19 +147,17 @@
                                  style="position: relative; top: 7px;">
                         </div>
                         <div
-                            style="text-transform: uppercase; display: inline-block; padding-left: 5px; position: relative; top: -10px; font-weight: 700; font-size: 16px;">
+                            style="text-transform: uppercase; display: inline-block; padding-left: 5px; position: relative; top: -10px; font-weight: 700; font-size: 20px;">
                             About me
                         </div>
                     </div>
-                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi
+                    <div style="text-align: justify; color: #acacac;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi
                         atque explicabo libero natus
                         officiis sequi. Aperiam dicta fugit ipsum labore magnam nesciunt ratione reprehenderit tempora
-                        tempore? Accusantium adipisci dolore earum fuga veritatis. Aliquid architecto delectus hic,
-                        nihil
-                        quam unde. Commodi, quo, repellat. Aliquid dolor eius error inventore minus nulla?
+                        tempore? Accusantium adipisci dolore earum fuga veritatis. Aliquid architecto delectus hic, nesciunt ratione reprehenderit tempora.
                     </div>
                 </div>
-                <div style="margin-bottom: 30px;">
+                <div style="margin-bottom: 60px;">
                     <div>
                         <div
                             style="height: 40px; width: 40px; text-align: center; background-color: #343434; border-radius: 50%; display: inline-block;">
@@ -168,13 +165,13 @@
                                  style="position: relative; top: 7px;">
                         </div>
                         <div
-                            style="text-transform: uppercase; display: inline-block; padding-left: 5px; position: relative; top: -10px; font-weight: 700; font-size: 16px;">
+                            style="text-transform: uppercase; display: inline-block; padding-left: 5px; position: relative; top: -10px; font-weight: 700; font-size: 20px;">
                             job experience
                         </div>
                     </div>
                     <div style="margin-top: 10px;">
                         <div>
-                            <div style="text-transform: uppercase; display: inline-block;font-weight: 700;font-size: 14px;">
+                            <div style="text-transform: uppercase; display: inline-block;font-weight: 700;font-size: 16px;">
                                 senior web
                                 designer
                             </div>
@@ -188,7 +185,7 @@
                     </div>
                     <div style="margin-top: 15px;">
                         <div>
-                            <div style="text-transform: uppercase; display: inline-block;font-weight: 700;font-size: 14px;">
+                            <div style="text-transform: uppercase; display: inline-block;font-weight: 700;font-size: 16px;">
                                 graphic
                                 designer
                             </div>
@@ -202,7 +199,7 @@
                     </div>
                     <div style="margin-top: 15px;">
                         <div>
-                            <div style="text-transform: uppercase; display: inline-block;font-weight: 700;font-size: 14px;">
+                            <div style="text-transform: uppercase; display: inline-block;font-weight: 700;font-size: 16px;">
                                 marketing
                                 manager
                             </div>
@@ -215,7 +212,7 @@
                         </div>
                     </div>
                 </div>
-                <div style="margin-bottom: 50px">
+                <div style="margin-bottom: 70px">
                     <div style="margin-bottom: 10px">
                         <div
                             style="height: 40px; width: 40px; text-align: center; background-color: #343434; border-radius: 50%; display: inline-block;">
@@ -223,7 +220,7 @@
                                  style="position: relative; top: 7px;">
                         </div>
                         <div
-                            style="text-transform: uppercase; display: inline-block; padding-left: 5px; position: relative; top: -10px; font-weight: 700; font-size: 16px;margin-bottom: 0;">
+                            style="text-transform: uppercase; display: inline-block; padding-left: 5px; position: relative; top: -10px; font-weight: 700; font-size: 20px;margin-bottom: 0;">
                             skills
                         </div>
                     </div>
@@ -294,7 +291,7 @@
                                      style="position: relative; top: 7px;">
                             </div>
                             <div
-                                style="text-transform: uppercase; display: inline-block; padding-left: 5px; position: relative; top: -10px; font-weight: bold; font-size: 16px;">
+                                style="text-transform: uppercase; display: inline-block; padding-left: 5px; position: relative; top: -10px; font-weight: bold; font-size: 20px;">
                                 language
                             </div>
                         </div>
@@ -345,7 +342,7 @@
                                     style="position: relative; top: 7px;">
                            </div>
                            <div
-                               style="text-transform: uppercase; display: inline-block; padding-left: 5px; position: relative; top: -10px; font-weight: bold; font-size: 16px;">
+                               style="text-transform: uppercase; display: inline-block; padding-left: 5px; position: relative; top: -10px; font-weight: bold; font-size: 20px;">
                                hobbies
                            </div>
                        </div>
