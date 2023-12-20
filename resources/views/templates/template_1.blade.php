@@ -18,15 +18,15 @@
 
 
 <body
-    style="font-family: sans-serif;font-size: 13px">
+    style="font-family: sans-serif;font-size: 13px;height: 100vh;">
 
 <!--main Content start-->
-<table style="width:100%;position:relative;border-collapse: collapse;">
+<table style="width:100%;position:relative;border-collapse: collapse;height:100vh;vertical-align: top">
     <tbody>
 
     <tr>
         <!--Left start-->
-        <td style="padding:30px;background-color:#3a3939;overflow: hidden;">
+        <td style="padding:30px;background-color:#3a3939;overflow: hidden;height:94.6%;vertical-align: top">
 
             <!--Triangle shape top-->
             <div style="
@@ -237,11 +237,11 @@
         <!--Left end  -->
 
         <!--Right side start-->
-        <td>
+        <td style="height: 94.6%;vertical-align: top">
             <div style="position: relative;float: left;width: 100%;margin:0;">
 
                 <div
-                    style="position: absolute; width: 1px;height: 100%;top: 0;bottom: 0;left:30px;background-color: #000;z-index: 1">
+                    style="position: absolute; width: 1px;height: 100%;top: 0;bottom: 0;left:30px;background-color: #313030;z-index: 1">
                 </div>
 
                 <!--User's name and occupation start-->
@@ -467,6 +467,60 @@
                             </table>
                         </td>
                     </tr>
+
+                    <tr>
+                        <td>
+                            <table style="padding-top: 20px;padding-left: 55px">
+                                <tr>
+                                    <td style="font-size: 10px;padding-top: 10px">Adobe Photoshop</td>
+                                    <td style="padding-right: 10px;padding-top: 10px">
+                                        <div
+                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
+                                            <div
+                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
+                                        </div>
+                                    </td>
+                                    <td style="font-size: 10px;padding-top: 10px">Adobe Illustrator</td>
+                                    <td style="padding-right: 10px;padding-top: 10px">
+                                        <div
+                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
+                                            <div
+                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 10px;padding-top: 10px">Microsoft Word</td>
+                                    <td style="padding-right: 10px;padding-top: 10px">
+                                        <div
+                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
+                                            <div
+                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
+                                        </div>
+                                    </td>
+                                    <td style="font-size: 10px;padding-top: 10px">Microsoft Powerpoint</td>
+                                    <td style="padding-right: 10px;padding-top: 10px">
+                                        <div
+                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
+                                            <div
+                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 10px;padding-top: 10px">HTML-S/CSS-3</td>
+                                    <td style="padding-right: 10px;padding-top: 10px">
+                                        <div
+                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
+                                            <div
+                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
 
                     <!--Skills section end  -->
                     </tbody>
