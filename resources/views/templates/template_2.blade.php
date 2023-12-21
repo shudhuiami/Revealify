@@ -21,11 +21,11 @@ $theme_color = '#333333';
         }
     </style>
 </head>
-<body style="padding: 0; margin: 0; box-sizing: border-box; color: {{$theme_color}}">
+<body style="padding: 0; margin: 0; box-sizing: border-box;">
 <table style="width: 100%;">
     <tbody>
     <tr>
-        {{--left--}}
+        {{--left side--}}
         <td style="width: 40%;padding: 0 0 0 40px; margin: 0; vertical-align: top;">
             <div style="background-color: #f0f0f0;">
                 {{--top--}}
@@ -54,7 +54,7 @@ $theme_color = '#333333';
                                  style="position: relative; top: 7px;">
                         </div>
                         <div
-                            style="text-transform: uppercase; display: inline-block; padding-left: 10px; position: relative; top: -10px; font-weight: 700; font-size: 20px;">
+                            style="text-transform: uppercase; display: inline-block; padding-left: 10px; position: relative; top: -10px; font-weight: 700; font-size: 20px; color: {{$theme_color}}">
                             contact me
                         </div>
                     </div>
@@ -141,9 +141,10 @@ $theme_color = '#333333';
             </div>
         </td>
 
-        {{--        right--}}
+        {{--right side--}}
         <td style="width: 60%; padding: 0 40px; vertical-align: top;">
             <div>
+                {{--about--}}
                 <div style="padding-top: 55px; margin-bottom: 60px">
                     <div style="margin-bottom: 10px;">
                         <div
@@ -152,7 +153,7 @@ $theme_color = '#333333';
                                  style="position: relative; top: 7px;">
                         </div>
                         <div
-                            style="text-transform: uppercase; display: inline-block; padding-left: 5px; position: relative; top: -10px; font-weight: 700; font-size: 20px;">
+                            style="color: {{$theme_color}}; text-transform: uppercase; display: inline-block; padding-left: 5px; position: relative; top: -10px; font-weight: 700; font-size: 20px;">
                             About me
                         </div>
                     </div>
@@ -164,6 +165,8 @@ $theme_color = '#333333';
                         officiis sequi. Aperiam dicta fugit ipsum.
                     </div>
                 </div>
+
+                {{--experience--}}
                 <div style="margin-bottom: 60px;">
                     <div>
                         <div
@@ -172,7 +175,7 @@ $theme_color = '#333333';
                                  style="position: relative; top: 7px;">
                         </div>
                         <div
-                            style="text-transform: uppercase; display: inline-block; padding-left: 5px; position: relative; top: -10px; font-weight: 700; font-size: 20px;">
+                            style="color: {{$theme_color}}; text-transform: uppercase; display: inline-block; padding-left: 5px; position: relative; top: -10px; font-weight: 700; font-size: 20px;">
                             job experience
                         </div>
                     </div>
@@ -219,6 +222,8 @@ $theme_color = '#333333';
                         </div>
                     </div>
                 </div>
+
+                {{--skills--}}
                 <div style="margin-bottom: 70px">
                     <div style="margin-bottom: 10px">
                         <div
@@ -227,7 +232,7 @@ $theme_color = '#333333';
                                  style="position: relative; top: 7px;">
                         </div>
                         <div
-                            style="text-transform: uppercase; display: inline-block; padding-left: 5px; position: relative; top: -10px; font-weight: 700; font-size: 20px;margin-bottom: 0;">
+                            style="color: {{$theme_color}};text-transform: uppercase; display: inline-block; padding-left: 5px; position: relative; top: -10px; font-weight: 700; font-size: 20px;margin-bottom: 0;">
                             skills
                         </div>
                     </div>
@@ -289,7 +294,9 @@ $theme_color = '#333333';
                         </div>
                     </div>
                 </div>
+
                 <div style="width: 100%; clear: both;">
+                    {{--languages--}}
                     <div style="width: 70%;">
                         <div style="width: 100%; margin-bottom: 10px;">
                             <div
@@ -298,7 +305,7 @@ $theme_color = '#333333';
                                      style="position: relative; top: 7px;">
                             </div>
                             <div
-                                style="text-transform: uppercase; display: inline-block; padding-left: 5px; position: relative; top: -10px; font-weight: bold; font-size: 20px;">
+                                style="color: {{$theme_color}}; text-transform: uppercase; display: inline-block; padding-left: 5px; position: relative; top: -10px; font-weight: bold; font-size: 20px;">
                                 language
                             </div>
                         </div>
@@ -306,7 +313,7 @@ $theme_color = '#333333';
                             <div style="width: 100%">
                                 <div style="width: 35%; float: left;">
                                     <div
-                                        style="height: 10px; width: 10px; border-radius: 50%; background-color: {{$theme_color}}; display: inline-block; position: relative; top: -4px;"></div>
+                                        style="height: 10px; width: 10px; border-radius: 50%; background-color: #373737; display: inline-block; position: relative; top: -4px;"></div>
                                     <div
                                         style="text-transform: uppercase; display: inline-block; padding-left: 5px; font-weight: 500; font-size: 14px;">
                                         english
@@ -314,7 +321,7 @@ $theme_color = '#333333';
                                 </div>
                                 <div style="width: 35%; float: left;">
                                     <div
-                                        style="height: 10px; width: 10px; border-radius: 50%; background-color: {{$theme_color}}; display: inline-block; position: relative; top: -4px;"></div>
+                                        style="height: 10px; width: 10px; border-radius: 50%; background-color: #373737; display: inline-block; position: relative; top: -4px;"></div>
                                     <div
                                         style="text-transform: uppercase; display: inline-block; padding-left: 5px; font-weight: 500; font-size: 14px;">
                                         spanish
@@ -324,7 +331,7 @@ $theme_color = '#333333';
                             <div style="width: 100%; margin-top: 30px; clear: both">
                                 <div style="width: 35%; float: left;">
                                     <div
-                                        style="height: 10px; width: 10px; border-radius: 50%; background-color: {{$theme_color}}; display: inline-block; position: relative; top: -4px;"></div>
+                                        style="height: 10px; width: 10px; border-radius: 50%; background-color: #373737; display: inline-block; position: relative; top: -4px;"></div>
                                     <div
                                         style="text-transform: uppercase; display: inline-block; padding-left: 5px; font-weight: 500; font-size: 14px;">
                                         french
@@ -332,7 +339,7 @@ $theme_color = '#333333';
                                 </div>
                                 <div style="width: 35%; float: left;">
                                     <div
-                                        style="height: 10px; width: 10px; border-radius: 50%; background-color: {{$theme_color}}; display: inline-block; position: relative; top: -4px;"></div>
+                                        style="height: 10px; width: 10px; border-radius: 50%; background-color: #373737; display: inline-block; position: relative; top: -4px;"></div>
                                     <div
                                         style="text-transform: uppercase; display: inline-block; padding-left: 5px; font-weight: 500; font-size: 14px;">
                                         german
@@ -341,6 +348,8 @@ $theme_color = '#333333';
                             </div>
                         </div>
                     </div>
+
+                    {{--hobbies--}}
                     <div style="float: left; position: relative; top: -80px; left: 60px;">
                        <div style="margin-bottom: 10px; width: 100%;">
                            <div
@@ -349,14 +358,14 @@ $theme_color = '#333333';
                                     style="position: relative; top: 7px;">
                            </div>
                            <div
-                               style="text-transform: uppercase; display: inline-block; padding-left: 5px; position: relative; top: -10px; font-weight: bold; font-size: 20px;">
+                               style="color: {{$theme_color}}; text-transform: uppercase; display: inline-block; padding-left: 5px; position: relative; top: -10px; font-weight: bold; font-size: 20px;">
                                hobbies
                            </div>
                        </div>
                         <div>
                             <div style="width: 100%; margin-bottom: 15px;">
                                 <div
-                                    style="height: 10px; width: 10px; border-radius: 50%; background-color: {{$theme_color}}; display: inline-block; position: relative; top: -4px;"></div>
+                                    style="height: 10px; width: 10px; border-radius: 50%; background-color: #373737; display: inline-block; position: relative; top: -4px;"></div>
                                 <div
                                     style="text-transform: uppercase; display: inline-block; padding-left: 5px; font-weight: 500; font-size: 14px;">
                                     reading books
@@ -364,7 +373,7 @@ $theme_color = '#333333';
                             </div>
                             <div style="width: 100%; margin-bottom: 15px;">
                                 <div
-                                    style="height: 10px; width: 10px; border-radius: 50%; background-color: {{$theme_color}}; display: inline-block; position: relative; top: -4px;"></div>
+                                    style="height: 10px; width: 10px; border-radius: 50%; background-color: #373737; display: inline-block; position: relative; top: -4px;"></div>
                                 <div
                                     style="text-transform: uppercase; display: inline-block; padding-left: 5px; font-weight: 500; font-size: 14px;">
                                     traveling
@@ -372,7 +381,7 @@ $theme_color = '#333333';
                             </div>
                             <div style="width: 100%;">
                                 <div
-                                    style="height: 10px; width: 10px; border-radius: 50%; background-color: {{$theme_color}}; display: inline-block; position: relative; top: -4px;"></div>
+                                    style="height: 10px; width: 10px; border-radius: 50%; background-color: #373737; display: inline-block; position: relative; top: -4px;"></div>
                                 <div
                                     style="text-transform: uppercase; display: inline-block; padding-left: 5px; font-weight: 500; font-size: 14px;">
                                     playing chess
