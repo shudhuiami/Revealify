@@ -1,3 +1,7 @@
+@php
+    $theme_color = '#FFB700'
+@endphp
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -38,7 +42,7 @@
             height: 0px;
             border-style: solid;
             border-width: 0 300px 300px 300px;
-            border-color: transparent transparent #FFB700 transparent;
+            border-color: transparent transparent {{$theme_color}} transparent;
             transform: rotate(90deg);"></div>
 
             <!--user image-->
@@ -53,7 +57,7 @@
                 <tr>
                     <td style="font-weight: 700;font-size: 18px;padding-left: 20px;text-transform: uppercase">
                        <span
-                           style="width: 5px;height: 25px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px">
+                           style="width: 5px;height: 25px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: -3px">
                        </span>
 
                         <img style="margin-right: 5px;width: 20px;height: 20px;position: relative;top: 2px"
@@ -66,7 +70,7 @@
                 <tr>
                     <td style="padding-left: 20px;padding-top: 20px;position: relative">
                        <span
-                           style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 35px">
+                           style="width: 5px;height: 10px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: -3px;top: 35px">
                        </span>
 
                         <img style="margin-right: 5px;width: 20px;height: 20px;position: relative;top: 15px"
@@ -82,7 +86,7 @@
                 <tr>
                     <td style="padding-left: 20px;padding-top: 20px;position: relative">
                        <span
-                           style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 35px">
+                           style="width: 5px;height: 10px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: -3px;top: 35px">
                        </span>
 
                         <img style="margin-right: 5px;width: 20px;height: 20px;position: relative;top: 15px"
@@ -98,12 +102,15 @@
                 <tr>
                     <td style="padding-left: 20px;padding-top: 20px;position: relative">
                     <span
-                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 35px"></span>
-                        <img style="margin-right: 5px;width: 20px;height: 20px;position: relative;top: 15px"
-                             src="./images/template-1/icon/map-pointer.png" alt="map pointer">
-                        <span>769 Prudence street</span>
-                        <br>
-                        <span style="padding-left: 29px">Lincoin Park, MI 48123</span>
+                        style="width: 5px;height: 10px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: -3px;top: 35px">
+
+                    </span>
+
+                        <div style="display: inline-block">
+                            <img style="margin-right: 5px;width: 20px;height: 20px;position: relative;top: 15px"
+                                 src="./images/template-1/icon/map-pointer.png" alt="map pointer">
+                        </div>
+                        <div style="padding-left: 29px">769 Prudence street Lincoin Park 4th ave, 12th street California </div>
 
                     </td>
                 </tr>
@@ -123,7 +130,7 @@
                 <tr>
                     <td style="font-weight: 700;font-size: 18px;padding-left: 20px;text-transform: uppercase">
                        <span
-                           style="width: 5px;height: 25px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px">
+                           style="width: 5px;height: 25px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: -3px">
                        </span>
 
                         <img style="margin-right: 5px;width: 24px;height: 24px;position: relative;top: 5px"
@@ -135,7 +142,7 @@
                 <tr>
                     <td style="font-weight: 700;font-size:16px;padding-left:20px;padding-top:20px;position: relative">
                     <span
-                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 25px"></span>
+                        style="width: 5px;height: 10px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: -3px;top: 25px"></span>
 
                         Darwin B. Magana
                     </td>
@@ -156,7 +163,7 @@
                 <tr>
                     <td style="font-weight: 700;font-size:16px;padding-left:20px;padding-top:20px;position: relative">
                     <span
-                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 25px"></span>
+                        style="width: 5px;height: 10px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: -3px;top: 25px"></span>
 
                         Robert j. Belvin
                     </td>
@@ -188,7 +195,7 @@
                 <tr>
                     <td style="font-weight: 700;font-size: 18px;padding-left: 20px;text-transform: uppercase">
                     <span
-                        style="width: 5px;height: 25px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px"></span>
+                        style="width: 5px;height: 25px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: -3px"></span>
 
                         <img style="margin-right: 5px;width: 24px;height: 24px;position: relative;top: 5px"
                              src="./images/template-1/icon/education.png" alt="education">
@@ -200,7 +207,7 @@
                 <tr>
                     <td style="font-weight: 700;font-size:16px;padding-left:20px;padding-top:20px;position: relative">
                     <span
-                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 25px"></span>
+                        style="width: 5px;height: 10px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: -3px;top: 25px"></span>
 
                         Stanford University
                     </td>
@@ -217,7 +224,7 @@
                 <tr>
                     <td style="font-weight: 700;font-size:16px;padding-left:20px;padding-top:20px;position: relative">
                     <span
-                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 25px"></span>
+                        style="width: 5px;height: 10px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: -3px;top: 25px"></span>
 
                         Stanford University
                     </td>
@@ -235,7 +242,7 @@
                 <tr>
                     <td style="font-weight: 700;font-size:16px;padding-left:20px;padding-top:20px;position: relative">
                     <span
-                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 25px"></span>
+                        style="width: 5px;height: 10px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: -3px;top: 25px"></span>
 
                         Stanford University
                     </td>
@@ -267,9 +274,9 @@
                 <div
                     style="padding: 20px 15px 20px 55px;text-transform:uppercase;font-size: 35px;font-weight: 700;background-color: #e7e7e7;margin-top:60px;display: block;">
                     <span
-                        style="width: 5px;height: 50px;border-radius: 10px;background-color: #ffb700;position: absolute;left: 30px;"></span>
+                        style="width: 5px;height: 50px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: 30px;"></span>
 
-                    Brian R. <span style="color:#ffb700">Baxter</span>
+                    Brian R. <span style="color:{{$theme_color}}">Baxter</span>
 
                     <div style="text-transform: uppercase;font-size: 15px;font-weight:400;color:#313030">Graphic & Web
                         Designer
@@ -283,12 +290,12 @@
                     <tr>
                         <td style="font-weight: 700;font-size: 20px;padding-left: 55px;text-transform: uppercase">
                            <span
-                               style="width: 5px;height: 25px;border-radius: 10px;background-color: #ffb700;position: absolute;left: 30px">
+                               style="width: 5px;height: 25px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: 30px">
 
                            </span>
 
                             <div
-                                style="display: inline-block;width: 22px;height: 22px;border-radius: 50%;background-color: #ffb700;margin-right: 2px;position: relative;top: 2px">
+                                style="display: inline-block;width: 22px;height: 22px;border-radius: 50%;background-color: {{$theme_color}};margin-right: 2px;position: relative;top: 2px">
                                 <img style="margin:3px;width: 14px;height: 14px;position: relative;top: 2px"
                                      src="./images/template-1/icon/graduation-hat-black.png" alt="graduation hat">
                             </div>
@@ -316,11 +323,11 @@
                     <tr>
                         <td style="font-weight: 700;font-size: 20px;padding-left: 55px;padding-top:40px;text-transform: uppercase">
                            <span
-                               style="width: 5px;height: 25px;border-radius: 10px;background-color: #ffb700;position: absolute;left: 30px">
+                               style="width: 5px;height: 25px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: 30px">
                            </span>
 
                             <div
-                                style="display: inline-block;width: 22px;height: 22px;border-radius: 50%;background-color: #ffb700;margin-right: 2px;position: relative;top: 2px">
+                                style="display: inline-block;width: 22px;height: 22px;border-radius: 50%;background-color: {{$theme_color}};margin-right: 2px;position: relative;top: 2px">
                                 <img style="margin:5px;width: 12px;height: 12px;position: relative;top: 0px"
                                      src="./images/template-1/icon/briefcase.png" alt="briefcase">
                             </div>
@@ -332,7 +339,7 @@
                         <tr>
                             <td style="font-weight: 700;font-size:16px;padding-left:55px;padding-top:20px;position: relative">
                              <span
-                                 style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: 30px;top: 25px">
+                                 style="width: 5px;height: 10px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: 30px;top: 25px">
                              </span>
                                 Senior Web Designer
                             </td>
@@ -363,7 +370,7 @@
                         <tr>
                             <td style="font-weight: 700;font-size:16px;padding-left:55px;padding-top:20px;position: relative">
                              <span
-                                 style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: 30px;top: 25px">
+                                 style="width: 5px;height: 10px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: 30px;top: 25px">
                              </span>
                                 Graphic Designer
                             </td>
@@ -393,7 +400,7 @@
                         <tr>
                             <td style="font-weight: 700;font-size:16px;padding-left:55px;padding-top:20px;position: relative">
                              <span
-                                 style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: 30px;top: 25px">
+                                 style="width: 5px;height: 10px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: 30px;top: 25px">
                              </span>
                                 Marketing Manager
                             </td>
@@ -426,12 +433,12 @@
                     <tr>
                         <td style="font-weight: 700;font-size: 20px;padding-left: 55px;text-transform: uppercase;padding-top: 50px">
                            <span
-                               style="width: 5px;height: 25px;border-radius: 10px;background-color: #ffb700;position: absolute;left: 30px">
+                               style="width: 5px;height: 25px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: 30px">
 
                            </span>
 
                             <div
-                                style="display: inline-block;width: 22px;height: 22px;border-radius: 50%;background-color: #ffb700;margin-right: 2px;position: relative;top: 2px">
+                                style="display: inline-block;width: 22px;height: 22px;border-radius: 50%;background-color: {{$theme_color}};margin-right: 2px;position: relative;top: 2px">
                                 <img style="margin:4px;width: 14px;height: 14px;position: relative;"
                                      src="./images/template-1/icon/pie-chart.png" alt="pie chart">
                             </div>
@@ -452,7 +459,7 @@
                                         <div
                                             style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
                                             <div
-                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
+                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: {{$theme_color}}"></div>
                                         </div>
                                     </td>
 
@@ -463,7 +470,7 @@
                                         <div
                                             style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
                                             <div
-                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
+                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: {{$theme_color}}"></div>
                                         </div>
                                     </td>
                                 </tr>
@@ -474,7 +481,7 @@
                                         <div
                                             style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
                                             <div
-                                                style="height: 6px;width: 55px;border-radius: 10px;background-color: #ffb700"></div>
+                                                style="height: 6px;width: 55px;border-radius: 10px;background-color: {{$theme_color}}"></div>
                                         </div>
                                     </td>
                                     <td style="font-size: 13px;padding-top: 10px;padding-right: 10px">Microsoft
@@ -484,7 +491,7 @@
                                         <div
                                             style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
                                             <div
-                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
+                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: {{$theme_color}}"></div>
                                         </div>
                                     </td>
                                 </tr>
@@ -494,7 +501,7 @@
                                         <div
                                             style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
                                             <div
-                                                style="height: 6px;width: 70px;border-radius: 10px;background-color: #ffb700"></div>
+                                                style="height: 6px;width: 70px;border-radius: 10px;background-color: {{$theme_color}}"></div>
                                         </div>
                                     </td>
                                 </tr>
@@ -515,7 +522,7 @@
                 height: 0px;
                 border-style: solid;
                 border-width: 0 70px 70px 70px;
-                border-color: transparent transparent #FFb700 transparent;
+                border-color: transparent transparent {{$theme_color}} transparent;
                 transform: rotate(135deg);"></div>
 
             </div>
