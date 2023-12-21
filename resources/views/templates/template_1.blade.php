@@ -31,7 +31,7 @@
 
     <tr>
         <!--Left start-->
-        <td style="padding:30px;background-color:#3a3939;overflow: hidden;height:94.6%;vertical-align: top">
+        <td style="padding:30px;padding-bottom: 0;background-color:#3a3939;overflow: hidden;height:97.3%;vertical-align: top">
 
             <!--Triangle shape top-->
             <div style="
@@ -51,7 +51,7 @@
                 src="./images/template-1/image/user.jpg"
                 alt="user">
 
-            <table style="border-left:1px solid #888888;margin-top: 25px;position: relative;color: #fff;">
+            <table style="border-left:1px solid #888888;margin-top: 25px;margin-bottom: 0;position: relative;color: #fff;">
                 <tbody>
                 <!--Contact section start-->
                 <tr>
@@ -149,7 +149,7 @@
                 </tr>
 
                 <tr>
-                    <td style="padding-left: 20px;">2813 Shobe Lane Mancos. CO.</td>
+                    <td style="padding-left: 20px;">2813 Shobe Lane Mancos. California.</td>
                 </tr>
 
                 <tr>
@@ -170,7 +170,7 @@
                 </tr>
 
                 <tr>
-                    <td style="padding-left: 20px;">2813 Shobe Lane Mancos. CO.</td>
+                    <td style="padding-left: 20px;">2813 Shobe Lane Mancos. California.</td>
                 </tr>
 
                 <tr>
@@ -253,7 +253,7 @@
                 </tr>
 
                 <tr>
-                    <td style="padding-left: 20px;padding-bottom: 4px">2011 - 2013</td>
+                    <td style="padding-left: 20px;padding-bottom: 20px">2011 - 2013</td>
                 </tr>
 
                 </tbody>
