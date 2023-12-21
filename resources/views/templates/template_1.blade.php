@@ -7,9 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Revealify - Template 1</title>
     <style>
-        @page{
+        @page {
             margin: 0;
         }
+
         table {
             border-collapse: collapse;
         }
@@ -230,6 +231,24 @@
                     <td style="padding-left: 20px;padding-bottom: 4px">2011 - 2013</td>
                 </tr>
 
+
+                <tr>
+                    <td style="font-weight: 700;font-size:16px;padding-left:20px;padding-top:20px;position: relative">
+                    <span
+                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 25px"></span>
+
+                        Stanford University
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-left: 20px;">Master Digree Graduate</td>
+                </tr>
+
+                <tr>
+                    <td style="padding-left: 20px;padding-bottom: 4px">2011 - 2013</td>
+                </tr>
+
                 </tbody>
             </table>
 
@@ -284,7 +303,11 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Alias amet animi corporis debitis doloremque eaque harum impedit
                             molestiae neque possimus, provident quibusdam quos ratione
-                            reiciendis reprehenderit sequi suscipit ut voluptates.
+                            reiciendis reprehenderit sequi suscipit ut voluptates. Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Accusamus at ea facere nulla odio omnis quo repellat totam.
+                            Error obcaecati praesentium ullam voluptatum. Cumque excepturi exercitationem libero nemo,
+                            officia quas saepe similique? Architecto consequatur deleniti dicta distinctio earum eos
+                            illo ipsam ipsum, itaque magnam nam natus nobis quis tempora totam.
                         </td>
                     </tr>
                     <!--About section end  -->
@@ -327,8 +350,9 @@
                         <tbody>
                         <tr>
                             <td style="padding: 15px 15px 0 55px;">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Commodi, sit?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nisi porro quia
+                                soluta. Accusamus architecto debitis earum harum illum impedit laborum magni
+                                necessitatibus omnis sapiente sequi, velit, voluptatem! Aliquid, est?
                             </td>
                         </tr>
                         </tbody>
@@ -357,8 +381,9 @@
                         <tbody>
                         <tr>
                             <td style="padding: 15px 15px 0 55px;">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Commodi, sit?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nisi porro quia
+                                soluta. Accusamus architecto debitis earum harum illum impedit laborum magni
+                                necessitatibus omnis sapiente sequi, velit, voluptatem! Aliquid, est?
                             </td>
                         </tr>
                         </tbody>
@@ -386,8 +411,9 @@
                         <tbody>
                         <tr>
                             <td style="padding: 15px 15px 0 55px;">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Commodi, sit?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nisi porro quia
+                                soluta. Accusamus architecto debitis earum harum illum impedit laborum magni
+                                necessitatibus omnis sapiente sequi, velit, voluptatem! Aliquid, est?
                             </td>
                         </tr>
                         </tbody>
@@ -419,7 +445,9 @@
                         <td>
                             <table style="padding-top: 20px;padding-left: 55px">
                                 <tr>
-                                    <td style="font-size: 10px;padding-top: 10px">Adobe Photoshop</td>
+                                    <td style="font-size: 13px;padding-top: 10px;padding-right: 10px">Adobe Photoshop
+                                    </td>
+
                                     <td style="padding-right: 10px;padding-top: 10px">
                                         <div
                                             style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
@@ -427,25 +455,10 @@
                                                 style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
                                         </div>
                                     </td>
-                                    <td style="font-size: 10px;padding-top: 10px">Adobe Illustrator</td>
-                                    <td style="padding-right: 10px;padding-top: 10px">
-                                        <div
-                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
-                                            <div
-                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
-                                        </div>
+
+                                    <td style="font-size: 13px;padding-top: 10px;padding-right: 10px">Adobe
+                                        Illustrator
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td style="font-size: 10px;padding-top: 10px">Microsoft Word</td>
-                                    <td style="padding-right: 10px;padding-top: 10px">
-                                        <div
-                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
-                                            <div
-                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
-                                        </div>
-                                    </td>
-                                    <td style="font-size: 10px;padding-top: 10px">Microsoft Powerpoint</td>
                                     <td style="padding-right: 10px;padding-top: 10px">
                                         <div
                                             style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
@@ -455,12 +468,33 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="font-size: 10px;padding-top: 10px">HTML-S/CSS-3</td>
+                                    <td style="font-size: 13px;padding-top: 10px;padding-right: 10px">Microsoft Word
+                                    </td>
+                                    <td style="padding-right: 10px;padding-top: 10px">
+                                        <div
+                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
+                                            <div
+                                                style="height: 6px;width: 55px;border-radius: 10px;background-color: #ffb700"></div>
+                                        </div>
+                                    </td>
+                                    <td style="font-size: 13px;padding-top: 10px;padding-right: 10px">Microsoft
+                                        Powerpoint
+                                    </td>
                                     <td style="padding-right: 10px;padding-top: 10px">
                                         <div
                                             style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
                                             <div
                                                 style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 13px;padding-top: 10px;padding-right: 10px">HTML-S/CSS-3</td>
+                                    <td style="padding-right: 10px;padding-top: 10px">
+                                        <div
+                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
+                                            <div
+                                                style="height: 6px;width: 70px;border-radius: 10px;background-color: #ffb700"></div>
                                         </div>
                                     </td>
                                 </tr>
@@ -468,59 +502,6 @@
                         </td>
                     </tr>
 
-                    <tr>
-                        <td>
-                            <table style="padding-top: 20px;padding-left: 55px">
-                                <tr>
-                                    <td style="font-size: 10px;padding-top: 10px">Adobe Photoshop</td>
-                                    <td style="padding-right: 10px;padding-top: 10px">
-                                        <div
-                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
-                                            <div
-                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
-                                        </div>
-                                    </td>
-                                    <td style="font-size: 10px;padding-top: 10px">Adobe Illustrator</td>
-                                    <td style="padding-right: 10px;padding-top: 10px">
-                                        <div
-                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
-                                            <div
-                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="font-size: 10px;padding-top: 10px">Microsoft Word</td>
-                                    <td style="padding-right: 10px;padding-top: 10px">
-                                        <div
-                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
-                                            <div
-                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
-                                        </div>
-                                    </td>
-                                    <td style="font-size: 10px;padding-top: 10px">Microsoft Powerpoint</td>
-                                    <td style="padding-right: 10px;padding-top: 10px">
-                                        <div
-                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
-                                            <div
-                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="font-size: 10px;padding-top: 10px">HTML-S/CSS-3</td>
-                                    <td style="padding-right: 10px;padding-top: 10px">
-                                        <div
-                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
-                                            <div
-                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    
 
                     <!--Skills section end  -->
                     </tbody>
