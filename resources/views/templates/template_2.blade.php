@@ -118,7 +118,7 @@ $theme_color = '#333333';
                                 references
                             </div>
                         </div>
-                        <div style="color: #ffffff; margin: 10px 0;">
+                        <div style="color: #ffffff; margin: 15px 0;">
                             <div
                                 style="text-transform: uppercase; font-weight: bold; font-size: 13px;margin-bottom: 7px;">
                                 Darwin b.magana
@@ -127,7 +127,7 @@ $theme_color = '#333333';
                             <div style="margin-bottom: 5px; font-size: 12px;">Tel: +1-970-533-3393</div>
                             <div style="font-size: 14px;">Email: www.yourwebsite.com</div>
                         </div>
-                        <div style="color: #ffffff; margin-bottom: 10px;">
+                        <div style="color: #ffffff;">
                             <div
                                 style="text-transform: uppercase; font-weight: bold; font-size: 13px;margin-bottom: 7px;">
                                 robert j.belvin
