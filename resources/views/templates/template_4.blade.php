@@ -1,3 +1,7 @@
+@php
+$theme_color = '#404042';
+@endphp
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -30,16 +34,16 @@
                 </div>
             </td>
             <td style="width: 65%; vertical-align: middle;">
-                <div style="padding: 30px 0 30px 30px; color: #434343; position: relative; top: 10px;">
-                    <div style="font-size: 40px; line-height: 0">Jennifer</div>
-                    <div style="font-size: 40px; font-weight: bold; margin-bottom: 5px;">Anderson</div>
-                    <div>User experience designer</div>
+                <div style="padding: 30px 0 30px 30px; position: relative; top: 10px;">
+                    <div style="font-size: 40px; line-height: 0; color: {{$theme_color}}">Jennifer</div>
+                    <div style="font-size: 40px; font-weight: bold; margin-bottom: 5px; color: {{$theme_color}}">Anderson</div>
+                    <div style="color: #404042">User experience designer</div>
                 </div>
             </td>
         </tr>
         <tr>
             <td style="width: 35%; vertical-align: top;">
-                <div style="padding: 30px 0 43.2px 30px; background-color: #404042; border-radius: 0 40px 0 0;">
+                <div style="padding: 30px 0 43.2px 30px; background-color: {{$theme_color}}; border-radius: 0 40px 0 0;">
                     {{--contact--}}
                     <div style="color: #ffffff; margin-bottom: 40px;">
                         <div style="border-bottom: 2px solid #b4b4b6; margin-bottom: 15px;">
@@ -146,12 +150,12 @@
                     <div style="margin-bottom: 55px;">
                         <div style="border-bottom: 2px solid #b4b4b6; margin-bottom: 20px;">
                             <div
-                                style="height: 40px; width: 40px; text-align: center; border-radius: 50%; background-color: #3d3d3d;display: inline-block;">
+                                style="height: 40px; width: 40px; text-align: center; border-radius: 50%; background-color: {{$theme_color}};display: inline-block;">
                                 <img src="./images/template-four/icons/suitcase.png" alt=""
                                      style="position:relative; top: 7px;">
                             </div>
                             <div
-                                style="text-transform: uppercase; margin-left: 10px; font-weight: bold; display: inline-block;position:relative; top: -9px; font-size: 22px;">
+                                style="text-transform: uppercase; margin-left: 10px; font-weight: bold; display: inline-block;position:relative; top: -9px; font-size: 22px; color: {{$theme_color}}">
                                 About Me
                             </div>
                         </div>
@@ -173,12 +177,12 @@
                     <div style="margin-bottom: 50px;">
                         <div style="border-bottom: 2px solid #b4b4b6; margin-bottom: 20px;">
                             <div
-                                style="height: 40px; width: 40px; text-align: center; border-radius: 50%; background-color: #3d3d3d;display: inline-block;">
+                                style="height: 40px; width: 40px; text-align: center; border-radius: 50%; background-color: {{$theme_color}};display: inline-block;">
                                 <img src="./images/template-four/icons/suitcase.png" alt=""
                                      style="position:relative; top: 7px;">
                             </div>
                             <div
-                                style="text-transform: uppercase; margin-left: 10px; font-weight: bold; display: inline-block;position:relative; top: -9px; font-size: 22px;">
+                                style="text-transform: uppercase; margin-left: 10px; font-weight: bold; display: inline-block;position:relative; top: -9px; font-size: 22px;color: {{$theme_color}};">
                                 Experiences
                             </div>
                         </div>
@@ -240,12 +244,12 @@
                     <div>
                         <div style="border-bottom: 2px solid #b4b4b6; margin-bottom: 20px;">
                             <div
-                                style="height: 40px; width: 40px; text-align: center; border-radius: 50%; background-color: #3d3d3d;display: inline-block;">
+                                style="height: 40px; width: 40px; text-align: center; border-radius: 50%; background-color: {{$theme_color}};display: inline-block;">
                                 <img src="./images/template-four/icons/graduate.png" alt=""
                                      style="position:relative; top: 7px;">
                             </div>
                             <div
-                                style="text-transform: uppercase; margin-left: 10px; font-weight: bold; display: inline-block;position:relative; top: -9px; font-size: 22px;">
+                                style="text-transform: uppercase; margin-left: 10px; font-weight: bold; display: inline-block;position:relative; top: -9px; font-size: 22px; color: {{$theme_color}}">
                                 Education
                             </div>
                         </div>
