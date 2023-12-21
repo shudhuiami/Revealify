@@ -11,6 +11,10 @@ class FrontController extends Controller
         return view('welcome');
     }
 
+    public static function login(){
+        return view('auth');
+    }
+
     public static function template_1(){
         $pdf = Pdf::loadView('templates.template_1');
         return $pdf->stream();
