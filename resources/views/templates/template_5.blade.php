@@ -1,4 +1,8 @@
-<!doctype html>
+@php
+    $theme_color = '#0067de'
+@endphp
+
+    <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,7 +33,7 @@
                 <tr>
                     <td style="padding:20px 0;">
                         <div
-                            style="width: 130px;height: 130px;border: 3px solid #0067de; border-radius: 50%;margin: 0 auto;overflow: hidden">
+                            style="width: 130px;height: 130px;border: 3px solid {{$theme_color}}; border-radius: 50%;margin: 0 auto;overflow: hidden">
                             <img style="width: 130px;height: 130px;object-fit: contain;border-radius: 50%"
                                  src="./images/template-5/image/user-profile.jpg" alt="user profile">
                         </div>
@@ -43,13 +47,13 @@
                             <tr>
                                 <td style="width: 50px;padding-bottom: 20px;">
                                     <div
-                                        style=";border-radius: 50%;background-color: #0067de;padding:10px;display: inline-block">
+                                        style=";border-radius: 50%;background-color: {{$theme_color}};padding:10px;display: inline-block">
                                         <img style="width: 15px;height: 15px;" src="./images/template-5/icon/user.png"
                                              alt="user">
                                     </div>
                                 </td>
 
-                                <td style="padding-bottom: 20px;font-size: 18px;font-weight: 700;color: #0067de;text-transform: uppercase">
+                                <td style="padding-bottom: 20px;font-size: 18px;font-weight: 700;color: {{$theme_color}};text-transform: uppercase">
                                     About Me
                                 </td>
                             </tr>
@@ -59,7 +63,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     Ab alias amet aut, dicta doloremque dolorum eligendi facilis
                                     itaque laboriosam minus necessitatibus nemo nobis non obcaecati
-                                    praesentium, reprehenderit sit soluta ullam.
+                                    praesentium, reprehenderit sit soluta ullam. lorem
                                 </td>
                             </tr>
                             <!--About me end  -->
@@ -68,7 +72,7 @@
                             <tr>
                                 <td style="padding-bottom: 20px;"></td>
 
-                                <td style="padding-bottom: 20px;font-size: 18px;font-weight: 700;color: #0067de;text-transform: uppercase">
+                                <td style="padding-bottom: 20px;font-size: 18px;font-weight: 700;color: {{$theme_color}};text-transform: uppercase">
                                     Contact
                                 </td>
                             </tr>
@@ -76,29 +80,90 @@
                             <tr>
                                 <td style="width: 50px;">
                                     <div
-                                        style=";border-radius: 50% 50% 0 0;background-color: #0067de;padding:15px 10px;display: inline-block">
-                                        <img style="width: 15px;height: 15px;"
+                                        style=";border-radius: 50%;background-color: {{$theme_color}};padding:15px 6.5px;display: inline-block">
+                                        <img style="width: 15px;height: 15px;position: relative;left: 3px;margin-bottom: 2px;"
                                              src="./images/template-5/icon/phone-call.png"
                                              alt="phone-call">
+                                        <br>
+                                        <br>
+
+                                        <img style="width: 15px;height: 15px;position: relative;left: 3px;margin-bottom: 2px;"
+                                             src="./images/template-5/icon/email.png"
+                                             alt="email">
+                                        <br>
+                                        <br>
+
+                                        <img style="width: 15px;height: 15px;position: relative;left: 3px;margin-bottom: 2px;"
+                                             src="./images/template-5/icon/home.png"
+                                             alt="home">
+                                    </div>
+
+                                </td>
+
+                                <td style="color: #7e7e7e;line-height: 1.6;padding-bottom: 30px;max-height: 50px;vertical-align: middle">
+
+                                    <div style="margin-top: 15px;">
+                                        +000 111 222 3334
+                                    </div>
+
+                                    <div style="margin-top: 15px;">
+                                        urname@gmail.com
+                                    </div>
+
+                                    <div style="margin-top: 15px;">Address here, Zip-0123</div>
+                                </td>
+                            </tr>
+
+
+                            <!--Contact me end  -->
+
+
+                            <!--About me start-->
+                            <tr>
+                                <td style="width: 50px;padding-bottom: 20px;padding-top: 20px;">
+                                    <div
+                                        style=";border-radius: 50%;background-color: {{$theme_color}};padding:10px;display: inline-block">
+                                        <img style="width: 15px;height: 15px;" src="./images/template-5/icon/book.png"
+                                             alt="book">
                                     </div>
                                 </td>
 
-                                <td style="color: #7e7e7e;line-height: 1.5;padding-bottom: 30px;border: 1px solid;">+000 111 222 3334</td>
+                                <td style="padding-bottom: 20px;padding-top: 20px;font-size: 18px;font-weight: 700;color: {{$theme_color}};text-transform: uppercase">
+                                    Education
+                                </td>
                             </tr>
 
                             <tr>
-                                <td style="width: 50px;">
-                                    <div
-                                        style="background-color: #0067de;padding: 25px 10px;display: inline-block">
-                                        <img style="width: 15px;height: 15px;" src="./images/template-5/icon/home.png"
-                                             alt="home">
-                                    </div>
+                                <td style="padding-bottom: 20px;"></td>
+                                <td style="color: #7e7e7e;line-height: 1.5;padding-bottom: 20px;">
+                                    2014 - 2016
+                                    <br>
+                                    <span style="color:#2a2a2a">Master's Degree Major Name</span>
+                                    <br>
+                                    University name here
                                 </td>
-
-                                <td style="color: #7e7e7e;line-height: 1.5;padding-bottom: 30px;">urname@gmail.com</td>
                             </tr>
-
-                            <!--Contact me end  -->
+                            <tr>
+                                <td style="padding-bottom: 20px;"></td>
+                                <td style="color: #7e7e7e;line-height: 1.5;padding-bottom: 20px;">
+                                    2010 - 2014
+                                    <br>
+                                    <span style="color:#2a2a2a">Bachelor's Degree Major Name</span>
+                                    <br>
+                                    University name here
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-bottom: 20px;"></td>
+                                <td style="color: #7e7e7e;line-height: 1.5;padding-bottom: 20px;">
+                                    2014 - 2016
+                                    <br>
+                                    <span style="color:#2a2a2a">Bachelor's Of Arts</span>
+                                    <br>
+                                    University name here
+                                </td>
+                            </tr>
+                            <!--About me end  -->
                         </table>
                     </td>
                 </tr>
