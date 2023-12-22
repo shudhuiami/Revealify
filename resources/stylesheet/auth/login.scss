@@ -12,6 +12,14 @@
             max-width: 1385px;
         }
 
+        &.reset {
+            max-width: 1255px;
+        }
+
+        &.forgot {
+            min-height: 726px;
+        }
+
         .auth-box-half {
             width: 50%;
             display: inline;

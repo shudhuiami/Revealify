@@ -2,7 +2,7 @@
 @section('content')
     <div class="authentication container-fluid min-vh-100">
 
-        <div class="auth-box d-flex bg-white shadow-lg m-2">
+        <div class="auth-box forgot d-flex bg-white shadow-lg m-2">
 
             <!--Authentication cover imgae-->
             <div class="auth-box-half d-md-block d-none auth-cover"
