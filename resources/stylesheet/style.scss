@@ -1,8 +1,11 @@
+@import "bootstrap/dist/css/bootstrap.css";
+
 /*fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 
     /*auth*/
     @import "auth/login";

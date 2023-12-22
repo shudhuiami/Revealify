@@ -7,9 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Reveaify</title>
 
+    <!--google montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     @vite('resources/stylesheet/style.scss')
 </head>
-<body>
+<body class="m-0 p-0" style="box-sizing: border-box">
 @yield('content')
 </body>
 </html>

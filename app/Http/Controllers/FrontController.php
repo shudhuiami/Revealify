@@ -12,7 +12,7 @@ class FrontController extends Controller
     }
 
     public static function login(){
-        return view('auth');
+        return view('auth.login');
     }
 
     public static function template_1(){
