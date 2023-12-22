@@ -4,7 +4,7 @@
         <div class="row h-100">
             <!--Authentication cover imgae-->
             <div class="col-xl-7 col-md-6  d-md-block d-none auth-cover"
-                 style="background-image: url('./images/auth/image/2x/auth-bg.png')"></div>
+                 style="background-image: url({{asset('./images/auth/image/bg.png')}})"></div>
             <!--Authentication cover imgae-->
 
             <div class="col-xl-5 col-md-6 col-12 px-lg-5">
@@ -38,8 +38,9 @@
                             </label>
                         </div>
 
-                        <a href="javascript:void(0)" class="text-muted text-decoration-none small">Forgot your
-                            password?</a>
+                        <a href="javascript:void(0)" class="text-muted underline-anim text-decoration-none small">
+                            Forgot your password?
+                        </a>
                     </div>
 
 
