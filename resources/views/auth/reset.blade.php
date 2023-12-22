@@ -15,7 +15,7 @@
 
                     <div class="logo text-uppercase fs-4 fw-bold mt-5 mb-md-5 pb-4">Revealify</div>
 
-                    <h3 class="mb-3 fw-bold fs-2 auth-title text-uppercase">User Login</h3>
+                    <h3 class="mb-3 fw-bold fs-2 auth-title text-uppercase">Reset Password</h3>
 
                     <h5 class="auth-sub-title mb-md-5 mb-3 pb-3">Welcome to website</h5>
 
@@ -29,28 +29,22 @@
                     <div class="form-group form-floating mb-4">
                         <input type="password" class="form-control shadow-none rounded-0" id="password" name="password"
                                placeholder="Enter Password">
-                        <label for="password">Password</label>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-center mb-5">
-                        <div class="form-check">
-                            <input class="form-check-input rounded-0" type="checkbox" value="" id="remember">
-                            <label class="form-check-label small user-select-none" for="remember">
-                                Remember
-                            </label>
-                        </div>
-
-                        <a href="{{route('forgot')}}" class="text-muted underline-anim text-decoration-none small">
-                            Forgot <span class="d-sm-inline d-none">your</span> password?
-                        </a>
+                        <label for="password">New Password</label>
                     </div>
 
 
-                    <button type="button" class="btn btn-orange-red px-4 rounded-0 mb-4">Login</button>
+                    <div class="form-group form-floating mb-4">
+                        <input type="password" class="form-control shadow-none rounded-0" id="password" name="password"
+                               placeholder="Enter Password">
+                        <label for="password">Confirm New Password</label>
+                    </div>
+
+
+                    <button type="button" class="btn btn-orange-red px-4 rounded-0 mt-5 mb-4">Confirm</button>
 
                     <br>
 
-                    <a href="{{route('register')}}" class="text-decoration-none sub-auth-btn">Create Account</a>
+                    Remember Password? <a href="{{route('login')}}" class="text-decoration-none sub-auth-btn">Login</a>
 
 
                 </form>
