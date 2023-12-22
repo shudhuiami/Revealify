@@ -5,7 +5,7 @@
         <div class="auth-box d-flex bg-white shadow-lg m-2">
 
             <!--Authentication cover imgae-->
-            <div class="auth-box-half  d-md-block d-none auth-cover"
+            <div class="auth-box-half d-md-block d-none auth-cover"
                  style="background-image: url({{asset('./images/auth/image/bg-2.png')}})"></div>
             <!--Authentication cover imgae-->
 
