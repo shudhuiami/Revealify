@@ -1,49 +1,54 @@
 @extends('auth')
 @section('content')
-    <div class="authentication container-fluid">
-        <div class="row">
-            <div class="col-md-7 bg-danger">
+    <div class="authentication container-fluid vh-100">
+        <div class="row h-100">
+            <div class="col-xl-7 col-lg-6 d-md-block d-none bg-danger">
             </div>
 
-            <div class="col-md-5 px-md-5">
+            <div class="col-xl-5 col-lg-6 col-12 px-md-5">
+                <!--Authentication form start-->
                 <form action="" class="auth-form p-md-5 p-4">
-                    <div class="logo text-uppercase fs-4 fw-bold my-5">Revealify</div>
+                    <div class="logo text-uppercase fs-4 fw-bold my-5 pb-4">Revealify</div>
 
-                    <h3 class="mb-3 fw-bold fs-3 auth-titlev text-uppercase">User Login</h3>
+                    <h3 class="mb-3 fw-bold fs-2 auth-title text-uppercase">User Login</h3>
 
-                    <h4 class="text-danger mb-5 pb-3">Welcome to website</h4>
+                    <h5 class="auth-sub-title mb-5 pb-3">Welcome to website</h5>
 
                     <div class="form-group form-floating mb-4 pb-2">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email">
+                        <input type="email" class="form-control shadow-none rounded-0" id="email" name="email"
+                               placeholder="Enter Your Email">
                         <label class="bg-transparent" for="email">Email</label>
                     </div>
 
 
                     <div class="form-group form-floating mb-4">
-                        <input type="password" class="form-control" id="password" name="password"
+                        <input type="password" class="form-control shadow-none rounded-0" id="password" name="password"
                                placeholder="Enter Password">
                         <label class="bg-transparent" for="password">Password</label>
                     </div>
 
                     <div class="d-flex justify-content-between align-items-center mb-5 pb-3">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="remember">
-                            <label class="form-check-label small" for="remember">
+                            <input class="form-check-input rounded-0" type="checkbox" value="" id="remember">
+                            <label class="form-check-label small user-select-none" for="remember">
                                 Remember
                             </label>
                         </div>
 
-                        <a href="javascript:void(0)" class="text-muted text-decoration-none small">Forgot your password?</a>
+                        <a href="javascript:void(0)" class="text-muted text-decoration-none small">Forgot your
+                            password?</a>
                     </div>
 
 
-                    <button type="button" class="btn btn-primary rounded-0 mb-5">Login</button>
+                    <button type="button" class="btn btn-orange-red px-4 rounded-0 mb-5">Login</button>
+
                     <br>
 
-                    <a href="javascript:void(0)">Create Account</a>
+                    <a href="javascript:void(0)" class="text-decoration-none sub-auth-btn">Create Account</a>
 
 
                 </form>
+                <!--Authentication form end  -->
             </div>
         </div>
     </div>

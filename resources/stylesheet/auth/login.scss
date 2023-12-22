@@ -1,3 +1,66 @@
-.authentication{
-    height: 100vh;
+.authentication {
+    .auth-form {
+        .logo {
+            letter-spacing: 3px;
+            color: var(--orange);
+        }
+
+        .auth-title {
+            letter-spacing: 5px;
+        }
+
+        .auth-sub-title {
+            color: var(--orange-red);
+        }
+
+        .form-group {
+            .form-control {
+                border-width: 0 0 2px 0;
+                border-color: var(--aqua-blue);
+                transition: .3s all ease-in-out;
+
+                &:focus, &:active {
+                    border-color: var(--orange);
+                    transition: .3s all ease-in-out;
+                }
+            }
+        }
+
+        .btn-orange-red {
+            background-color: var(--orange-red);
+            color: var(--white);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: .3s all ease-in-out;
+
+            &:hover {
+                transition: .3s all ease-in-out;
+                background-color: darken(#ff4f4f, 10%);
+            }
+        }
+
+        .sub-auth-btn {
+            color: var(--pickle-green);
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background-color: var(--pickle-green);
+                bottom: -3px;
+                transform-origin: center;
+                transform: scaleX(0);
+                transition: .3s all ease-in-out;
+            }
+            &:hover{
+                &:before{
+                    transform: scaleX(1);
+                    transition: .3s all ease-in-out;
+                }
+            }
+        }
+    }
 }

@@ -3,6 +3,16 @@
 /*fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
+
+:root {
+    --orange: #ff8726;
+    --orange-red: #ff4f4f;
+    --aqua-blue: #00d9e2;
+    --pickle-green: #a09d00;
+    --white: #fff;
+    --black: #000;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
