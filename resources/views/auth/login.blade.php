@@ -6,7 +6,7 @@
 
             <!--Authentication cover imgae-->
             <div class="auth-box-half d-md-block d-none auth-cover"
-                 style="background-image: url({{asset('./images/auth/image/bg-2.png')}})"></div>
+                 style="background-image: url({{asset('./images/auth/image/auth-bg.png')}})"></div>
             <!--Authentication cover imgae-->
 
             <div class="auth-box-half px-lg-5">
@@ -41,7 +41,7 @@
                         </div>
 
                         <a href="javascript:void(0)" class="text-muted underline-anim text-decoration-none small">
-                            Forgot your password?
+                            Forgot <span class="d-sm-inline d-none">your</span> password?
                         </a>
                     </div>
 
