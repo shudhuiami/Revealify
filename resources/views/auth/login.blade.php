@@ -2,12 +2,15 @@
 @section('content')
     <div class="authentication container-fluid vh-100">
         <div class="row h-100">
-            <div class="col-xl-7 col-lg-6 d-md-block d-none bg-danger">
-            </div>
+            <!--Authentication cover imgae-->
+            <div class="col-xl-7 col-md-6  d-md-block d-none auth-cover"
+                 style="background-image: url('./images/auth/image/2x/auth-bg.png')"></div>
+            <!--Authentication cover imgae-->
 
-            <div class="col-xl-5 col-lg-6 col-12 px-md-5">
+            <div class="col-xl-5 col-md-6 col-12 px-lg-5">
                 <!--Authentication form start-->
-                <form action="" class="auth-form p-md-5 p-4">
+                <form action="" class="auth-form p-lg-5 p-4">
+
                     <div class="logo text-uppercase fs-4 fw-bold my-5 pb-4">Revealify</div>
 
                     <h3 class="mb-3 fw-bold fs-2 auth-title text-uppercase">User Login</h3>
@@ -17,14 +20,14 @@
                     <div class="form-group form-floating mb-4 pb-2">
                         <input type="email" class="form-control shadow-none rounded-0" id="email" name="email"
                                placeholder="Enter Your Email">
-                        <label class="bg-transparent" for="email">Email</label>
+                        <label for="email">Email</label>
                     </div>
 
 
                     <div class="form-group form-floating mb-4">
                         <input type="password" class="form-control shadow-none rounded-0" id="password" name="password"
                                placeholder="Enter Password">
-                        <label class="bg-transparent" for="password">Password</label>
+                        <label for="password">Password</label>
                     </div>
 
                     <div class="d-flex justify-content-between align-items-center mb-5 pb-3">
@@ -40,7 +43,7 @@
                     </div>
 
 
-                    <button type="button" class="btn btn-orange-red px-4 rounded-0 mb-5">Login</button>
+                    <button type="button" class="btn btn-orange-red px-4 rounded-0 mb-4">Login</button>
 
                     <br>
 

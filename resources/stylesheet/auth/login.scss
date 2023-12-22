@@ -1,4 +1,9 @@
 .authentication {
+    .auth-cover {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     .auth-form {
         .logo {
             letter-spacing: 3px;
@@ -22,6 +27,26 @@
                 &:focus, &:active {
                     border-color: var(--orange);
                     transition: .3s all ease-in-out;
+                }
+            }
+
+            label {
+                &:after {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .form-check {
+            .form-check-input {
+                border-color: var(--aqua-blue);
+
+                &:checked {
+                    background-color: var(--aqua-blue);
+                }
+
+                &:focus {
+                    box-shadow: 0 0 0 0.25rem rgba(13, 253, 253, 0.25);
                 }
             }
         }
@@ -55,8 +80,9 @@
                 transform: scaleX(0);
                 transition: .3s all ease-in-out;
             }
-            &:hover{
-                &:before{
+
+            &:hover {
+                &:before {
                     transform: scaleX(1);
                     transition: .3s all ease-in-out;
                 }
