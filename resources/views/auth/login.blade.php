@@ -50,7 +50,7 @@
 
                     <br>
 
-                    <a href="javascript:void(0)" class="text-decoration-none sub-auth-btn">Create Account</a>
+                    <a href="{{route('register')}}" class="text-decoration-none sub-auth-btn">Create Account</a>
 
 
                 </form>

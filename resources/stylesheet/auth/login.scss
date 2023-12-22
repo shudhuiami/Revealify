@@ -8,6 +8,10 @@
         max-width: 1165px;
         width: 100%;
 
+        &.register {
+            max-width: 1385px;
+        }
+
         .auth-box-half {
             width: 50%;
             display: inline;
