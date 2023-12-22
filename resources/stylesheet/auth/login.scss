@@ -1,4 +1,22 @@
 .authentication {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange-2);
+
+    .auth-box {
+        max-width: 1192px;
+        width: 100%;
+
+        .auth-box-half {
+            width: 50%;
+            display: inline;
+            @media  screen and (max-width: 767px) {
+                width: 100%;
+            }
+        }
+    }
+
     .auth-cover {
         background-size: cover;
         background-repeat: no-repeat;
@@ -94,7 +112,7 @@
 
 /*underline animation*/
 
-.underline-anim{
+.underline-anim {
     position: relative;
 
     &:before {
@@ -116,8 +134,8 @@
         }
     }
 
-    &.text-muted{
-        &:before{
+    &.text-muted {
+        &:before {
             background-color: var(--bs-secondary-color);
         }
     }

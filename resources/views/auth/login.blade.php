@@ -1,15 +1,17 @@
 @extends('auth')
 @section('content')
-    <div class="authentication container-fluid vh-100">
-        <div class="row h-100">
+    <div class="authentication container-fluid min-vh-100">
+
+        <div class="auth-box d-flex bg-white shadow-lg m-2">
+
             <!--Authentication cover imgae-->
-            <div class="col-xl-7 col-md-6  d-md-block d-none auth-cover"
+            <div class="auth-box-half  d-md-block d-none auth-cover"
                  style="background-image: url({{asset('./images/auth/image/bg-2.png')}})"></div>
             <!--Authentication cover imgae-->
 
-            <div class="col-xl-5 col-md-6 col-12 px-lg-5">
+            <div class="auth-box-half px-lg-5">
                 <!--Authentication form start-->
-                <form action="" class="auth-form p-lg-5 p-4">
+                <form action="" class="auth-form p-sm-5 p-4">
 
                     <div class="logo text-uppercase fs-4 fw-bold my-5 pb-4">Revealify</div>
 
@@ -30,7 +32,7 @@
                         <label for="password">Password</label>
                     </div>
 
-                    <div class="d-flex justify-content-between align-items-center mb-5 pb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-5">
                         <div class="form-check">
                             <input class="form-check-input rounded-0" type="checkbox" value="" id="remember">
                             <label class="form-check-label small user-select-none" for="remember">
@@ -54,6 +56,8 @@
                 </form>
                 <!--Authentication form end  -->
             </div>
+
         </div>
+    </div>
     </div>
 @endsection
