@@ -1,3 +1,7 @@
+@php
+    $theme_color = '#FFB700'
+@endphp
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,9 +11,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Revealify - Template 1</title>
     <style>
-        @page{
+        @page {
             margin: 0;
         }
+
         table {
             border-collapse: collapse;
         }
@@ -26,7 +31,7 @@
 
     <tr>
         <!--Left start-->
-        <td style="padding:30px;background-color:#3a3939;overflow: hidden;height:94.6%;vertical-align: top">
+        <td style="padding:30px;padding-bottom: 0;background-color:#3a3939;overflow: hidden;height:97.3%;vertical-align: top">
 
             <!--Triangle shape top-->
             <div style="
@@ -37,7 +42,7 @@
             height: 0px;
             border-style: solid;
             border-width: 0 300px 300px 300px;
-            border-color: transparent transparent #FFB700 transparent;
+            border-color: transparent transparent {{$theme_color}} transparent;
             transform: rotate(90deg);"></div>
 
             <!--user image-->
@@ -46,13 +51,13 @@
                 src="./images/template-1/image/user.jpg"
                 alt="user">
 
-            <table style="border-left:1px solid #888888;margin-top: 25px;position: relative;color: #fff;">
+            <table style="border-left:1px solid #888888;margin-top: 25px;margin-bottom: 0;position: relative;color: #fff;">
                 <tbody>
                 <!--Contact section start-->
                 <tr>
                     <td style="font-weight: 700;font-size: 18px;padding-left: 20px;text-transform: uppercase">
                        <span
-                           style="width: 5px;height: 25px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px">
+                           style="width: 5px;height: 25px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: -3px">
                        </span>
 
                         <img style="margin-right: 5px;width: 20px;height: 20px;position: relative;top: 2px"
@@ -65,7 +70,7 @@
                 <tr>
                     <td style="padding-left: 20px;padding-top: 20px;position: relative">
                        <span
-                           style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 35px">
+                           style="width: 5px;height: 10px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: -3px;top: 35px">
                        </span>
 
                         <img style="margin-right: 5px;width: 20px;height: 20px;position: relative;top: 15px"
@@ -81,7 +86,7 @@
                 <tr>
                     <td style="padding-left: 20px;padding-top: 20px;position: relative">
                        <span
-                           style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 35px">
+                           style="width: 5px;height: 10px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: -3px;top: 35px">
                        </span>
 
                         <img style="margin-right: 5px;width: 20px;height: 20px;position: relative;top: 15px"
@@ -97,12 +102,15 @@
                 <tr>
                     <td style="padding-left: 20px;padding-top: 20px;position: relative">
                     <span
-                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 35px"></span>
-                        <img style="margin-right: 5px;width: 20px;height: 20px;position: relative;top: 15px"
-                             src="./images/template-1/icon/map-pointer.png" alt="map pointer">
-                        <span>769 Prudence street</span>
-                        <br>
-                        <span style="padding-left: 29px">Lincoin Park, MI 48123</span>
+                        style="width: 5px;height: 10px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: -3px;top: 35px">
+
+                    </span>
+
+                        <div style="display: inline-block">
+                            <img style="margin-right: 5px;width: 20px;height: 20px;position: relative;top: 15px"
+                                 src="./images/template-1/icon/map-pointer.png" alt="map pointer">
+                        </div>
+                        <div style="padding-left: 29px">769 Prudence street Lincoin Park 4th ave, 12th street California </div>
 
                     </td>
                 </tr>
@@ -122,7 +130,7 @@
                 <tr>
                     <td style="font-weight: 700;font-size: 18px;padding-left: 20px;text-transform: uppercase">
                        <span
-                           style="width: 5px;height: 25px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px">
+                           style="width: 5px;height: 25px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: -3px">
                        </span>
 
                         <img style="margin-right: 5px;width: 24px;height: 24px;position: relative;top: 5px"
@@ -134,14 +142,14 @@
                 <tr>
                     <td style="font-weight: 700;font-size:16px;padding-left:20px;padding-top:20px;position: relative">
                     <span
-                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 25px"></span>
+                        style="width: 5px;height: 10px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: -3px;top: 25px"></span>
 
                         Darwin B. Magana
                     </td>
                 </tr>
 
                 <tr>
-                    <td style="padding-left: 20px;">2813 Shobe Lane Mancos. CO.</td>
+                    <td style="padding-left: 20px;">2813 Shobe Lane Mancos. California.</td>
                 </tr>
 
                 <tr>
@@ -155,14 +163,14 @@
                 <tr>
                     <td style="font-weight: 700;font-size:16px;padding-left:20px;padding-top:20px;position: relative">
                     <span
-                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 25px"></span>
+                        style="width: 5px;height: 10px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: -3px;top: 25px"></span>
 
                         Robert j. Belvin
                     </td>
                 </tr>
 
                 <tr>
-                    <td style="padding-left: 20px;">2813 Shobe Lane Mancos. CO.</td>
+                    <td style="padding-left: 20px;">2813 Shobe Lane Mancos. California.</td>
                 </tr>
 
                 <tr>
@@ -187,7 +195,7 @@
                 <tr>
                     <td style="font-weight: 700;font-size: 18px;padding-left: 20px;text-transform: uppercase">
                     <span
-                        style="width: 5px;height: 25px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px"></span>
+                        style="width: 5px;height: 25px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: -3px"></span>
 
                         <img style="margin-right: 5px;width: 24px;height: 24px;position: relative;top: 5px"
                              src="./images/template-1/icon/education.png" alt="education">
@@ -199,7 +207,7 @@
                 <tr>
                     <td style="font-weight: 700;font-size:16px;padding-left:20px;padding-top:20px;position: relative">
                     <span
-                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 25px"></span>
+                        style="width: 5px;height: 10px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: -3px;top: 25px"></span>
 
                         Stanford University
                     </td>
@@ -216,7 +224,7 @@
                 <tr>
                     <td style="font-weight: 700;font-size:16px;padding-left:20px;padding-top:20px;position: relative">
                     <span
-                        style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: -3px;top: 25px"></span>
+                        style="width: 5px;height: 10px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: -3px;top: 25px"></span>
 
                         Stanford University
                     </td>
@@ -228,6 +236,24 @@
 
                 <tr>
                     <td style="padding-left: 20px;padding-bottom: 4px">2011 - 2013</td>
+                </tr>
+
+
+                <tr>
+                    <td style="font-weight: 700;font-size:16px;padding-left:20px;padding-top:20px;position: relative">
+                    <span
+                        style="width: 5px;height: 10px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: -3px;top: 25px"></span>
+
+                        Stanford University
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-left: 20px;">Master Digree Graduate</td>
+                </tr>
+
+                <tr>
+                    <td style="padding-left: 20px;padding-bottom: 20px">2011 - 2013</td>
                 </tr>
 
                 </tbody>
@@ -248,9 +274,9 @@
                 <div
                     style="padding: 20px 15px 20px 55px;text-transform:uppercase;font-size: 35px;font-weight: 700;background-color: #e7e7e7;margin-top:60px;display: block;">
                     <span
-                        style="width: 5px;height: 50px;border-radius: 10px;background-color: #ffb700;position: absolute;left: 30px;"></span>
+                        style="width: 5px;height: 50px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: 30px;"></span>
 
-                    Brian R. <span style="color:#ffb700">Baxter</span>
+                    Brian R. <span style="color:{{$theme_color}}">Baxter</span>
 
                     <div style="text-transform: uppercase;font-size: 15px;font-weight:400;color:#313030">Graphic & Web
                         Designer
@@ -264,12 +290,12 @@
                     <tr>
                         <td style="font-weight: 700;font-size: 20px;padding-left: 55px;text-transform: uppercase">
                            <span
-                               style="width: 5px;height: 25px;border-radius: 10px;background-color: #ffb700;position: absolute;left: 30px">
+                               style="width: 5px;height: 25px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: 30px">
 
                            </span>
 
                             <div
-                                style="display: inline-block;width: 22px;height: 22px;border-radius: 50%;background-color: #ffb700;margin-right: 2px;position: relative;top: 2px">
+                                style="display: inline-block;width: 22px;height: 22px;border-radius: 50%;background-color: {{$theme_color}};margin-right: 2px;position: relative;top: 2px">
                                 <img style="margin:3px;width: 14px;height: 14px;position: relative;top: 2px"
                                      src="./images/template-1/icon/graduation-hat-black.png" alt="graduation hat">
                             </div>
@@ -284,7 +310,11 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Alias amet animi corporis debitis doloremque eaque harum impedit
                             molestiae neque possimus, provident quibusdam quos ratione
-                            reiciendis reprehenderit sequi suscipit ut voluptates.
+                            reiciendis reprehenderit sequi suscipit ut voluptates. Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Accusamus at ea facere nulla odio omnis quo repellat totam.
+                            Error obcaecati praesentium ullam voluptatum. Cumque excepturi exercitationem libero nemo,
+                            officia quas saepe similique? Architecto consequatur deleniti dicta distinctio earum eos
+                            illo ipsam ipsum, itaque magnam nam natus nobis quis tempora totam.
                         </td>
                     </tr>
                     <!--About section end  -->
@@ -293,11 +323,11 @@
                     <tr>
                         <td style="font-weight: 700;font-size: 20px;padding-left: 55px;padding-top:40px;text-transform: uppercase">
                            <span
-                               style="width: 5px;height: 25px;border-radius: 10px;background-color: #ffb700;position: absolute;left: 30px">
+                               style="width: 5px;height: 25px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: 30px">
                            </span>
 
                             <div
-                                style="display: inline-block;width: 22px;height: 22px;border-radius: 50%;background-color: #ffb700;margin-right: 2px;position: relative;top: 2px">
+                                style="display: inline-block;width: 22px;height: 22px;border-radius: 50%;background-color: {{$theme_color}};margin-right: 2px;position: relative;top: 2px">
                                 <img style="margin:5px;width: 12px;height: 12px;position: relative;top: 0px"
                                      src="./images/template-1/icon/briefcase.png" alt="briefcase">
                             </div>
@@ -309,7 +339,7 @@
                         <tr>
                             <td style="font-weight: 700;font-size:16px;padding-left:55px;padding-top:20px;position: relative">
                              <span
-                                 style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: 30px;top: 25px">
+                                 style="width: 5px;height: 10px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: 30px;top: 25px">
                              </span>
                                 Senior Web Designer
                             </td>
@@ -327,8 +357,9 @@
                         <tbody>
                         <tr>
                             <td style="padding: 15px 15px 0 55px;">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Commodi, sit?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nisi porro quia
+                                soluta. Accusamus architecto debitis earum harum illum impedit laborum magni
+                                necessitatibus omnis sapiente sequi, velit, voluptatem! Aliquid, est?
                             </td>
                         </tr>
                         </tbody>
@@ -339,7 +370,7 @@
                         <tr>
                             <td style="font-weight: 700;font-size:16px;padding-left:55px;padding-top:20px;position: relative">
                              <span
-                                 style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: 30px;top: 25px">
+                                 style="width: 5px;height: 10px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: 30px;top: 25px">
                              </span>
                                 Graphic Designer
                             </td>
@@ -357,8 +388,9 @@
                         <tbody>
                         <tr>
                             <td style="padding: 15px 15px 0 55px;">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Commodi, sit?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nisi porro quia
+                                soluta. Accusamus architecto debitis earum harum illum impedit laborum magni
+                                necessitatibus omnis sapiente sequi, velit, voluptatem! Aliquid, est?
                             </td>
                         </tr>
                         </tbody>
@@ -368,7 +400,7 @@
                         <tr>
                             <td style="font-weight: 700;font-size:16px;padding-left:55px;padding-top:20px;position: relative">
                              <span
-                                 style="width: 5px;height: 10px;border-radius: 10px;background-color: #ffb700;position: absolute;left: 30px;top: 25px">
+                                 style="width: 5px;height: 10px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: 30px;top: 25px">
                              </span>
                                 Marketing Manager
                             </td>
@@ -386,8 +418,9 @@
                         <tbody>
                         <tr>
                             <td style="padding: 15px 15px 0 55px;">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Commodi, sit?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nisi porro quia
+                                soluta. Accusamus architecto debitis earum harum illum impedit laborum magni
+                                necessitatibus omnis sapiente sequi, velit, voluptatem! Aliquid, est?
                             </td>
                         </tr>
                         </tbody>
@@ -400,12 +433,12 @@
                     <tr>
                         <td style="font-weight: 700;font-size: 20px;padding-left: 55px;text-transform: uppercase;padding-top: 50px">
                            <span
-                               style="width: 5px;height: 25px;border-radius: 10px;background-color: #ffb700;position: absolute;left: 30px">
+                               style="width: 5px;height: 25px;border-radius: 10px;background-color: {{$theme_color}};position: absolute;left: 30px">
 
                            </span>
 
                             <div
-                                style="display: inline-block;width: 22px;height: 22px;border-radius: 50%;background-color: #ffb700;margin-right: 2px;position: relative;top: 2px">
+                                style="display: inline-block;width: 22px;height: 22px;border-radius: 50%;background-color: {{$theme_color}};margin-right: 2px;position: relative;top: 2px">
                                 <img style="margin:4px;width: 14px;height: 14px;position: relative;"
                                      src="./images/template-1/icon/pie-chart.png" alt="pie chart">
                             </div>
@@ -419,48 +452,56 @@
                         <td>
                             <table style="padding-top: 20px;padding-left: 55px">
                                 <tr>
-                                    <td style="font-size: 10px;padding-top: 10px">Adobe Photoshop</td>
+                                    <td style="font-size: 13px;padding-top: 10px;padding-right: 10px">Adobe Photoshop
+                                    </td>
+
                                     <td style="padding-right: 10px;padding-top: 10px">
                                         <div
                                             style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
                                             <div
-                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
+                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: {{$theme_color}}"></div>
                                         </div>
                                     </td>
-                                    <td style="font-size: 10px;padding-top: 10px">Adobe Illustrator</td>
-                                    <td style="padding-right: 10px;padding-top: 10px">
-                                        <div
-                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
-                                            <div
-                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
-                                        </div>
+
+                                    <td style="font-size: 13px;padding-top: 10px;padding-right: 10px">Adobe
+                                        Illustrator
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td style="font-size: 10px;padding-top: 10px">Microsoft Word</td>
                                     <td style="padding-right: 10px;padding-top: 10px">
                                         <div
                                             style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
                                             <div
-                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
-                                        </div>
-                                    </td>
-                                    <td style="font-size: 10px;padding-top: 10px">Microsoft Powerpoint</td>
-                                    <td style="padding-right: 10px;padding-top: 10px">
-                                        <div
-                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
-                                            <div
-                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
+                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: {{$theme_color}}"></div>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="font-size: 10px;padding-top: 10px">HTML-S/CSS-3</td>
+                                    <td style="font-size: 13px;padding-top: 10px;padding-right: 10px">Microsoft Word
+                                    </td>
                                     <td style="padding-right: 10px;padding-top: 10px">
                                         <div
                                             style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
                                             <div
-                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
+                                                style="height: 6px;width: 55px;border-radius: 10px;background-color: {{$theme_color}}"></div>
+                                        </div>
+                                    </td>
+                                    <td style="font-size: 13px;padding-top: 10px;padding-right: 10px">Microsoft
+                                        Powerpoint
+                                    </td>
+                                    <td style="padding-right: 10px;padding-top: 10px">
+                                        <div
+                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
+                                            <div
+                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: {{$theme_color}}"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 13px;padding-top: 10px;padding-right: 10px">HTML-S/CSS-3</td>
+                                    <td style="padding-right: 10px;padding-top: 10px">
+                                        <div
+                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
+                                            <div
+                                                style="height: 6px;width: 70px;border-radius: 10px;background-color: {{$theme_color}}"></div>
                                         </div>
                                     </td>
                                 </tr>
@@ -468,59 +509,6 @@
                         </td>
                     </tr>
 
-                    <tr>
-                        <td>
-                            <table style="padding-top: 20px;padding-left: 55px">
-                                <tr>
-                                    <td style="font-size: 10px;padding-top: 10px">Adobe Photoshop</td>
-                                    <td style="padding-right: 10px;padding-top: 10px">
-                                        <div
-                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
-                                            <div
-                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
-                                        </div>
-                                    </td>
-                                    <td style="font-size: 10px;padding-top: 10px">Adobe Illustrator</td>
-                                    <td style="padding-right: 10px;padding-top: 10px">
-                                        <div
-                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
-                                            <div
-                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="font-size: 10px;padding-top: 10px">Microsoft Word</td>
-                                    <td style="padding-right: 10px;padding-top: 10px">
-                                        <div
-                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
-                                            <div
-                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
-                                        </div>
-                                    </td>
-                                    <td style="font-size: 10px;padding-top: 10px">Microsoft Powerpoint</td>
-                                    <td style="padding-right: 10px;padding-top: 10px">
-                                        <div
-                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
-                                            <div
-                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="font-size: 10px;padding-top: 10px">HTML-S/CSS-3</td>
-                                    <td style="padding-right: 10px;padding-top: 10px">
-                                        <div
-                                            style="height: 6px;width: 80px;border-radius: 10px;background-color: #dcdcdc">
-                                            <div
-                                                style="height: 6px;width: 60px;border-radius: 10px;background-color: #ffb700"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    
 
                     <!--Skills section end  -->
                     </tbody>
@@ -534,7 +522,7 @@
                 height: 0px;
                 border-style: solid;
                 border-width: 0 70px 70px 70px;
-                border-color: transparent transparent #FFb700 transparent;
+                border-color: transparent transparent {{$theme_color}} transparent;
                 transform: rotate(135deg);"></div>
 
             </div>
