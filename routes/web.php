@@ -15,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [FrontController::class, 'home'])->name('template.one');
+Route::get('/login', [FrontController::class, 'login'])->name('login');
+Route::get('/register', [FrontController::class, 'register'])->name('register');
+Route::get('/forgot', [FrontController::class, 'forgot'])->name('forgot');
+Route::get('/reset', [FrontController::class, 'reset'])->name('reset');
 
 Route::get('template-1', [FrontController::class, 'template_1'])->name('template.one');
 Route::get('template-2', [FrontController::class, 'template_2'])->name('template.two');
