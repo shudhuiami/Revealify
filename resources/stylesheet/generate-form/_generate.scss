@@ -29,7 +29,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-color: #ecf7f9;
+                background-color: #ff4f4f1c;
                 height: 150px;
                 width: 150px;
                 border-radius: 50%;
@@ -88,7 +88,7 @@
                 &:focus{
                     transition: 500ms;
                     box-shadow: none;
-                    border: 1px solid #85cebf;
+                    border: 1px solid var(--orange-red);
                 }
             }
 
@@ -99,10 +99,14 @@
             }
         }
 
-        .remove{
-            height: 38px;
-            width: 38px;
+        .remove, .add{
             border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
         }
     }
 }

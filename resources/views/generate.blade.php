@@ -18,7 +18,7 @@
             <header class="py-3 px-3 px-sm-5 shadow-sm fixed-top bg-white">
                 <div class="d-flex align-items-center justify-content-between">
                     <h2>Generate Form</h2>
-                    <button type="submit" class="btn btn-orange-red">Save</button>
+                    <button type="submit" class="btn btn-orange-red rounded-pill">Save</button>
                 </div>
             </header>
 
@@ -101,7 +101,7 @@
                 <div class="mb-5">
                     <div class="d-flex align-items-center justify-content-between mb-3">
                         <div class="fw-bold">Education</div>
-                        <button type="button" class="btn btn-orange-red btn-sm" @click="addEducationFields">
+                        <button type="button" class="btn btn-orange-red btn-sm add" @click="addEducationFields">
                             <img src="/images/generate-form/add.png" alt="" height="20" width="20">
                         </button>
                     </div>
@@ -144,7 +144,7 @@
                 <div class="mb-5">
                     <div class="d-flex align-items-center justify-content-between mb-3">
                         <div class="fw-bold">Skills</div>
-                        <button type="button" class="btn btn-orange-red btn-sm" @click="addSkillFields">
+                        <button type="button" class="btn btn-orange-red btn-sm add" @click="addSkillFields">
                             <img src="/images/generate-form/add.png" alt="" height="20" width="20">
                         </button>
                     </div>
@@ -181,7 +181,7 @@
                 <div class="mb-5">
                     <div class="d-flex align-items-center justify-content-between mb-3">
                         <div class="fw-bold">Job Experience</div>
-                        <button type="button" class="btn btn-orange-red btn-sm" @click="addJobExperienceFields">
+                        <button type="button" class="btn btn-orange-red btn-sm add" @click="addJobExperienceFields">
                             <img src="/images/generate-form/add.png" alt="" height="20" width="20">
                         </button>
                     </div>
@@ -230,14 +230,14 @@
                 <div class="mb-5">
                     <div class="d-flex align-items-center justify-content-between mb-3">
                         <div class="fw-bold">Reference</div>
-                        <button type="button" class="btn btn-orange-red btn-sm" @click="addReferenceFields">
+                        <button type="button" class="btn btn-orange-red btn-sm add" @click="addReferenceFields">
                             <img src="/images/generate-form/add.png" alt="" height="20" width="20">
                         </button>
                     </div>
                     <div v-for="(each, index) in references">
                         <div class="mb-2 text-end" v-if="index != 0">
-                            <button type="button" class="btn btn-orange-red btn-sm remove"@click="references.splice(index, 1)">
-                                <img src="/images/generate-form/remove.png" alt="" height="20" width="20">
+                            <button type="button" class="btn btn-orange-red btn-sm remove" @click="references.splice(index, 1)">
+                                <img src="/images/generate-form/remove.png" alt="" height="16" width="16">
                             </button>
                         </div>
                         <div class="card p-4 mb-4">
