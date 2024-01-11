@@ -20,8 +20,13 @@ Route::get('/register', [FrontController::class, 'register'])->name('register');
 Route::get('/forgot', [FrontController::class, 'forgot'])->name('forgot');
 Route::get('/reset', [FrontController::class, 'reset'])->name('reset');
 
+Route::get('/generate', [FrontController::class, 'generate'])->name('generate');
+
 Route::get('template-1', [FrontController::class, 'template_1'])->name('template.one');
 Route::get('template-2', [FrontController::class, 'template_2'])->name('template.two');
 Route::get('template-3', [FrontController::class, 'template_3'])->name('template.three');
 Route::get('template-4', [FrontController::class, 'template_4'])->name('template.four');
 Route::get('template-5', [FrontController::class, 'template_5'])->name('template.five');
+
+
+

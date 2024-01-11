@@ -32,6 +32,11 @@ class FrontController extends Controller
         return view('auth.reset');
     }
 
+    public static function generate()
+    {
+        return view('generate');
+    }
+
     public static function template_1()
     {
         $pdf = Pdf::loadView('templates.template_1');
