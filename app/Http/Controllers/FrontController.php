@@ -9,7 +9,7 @@ class FrontController extends Controller
 {
     public static function home()
     {
-        return view('welcome');
+        return view('landing-page.pages.home');
     }
 
     public static function login()
