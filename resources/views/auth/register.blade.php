@@ -111,9 +111,7 @@
                     axios.post('{{ route('user.registration') }}', this.formData).then(response => {
                         this.loading = false;
                         const res = response.data;
-                        this.msg = res.message + ' ' + 'Please check email to verify your account.';    
-                        // console.log(res.message)
-                        // toastr.success(res.message);
+                        this.msg = res.message + ' ' + 'Please check email to verify your account.';
                         this.formData = {
                             first_name: '',
                             last_name: '',
