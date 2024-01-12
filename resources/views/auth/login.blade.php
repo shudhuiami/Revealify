@@ -1,6 +1,6 @@
 @extends('auth')
 @section('content')
-    <div class="authentication container-fluid min-vh-100">
+    <div class="authentication container-fluid min-vh-100" id="login">
 
         <div class="auth-box d-flex bg-white shadow-lg m-2">
 
@@ -60,4 +60,48 @@
         </div>
     </div>
     </div>
+
+    <script>
+        new Vue({
+            el: '#login',
+            data: {
+                formData: {
+                    first_name: '',
+                    last_name: '',
+                    email: '',
+                    mobile: '',
+                    password: '',
+                    password_confirmation: ''
+                },
+                loading:false,
+                error:null,
+            },
+            methods:  {
+                login: function () {
+                    this.loading = true;
+                    this.error = null;
+                    axios.post('{{ route('user.registration') }}', this.formData).then(response => {
+                        this.loading = false;
+                        // const res = response.data;
+                        // console.log(res.message)
+                        // toastr.success(res.message);
+                        this.formData = {
+                            first_name: '',
+                            last_name: '',
+                            email: '',
+                            mobile: '',
+                            password: '',
+                            password_confirmation: ''
+                        }
+                    }).catch(err => {
+                        // Error Handling here
+                        this.loading = false
+                        this.error = err.response.data.errors;
+                    })
+                }
+            },
+            mounted() {
+            }
+        })
+    </script>
 @endsection

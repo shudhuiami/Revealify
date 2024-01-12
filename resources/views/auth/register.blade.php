@@ -1,6 +1,6 @@
 @extends('auth')
 @section('content')
-    <div class="authentication container-fluid min-vh-100">
+    <div class="authentication container-fluid min-vh-100" id="register">
 
         <div class="auth-box register d-flex bg-white shadow-lg m-2">
 
@@ -11,8 +11,8 @@
 
             <div class="auth-box-half px-lg-5">
                 <!--Authentication form start-->
-                <form action="" class="auth-form p-sm-5 p-4">
-
+                <form action="" class="auth-form p-sm-5 p-4" @submit.prevent="register">
+                    <div class="alert-success" v-if="msg">@{{ msg }}</div>
                     <div class="logo text-uppercase fs-4 fw-bold mt-3 pb-4">Revealify</div>
 
                     <h3 class="mb-3 fw-bold fs-2 auth-title text-uppercase">User Signup</h3>
@@ -21,42 +21,59 @@
 
                     <div class="form-group form-floating mb-3">
                         <input type="text" class="form-control shadow-none rounded-0" id="first_name" name="first_name"
-                               placeholder="Enter First Name">
+                               placeholder="Enter First Name" v-model="formData.first_name">
                         <label for="first_name">First Name</label>
+                        <span class="invalid-feedback d-block" v-if="error != null && error.first_name != undefined" v-text="error.first_name[0]"></span>
                     </div>
 
                     <div class="form-group form-floating mb-3">
                         <input type="text" class="form-control shadow-none rounded-0" id="last_name" name="last_name"
-                               placeholder="Enter Last Name">
+                               placeholder="Enter Last Name" v-model="formData.last_name">
                         <label for="last_name">last Name</label>
+                        <span class="invalid-feedback d-block" v-if="error != null && error.last_name != undefined" v-text="error.last_name[0]"></span>
                     </div>
 
                     <div class="form-group form-floating mb-3">
                         <input type="email" class="form-control shadow-none rounded-0" id="email" name="email"
-                               placeholder="Enter Your Email">
+                               placeholder="Enter Your Email" v-model="formData.email">
                         <label for="email">Email</label>
+                        <span class="invalid-feedback d-block" v-if="error != null && error.email != undefined" v-text="error.email[0]"></span>
                     </div>
 
                     <div class="form-group form-floating mb-3">
-                        <input type="text" class="form-control shadow-none rounded-0" id="mobile" name="mobile"
-                               placeholder="Enter Your Email">
-                        <label for="mobile">Mobile</label>
+                        <input type="text" class="form-control shadow-none rounded-0" id="phone" name="phone"
+                               placeholder="Enter Mobile Number" v-model="formData.phone">
+                        <label for="phone">Mobile</label>
                     </div>
 
                     <div class="form-group form-floating mb-3">
                         <input type="password" class="form-control shadow-none rounded-0" id="password" name="password"
-                               placeholder="Enter Password">
+                               placeholder="Enter Password" v-model="formData.password">
                         <label for="password">Password</label>
+                        <span class="invalid-feedback d-block" v-if="error != null && error.password != undefined" v-text="error.password[0]"></span>
                     </div>
 
                     <div class="form-group form-floating mb-3">
                         <input type="password" class="form-control shadow-none rounded-0" id="password_confirmation" name="password_confirmation"
-                               placeholder="Confirm Password">
+                               placeholder="Confirm Password" v-model="formData.password_confirmation">
                         <label for="password_confirmation">Confirm Password</label>
                     </div>
 
-
-                    <button type="button" class="btn btn-orange-red px-4 rounded-0 mt-5 mb-4">Signup</button>
+                    <button type="submit" class="btn btn-orange-red px-4 rounded-0 mt-5 mb-4"  v-if="!loading">Signup</button>
+                    <button type="button" class="btn btn-orange-red px-4 rounded-0 mt-5 mb-4" v-if="loading">
+                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
+                             stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                             class="css-i6dzq1 la-spin spin">
+                            <line x1="12" y1="2" x2="12" y2="6"></line>
+                            <line x1="12" y1="18" x2="12" y2="22"></line>
+                            <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line>
+                            <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line>
+                            <line x1="2" y1="12" x2="6" y2="12"></line>
+                            <line x1="18" y1="12" x2="22" y2="12"></line>
+                            <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line>
+                            <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
+                        </svg>
+                    </button>
 
                     <br>
 
@@ -70,4 +87,50 @@
         </div>
     </div>
     </div>
+
+    <script>
+        new Vue({
+            el: '#register',
+            data: {
+                formData: {
+                    first_name: '',
+                    last_name: '',
+                    email: '',
+                    mobile: '',
+                    password: '',
+                    password_confirmation: ''
+                },
+                loading:false,
+                error:null,
+                msg: ''
+            },
+            methods:  {
+                register: function () {
+                    this.loading = true;
+                    this.error = null;
+                    axios.post('{{ route('user.registration') }}', this.formData).then(response => {
+                        this.loading = false;
+                        const res = response.data;
+                        this.msg = res.message + ' ' + 'Please check email to verify your account.';    
+                        // console.log(res.message)
+                        // toastr.success(res.message);
+                        this.formData = {
+                            first_name: '',
+                            last_name: '',
+                            email: '',
+                            mobile: '',
+                            password: '',
+                            password_confirmation: ''
+                        }
+                    }).catch(err => {
+                        // Error Handling here
+                        this.loading = false
+                        this.error = err.response.data.errors;
+                    })
+                }
+            },
+            mounted() {
+            }
+        })
+    </script>
 @endsection

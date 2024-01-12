@@ -29,9 +29,9 @@
                 belongs to you. You'll only need to do this once.
             </div>
             <br><br>
-            <div style="font-size:45px;letter-spacing:10px;font-weight: bold;">
+            <div style="font-size:16px;font-weight: bold;">
                 <h3>Click Here to verify your account</h3>
-                <h3><a href="{{route('user.verify.account', [$user->verified_token])}}">{{route('user.verify.account', [$user->verified_token])}}</a></h3>
+                <h3><a href="{{route('user.verify.account', [$user->verified_token])}}" style="font-size: 14px;line-break: anywhere;">{{route('user.verify.account', [$user->verified_token])}}</a></h3>
             </div>
             <br><br>
             <div style="font-weight: bold; font-size: 20px;">Why did i receive this?</div>

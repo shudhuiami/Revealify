@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Repository\AuthRepository;
 use Carbon\Carbon;
-use http\Client\Curl\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -14,7 +13,8 @@ class AuthController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'avatar' => 'nullable',
-            'name' => 'required|min:3',
+            'first_name' => 'required|min:3',
+            'last_name' => 'required|min:3',
             'phone' => 'nullable|numeric',
             'email' => 'required|unique:users,email',
             'password' => 'required|min:6|confirmed',
@@ -28,7 +28,8 @@ class AuthController extends Controller
 
             $userData = [
                 'avatar' => $request->avatar ?? null,
-                'name' => $request->name,
+                'first_name' => $request->first_name,
+                'last_name' => $request->last_name,
                 'email' => $request->email,
                 'phone' => $request->phone,
                 'password' => bcrypt($request->password),
