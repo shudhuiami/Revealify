@@ -32,6 +32,11 @@ class FrontController extends Controller
         return view('auth.reset');
     }
 
+    public static function theme_selection()
+    {
+        return view('theme-selection');
+    }
+
     public static function generate()
     {
         return view('generate');

@@ -21,6 +21,8 @@ Route::get('/forgot', [FrontController::class, 'forgot'])->name('forgot');
 
 Route::get('/generate', [FrontController::class, 'generate'])->name('generate');
 
+Route::get('/theme-selection', [FrontController::class, 'theme_selection'])->name('theme.selection');
+
 Route::get('template-1', [FrontController::class, 'template_1'])->name('template.one');
 Route::get('template-2', [FrontController::class, 'template_2'])->name('template.two');
 Route::get('template-3', [FrontController::class, 'template_3'])->name('template.three');

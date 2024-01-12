@@ -22,6 +22,11 @@ body {
 
     /*auth*/
     @import "auth/login";
+
+    /*theme selection*/
+    @import "theme-selection/theme-selection";
+
+    /*generate form*/
     @import "generate-form/generate";
 }
 
