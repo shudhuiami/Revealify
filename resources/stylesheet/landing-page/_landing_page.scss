@@ -1,0 +1,18 @@
+/* btn */
+.btn-orange-red{
+    background-color: var(--orange-red);
+    color: var(--white);
+    text-transform: uppercase;
+    transition: .3s all ease-in-out;
+
+    &:hover {
+        transition: .3s all ease-in-out;
+        background-color: darken(#ff4f4f, 10%);
+
+    }
+}
+
+
+@import "shared/header";
+@import "pages/home";
+@import "shared/footer";

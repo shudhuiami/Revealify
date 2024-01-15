@@ -1,0 +1,24 @@
+header{
+    background-color: var(--white);
+    .navbar{
+        .navbar-brand{
+            &:hover{
+                span{
+                    transition: 500ms;
+                    color: var(--orange-red);
+                }
+            }
+            span{
+                transition: 500ms;
+                color: #333;
+                font-size: 26px;
+                font-weight: bold;
+            }
+        }
+        .navbar-nav{
+            .btn-orange-red{
+                width: 120px;
+             }
+        }
+    }
+}

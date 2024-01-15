@@ -1,0 +1,166 @@
+.home{
+    color: #212529;
+
+    .colors{
+        span{
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 2px;
+            &:nth-child(1){
+                background-color: #00a8ff;
+            }
+            &:nth-child(2){
+                background-color: #9c88ff;
+            }
+            &:nth-child(3){
+                background-color: #fbc531;
+            }
+            &:nth-child(4){
+                background-color: #4cd137;
+            }
+            &:nth-child(5){
+                background-color: #487eb0;
+            }
+            &:nth-child(6){
+                background-color: #e84118;
+            }
+            &:nth-child(7){
+                background-color: #8c7ae6;
+            }
+        }
+    }
+
+    .section-title{
+        font-size: 30px;
+        font-weight: 600;
+        color: var(--aqua-blue);
+    }
+
+    /*banner section*/
+    .banner{
+        position: relative;
+        min-height: 700px;
+        display: flex;
+        align-items: center;
+        .content{
+            margin-top: 60px;
+            .left-content{
+                .promo{
+                    background-color: #ff4f4f2b;
+                    padding: 8px 15px;
+                    span{
+                        color: var(--orange-red);
+                        font-weight: 600;
+                        margin-left: 10px;
+                    }
+                }
+                .title{
+                    font-size: 45px;
+                    font-weight: 600;
+                    margin: 30px 0;
+                    color: var(--aqua-blue);
+                }
+                .desc{
+                    color: #888;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 1.9;
+                }
+                .buttons{
+                    margin-top: 30px;
+                    .btn-orange-red{
+                        width: 200px;
+                        padding: 12px;
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .right-content{
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    /*service section*/
+    .service{
+        padding: 100px 0;
+        background-repeat: no-repeat;
+        .content{
+            .left-content{
+                .service-item{
+                    box-shadow: 0px 2px 27px 0px rgba(154, 161, 171, 0.18);
+                    padding: 25px;
+                    margin-bottom: 20px;
+                    background: #fff;
+                    border: 1px solid #eee;
+                    display: flex;
+                    align-items: center;
+                    .icon{
+                        margin-right: 20px;
+                    }
+                    .info{
+                        .title{
+                            color: var(--aqua-blue);
+                            font-size: 20px;
+                            font-weight: 500;
+                            margin-bottom: 8px;
+                        }
+                        .desc{
+                            color: #888;
+                        }
+                    }
+                }
+            }
+            .right-content{
+                padding-left: 10px;
+                .section-title{
+                    margin: 30px 0;
+                }
+                .desc{
+                    color: #888;
+                    margin-bottom: 30px;
+                    line-height: 1.9;
+                    padding-right: 90px;
+
+                }
+                .btn-orange-red{
+                    font-size: 14px;
+                    font-weight: bold;
+                    padding: 12px 20px;
+                }
+            }
+        }
+    }
+
+    /*about section*/
+    .about{
+        padding: 100px 0;
+        .content{
+            .left-content{
+                .section-title{
+                    margin: 30px 0;
+                }
+                .desc{
+                    padding-left: 0;
+                    margin-bottom: 0;
+                    li{
+                        list-style: none;
+                        margin-bottom: 20px;
+                        font-weight: 500;
+                        line-height: 20px;
+                        font-size: 18px;
+                        img{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
