@@ -19,8 +19,8 @@
                                     resume.
                                 </div>
                                 <div class="buttons">
-                                    <button class="btn btn-orange-red me-3">choose template</button>
-                                    <button class="btn btn-orange-red">contact us</button>
+                                    <button class="btn btn-aqua-blue me-3">choose template</button>
+                                    <button class="btn btn-aqua-blue">contact us</button>
                                 </div>
                             </div>
                         </div>
@@ -98,7 +98,7 @@
                                     facere, natus reprehenderit eaque eum, autem ipsam. Magni, error. Tempora odit
                                     laborum iure inventore possimus laboriosam qui nam. Fugit!
                                 </div>
-                                <button class="btn btn-orange-red">lets build your cv</button>
+                                <button class="btn btn-aqua-blue">lets build your cv</button>
                             </div>
                         </div>
                     </div>
@@ -169,90 +169,21 @@
         <section class="subscribe">
             <div class="container">
                 <div class="content">
-                    <img src="{{asset('/images/landing-page/custom.png')}}" class="custom-cv " alt="">
+                    <div class="img">
+                        <img src="{{asset('/images/landing-page/subscribe.png')}}"alt="">
+                    </div>
                     <div class="row right-content">
-                        <div class="col-xl-5">
+                        <div class="col-xl-6">
                             <div class="section-title">Do you Need a Complete Custom CV Template?</div>
                         </div>
                         <div class="col-xl-5 text-end pe-4">
-                            <button class="btn btn-orange-red-outline">Send a Request</button>
+                            <button class="btn btn-aqua-blue-outline">Send a Request</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         {{--subscribe section end--}}
-
-
-        {{--pricing section start--}}
-        <section class="pricing">
-            <div class="container">
-                <div class="content">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4 mb-4 mb-md-3 mb-lg-0">
-                            <div class="left-content">
-                                <div class="colors">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                                <div class="section-title">Our Pricing</div>
-                                <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-                                    dictum risus, non
-                                    suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque
-                                    in.
-                                </div>
-                                <div class="free-trial">
-                                    <div class="title">Lets Build CV</div>
-                                    <div class="sub-title">with 7days of Free Trial</div>
-                                </div>
-                                <div class="policy">
-                                    <div class="title">Terms & Conditions</div>
-                                    <div class="sub-title">subject to change with perior notice</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
-                            <div class="pricing-item">
-                                <div class="package"
-                                     style="background-image: url('{{asset('/images/landing-page/price.png')}}')">
-                                    <div class="amount">$9.99</div>
-                                    <div class="type">/ month</div>
-                                </div>
-                                <div class="px-4">
-                                    <div class="section-title">Monthly Pack</div>
-                                    <div class="desc">You will be billed per month, and get unlimited access to all
-                                        resume Templates and new added ones
-                                    </div>
-                                    <button class="btn btn-orange-red-outline">Get Started</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
-                            <div class="pricing-item">
-                                <div class="package"
-                                     style="background-image: url('{{asset('/images/landing-page/price.png')}}')">
-                                    <div class="amount">$9.99</div>
-                                    <div class="type">/ month</div>
-                                </div>
-                                <div class="px-4">
-                                    <div class="section-title">Monthly Pack</div>
-                                    <div class="desc">You will be billed per month, and get unlimited access to all
-                                        resume Templates and new added ones
-                                    </div>
-                                    <button class="btn btn-orange-red-outline">Get Started</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        {{--pricing section end--}}
 
 
         {{--cv template section start--}}
@@ -281,10 +212,10 @@
                                     <img src="{{asset('/images/landing-page/template-1.png')}}" alt="">
                                 </div>
                                 <div class="buttons">
-                                    <button class="btn btn-orange-red  rounded-pill">see template
+                                    <button class="btn btn-aqua-blue  rounded-pill">see template
                                         <i class="fa-solid fa-arrow-right-long"></i>
                                     </button>
-                                    <button class="btn btn-orange-red-outline rounded-pill">use template
+                                    <button class="btn btn-aqua-blue-outline rounded-pill">use template
                                         <i class="fa-solid fa-arrow-right-long"></i>
                                     </button>
                                 </div>
@@ -296,10 +227,10 @@
                                     <img src="{{asset('/images/landing-page/template-2.png')}}" alt="">
                                 </div>
                                 <div class="buttons">
-                                    <button class="btn btn-orange-red  rounded-pill">see template
+                                    <button class="btn btn-aqua-blue  rounded-pill">see template
                                         <i class="fa-solid fa-arrow-right-long"></i>
                                     </button>
-                                    <button class="btn btn-orange-red-outline rounded-pill">use template
+                                    <button class="btn btn-aqua-blue-outline rounded-pill">use template
                                         <i class="fa-solid fa-arrow-right-long"></i>
                                     </button>
                                 </div>
@@ -311,10 +242,10 @@
                                     <img src="{{asset('/images/landing-page/template-3.png')}}" alt="">
                                 </div>
                                 <div class="buttons">
-                                    <button class="btn btn-orange-red  rounded-pill">see template
+                                    <button class="btn btn-aqua-blue  rounded-pill">see template
                                         <i class="fa-solid fa-arrow-right-long"></i>
                                     </button>
-                                    <button class="btn btn-orange-red-outline rounded-pill">use template
+                                    <button class="btn btn-aqua-blue-outline rounded-pill">use template
                                         <i class="fa-solid fa-arrow-right-long"></i>
                                     </button>
                                 </div>

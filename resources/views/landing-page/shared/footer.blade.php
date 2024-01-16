@@ -6,7 +6,7 @@
                     <div class="about">
                         <a href="" class="logo">
                             <img src="{{asset('/images/landing-page/logo.png')}}" alt="">
-                            cv builder
+                            Revealify
                         </a>
                         <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ducimus
                             voluptatibus neque illo id repellat quisquam? Autem expedita earum quae laborum ipsum ad.
