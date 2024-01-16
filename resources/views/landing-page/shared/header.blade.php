@@ -5,7 +5,7 @@
                 <div class="d-flex d-lg-none align-items-center justify-content-between w-100">
                     <a class="navbar-brand" href="#">
                         <img src="{{asset('/images/landing-page/logo.png')}}" alt="">
-                        <span>Revealify.</span>
+                        <span>Revealify</span>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
