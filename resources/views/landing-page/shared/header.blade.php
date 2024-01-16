@@ -16,7 +16,7 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <a class="navbar-brand d-none d-lg-inline-flex" href="#">
                         <img src="{{asset('/images/landing-page/logo.png')}}" alt="">
-                        <span>CV Builder.</span>
+                        <span>Revealify</span>
                     </a>
                     <ul class="navbar-nav me-auto flex-grow-1 justify-content-center justify-content-lg-end flex-row mb-4 mb-lg-0 mt-4 mt-lg-0">
                         <button class="btn btn-orange-red rounded-pill me-3">Log in</button>
