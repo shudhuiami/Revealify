@@ -493,8 +493,6 @@
         new Vue({
             el: '#home',
             mounted(){
-                console.log( $('.testimonial-slider'))
-                console.log( document.querySelector('.testimonial-slider'))
                 $('.testimonial-slider').owlCarousel({
 
                     dots: false,

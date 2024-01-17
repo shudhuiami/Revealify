@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class FrontController extends Controller
 {
-    public static function home()
+    public static function landing_page()
     {
         return view('landing-page.pages.home');
     }

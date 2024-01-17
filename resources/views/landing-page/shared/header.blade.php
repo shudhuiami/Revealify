@@ -7,16 +7,18 @@
                         <img src="{{asset('/images/landing-page/logo.png')}}" alt="">
                         <span>CV Builder.</span>
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                            aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a class="navbar-brand d-none d-lg-block" href="#">
+                    <a class="navbar-brand d-none d-lg-inline-flex" href="#">
                         <img src="{{asset('/images/landing-page/logo.png')}}" alt="">
                         <span>CV Builder.</span>
                     </a>
-                    <ul class="navbar-nav me-auto mb-lg-2 flex-grow-1 justify-content-center justify-content-lg-end flex-row mb-4 mt-4 mt-lg-0">
+                    <ul class="navbar-nav me-auto flex-grow-1 justify-content-center justify-content-lg-end flex-row mb-4 mb-lg-0 mt-4 mt-lg-0">
                         <button class="btn btn-orange-red rounded-pill me-3">Log in</button>
                         <button class="btn btn-orange-red rounded-pill">Sign up</button>
                     </ul>
@@ -28,14 +30,10 @@
 
 <script>
     window.onscroll = function () {
-        console.log(1)
         const header = document.querySelector('._header');
-        console.log(window.scrollY)
-        if (window.scrollY >= 200 ) {
+        if (window.scrollY >= 200) {
             header.classList.add("active");
-            console.log(33)
-        }
-        else {
+        } else {
             header.classList.remove("active");
         }
     };
