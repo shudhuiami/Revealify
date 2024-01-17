@@ -1,0 +1,118 @@
+footer{
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+    background: no-repeat;
+    background-size: cover;
+    @media screen and (max-width: 991px) {
+        background-image: url("");
+        background-color: #192057;
+        padding: 60px 0;
+    }
+    a{
+        text-decoration: none;
+        display: inline-block;
+    }
+    .content{
+        .about{
+            .logo{
+                display: flex;
+                align-items: center;
+                img{
+                    height: 40px;
+                    width: 40px;
+                    margin-right: 5px;
+                }
+                color: #fff;
+                font-size: 20px;
+            }
+            .desc{
+                color: var(--white);
+                font-size: 14px;
+                margin: 20px 0;
+                line-height: 1.9;
+            }
+            .social-links{
+                padding-left: 0;
+                margin-bottom: 0;
+                &.orange-red{
+                    li{
+                        a{
+                            &:hover{
+                                transition: 500ms;
+                                color: var(--orange-red);
+                            }
+                        }
+                    }
+                }
+                &.aqua-blue{
+                    li{
+                        a{
+                            &:hover{
+                                transition: 500ms;
+                                color: var(--aqua-blue);
+                            }
+                        }
+                    }
+                }
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    a{
+                        display: block;
+                        color: var(--white);
+                        transition: 500ms;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .privacy, .navigate, .contact{
+            .title{
+                font-size: 15px;
+                font-weight: 600;
+                color: #ffffff;
+                margin-bottom: 10px;
+            }
+        }
+        .privacy, .navigate{
+            .menu{
+                padding-left: 0;
+                margin-bottom: 0;
+                li{
+                    list-style: none;
+                    display: block;
+                    margin-bottom: 7px;
+                    a{
+                        display: block;
+                        color: #d3cdcd;
+                        transition: 500ms;
+                        font-size: 15px;
+                        &:hover{
+                            transition: 500ms;
+                            color: var(--white);
+                        }
+                    }
+                }
+            }
+        }
+        .contact{
+            .address, .mailing-address{
+                color: #d3cdcd;
+                font-size: 15px;
+                margin-bottom: 7px;
+            }
+            .phone, .email{
+                display: block;
+                color: #d3cdcd;
+                transition: 500ms;
+                font-size: 15px;
+                margin-bottom: 7px;
+                &:hover{
+                    transition: 500ms;
+                    color: var(--white);
+                }
+            }
+        }
+    }
+}
