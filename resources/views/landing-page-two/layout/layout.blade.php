@@ -26,8 +26,8 @@
     @vite('resources/stylesheet/style.scss')
 </head>
 <body>
-@include('landing-page.shared.header')
+@include('landing-page-two.shared.header')
 @yield('content')
-@include('landing-page.shared.footer')
+@include('landing-page-two.shared.footer')
 </body>
 </html>

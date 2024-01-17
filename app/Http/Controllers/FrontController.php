@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class FrontController extends Controller
 {
-    public static function landing_page()
+    public static function landing_page_two()
     {
-        return view('landing-page.pages.home');
+        return view('landing-page-two.pages.home');
     }
 
     public static function login()
@@ -30,16 +30,6 @@ class FrontController extends Controller
     public static function reset()
     {
         return view('auth.reset');
-    }
-
-    public static function theme_selection()
-    {
-        return view('theme-selection');
-    }
-
-    public static function generate()
-    {
-        return view('generate');
     }
 
     public static function template_1()
