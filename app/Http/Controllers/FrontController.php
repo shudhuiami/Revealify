@@ -12,6 +12,11 @@ class FrontController extends Controller
         return view('landing-page.pages.home');
     }
 
+    public static function landing_page_two()
+    {
+        return view('landing-page-two.pages.home');
+    }
+
     public static function login()
     {
         return view('auth.login');

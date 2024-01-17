@@ -12,6 +12,7 @@
     --pickle-green: #a09d00;
     --white: #fff;
     --black: #000;
+    --black-8: #888;
 }
 
 @import "global";
@@ -26,6 +27,9 @@ body {
 
     /*landing page*/
     @import "./landing-page/landing_page";
+
+    /*landing page two*/
+    @import "./landing-page-two/landing_page";
 
     /*theme selection*/
     @import "theme-selection/theme-selection";
