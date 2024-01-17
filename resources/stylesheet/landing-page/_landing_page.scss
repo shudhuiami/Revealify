@@ -4,12 +4,33 @@
     color: var(--white);
     text-transform: uppercase;
     transition: .3s all ease-in-out;
+    font-weight: 600;
+    font-size: 14px;
 
     &:hover {
         transition: .3s all ease-in-out;
         background-color: darken(#ff4f4f, 10%);
 
     }
+}
+.btn-orange-red-outline{
+    background-color: transparent;
+    border: 2px solid var(--orange-red);
+    color: var(--orange-red);
+    text-transform: uppercase;
+    transition: .3s all ease-in-out;
+    font-weight: 600;
+    font-size: 14px;
+
+    &:hover {
+        transition: .3s all ease-in-out;
+        background-color: var(--orange-red);
+        color: var(--white);
+    }
+}
+
+img{
+    max-width: 100%;
 }
 
 

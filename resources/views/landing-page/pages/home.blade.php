@@ -1,12 +1,12 @@
 @extends('landing-page.layout.layout')
 @section('content')
-    <div class="home">
+    <div class="home" id="home">
         {{--banner section start--}}
         <section class="banner">
             <div class="container">
                 <div class="content">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                             <div class="left-content">
                                 <div class="promo  rounded-pill">
                                     <img src="{{asset('/images/landing-page/dollar.svg')}}" alt="">
@@ -24,7 +24,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6 mt-4 mt-lg-0">
                             <div class="right-content">
                                 <img src="{{asset('/images/landing-page/banner.png')}}" alt="">
                             </div>
@@ -41,7 +41,7 @@
             <div class="container">
                 <div class="content">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                             <div class="left-content">
                                 <div class="service-item">
                                     <div class="icon">
@@ -78,7 +78,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6 mt-4 mt-lg-0">
                             <div class="right-content">
                                 <div class="colors">
                                     <span></span>
@@ -113,7 +113,7 @@
             <div class="container">
                 <div class="content">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
                             <div class="left-content">
                                 <div class="colors">
                                     <span></span>
@@ -153,7 +153,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                             <div class="right-content text-center">
                                 <img src="{{asset('/images/landing-page/cv.png')}}" alt="">
                             </div>
@@ -163,5 +163,360 @@
             </div>
         </section>
         {{--about section end--}}
+
+
+        {{--subscribe section start--}}
+        <section class="subscribe">
+            <div class="container">
+                <div class="content">
+                    <img src="{{asset('/images/landing-page/custom.png')}}" class="custom-cv " alt="">
+                    <div class="row right-content">
+                        <div class="col-xl-5">
+                            <div class="section-title">Do you Need a Complete Custom CV Template?</div>
+                        </div>
+                        <div class="col-xl-5 text-end pe-4">
+                            <button class="btn btn-orange-red-outline">Send a Request</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{--subscribe section end--}}
+
+
+        {{--pricing section start--}}
+        <section class="pricing">
+            <div class="container">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 mb-4 mb-md-3 mb-lg-0">
+                            <div class="left-content">
+                                <div class="colors">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="section-title">Our Pricing</div>
+                                <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+                                    dictum risus, non
+                                    suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque
+                                    in.
+                                </div>
+                                <div class="free-trial">
+                                    <div class="title">Lets Build CV</div>
+                                    <div class="sub-title">with 7days of Free Trial</div>
+                                </div>
+                                <div class="policy">
+                                    <div class="title">Terms & Conditions</div>
+                                    <div class="sub-title">subject to change with perior notice</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+                            <div class="pricing-item">
+                                <div class="package"
+                                     style="background-image: url('{{asset('/images/landing-page/price.png')}}')">
+                                    <div class="amount">$9.99</div>
+                                    <div class="type">/ month</div>
+                                </div>
+                                <div class="px-4">
+                                    <div class="section-title">Monthly Pack</div>
+                                    <div class="desc">You will be billed per month, and get unlimited access to all
+                                        resume Templates and new added ones
+                                    </div>
+                                    <button class="btn btn-orange-red-outline">Get Started</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+                            <div class="pricing-item">
+                                <div class="package"
+                                     style="background-image: url('{{asset('/images/landing-page/price.png')}}')">
+                                    <div class="amount">$9.99</div>
+                                    <div class="type">/ month</div>
+                                </div>
+                                <div class="px-4">
+                                    <div class="section-title">Monthly Pack</div>
+                                    <div class="desc">You will be billed per month, and get unlimited access to all
+                                        resume Templates and new added ones
+                                    </div>
+                                    <button class="btn btn-orange-red-outline">Get Started</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{--pricing section end--}}
+
+
+        {{--cv template section start--}}
+        <section class="cv-template" style="background-image: url('{{asset('/images/landing-page/ring-bg.png')}}')">
+            <div class="container">
+                <div class="header">
+                    <div class="colors">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="section-title">Our Creative Templates</div>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="template-item">
+                                <div class="img">
+                                    <img src="{{asset('/images/landing-page/template-1.png')}}" alt="">
+                                </div>
+                                <div class="buttons">
+                                    <button class="btn btn-orange-red  rounded-pill">see template
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </button>
+                                    <button class="btn btn-orange-red-outline rounded-pill">use template
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="template-item">
+                                <div class="img">
+                                    <img src="{{asset('/images/landing-page/template-2.png')}}" alt="">
+                                </div>
+                                <div class="buttons">
+                                    <button class="btn btn-orange-red  rounded-pill">see template
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </button>
+                                    <button class="btn btn-orange-red-outline rounded-pill">use template
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="template-item">
+                                <div class="img">
+                                    <img src="{{asset('/images/landing-page/template-3.png')}}" alt="">
+                                </div>
+                                <div class="buttons">
+                                    <button class="btn btn-orange-red  rounded-pill">see template
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </button>
+                                    <button class="btn btn-orange-red-outline rounded-pill">use template
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{--cv template section end--}}
+
+
+        {{--features section start--}}
+        <section class="feature">
+            <div class="container">
+                <div class="header">
+                    <div class="colors">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="section-title">Our Main Features</div>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut
+                        ut felis congue nisl hendrerit commodo.
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="feature-item">
+                                <div class="icon">
+                                    <img src="{{asset('/images/landing-page/f1.png')}}" alt="">
+                                </div>
+                                <div class="title">Proven CV Templates to increase Hiring Chance</div>
+                                <div class="desc">Lorem ipsum dolor sit amet, consecte adipiscing elit. Nulla neque
+                                    quam, maxim us ut accumsan ut, posuere sit Lorem ipsum adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="feature-item">
+                                <div class="icon">
+                                    <img src="{{asset('/images/landing-page/f2.png')}}" alt="">
+                                </div>
+                                <div class="title">Creative, Modern and Clean Templates Design</div>
+                                <div class="desc">Lorem ipsum dolor sit amet, consecte adipiscing elit. Nulla neque
+                                    quam, maxim us ut accumsan ut, posuere sit Lorem ipsum adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="feature-item">
+                                <div class="icon">
+                                    <img src="{{asset('/images/landing-page/f3.png')}}" alt="">
+                                </div>
+                                <div class="title">Easy and Intuitive Online CV and Resume Builder</div>
+                                <div class="desc">Lorem ipsum dolor sit amet, consecte adipiscing elit. Nulla neque
+                                    quam, maxim us ut accumsan ut, posuere sit Lorem ipsum adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="feature-item">
+                                <div class="icon">
+                                    <img src="{{asset('/images/landing-page/f4.png')}}" alt="">
+                                </div>
+                                <div class="title">Free to use. Developed by hiring professionals.</div>
+                                <div class="desc">Lorem ipsum dolor sit amet, consecte adipiscing elit. Nulla neque
+                                    quam, maxim us ut accumsan ut, posuere sit Lorem ipsum adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="feature-item">
+                                <div class="icon">
+                                    <img src="{{asset('/images/landing-page/f5.png')}}" alt="">
+                                </div>
+                                <div class="title">Recruiter Approved Phrases with Module Notification</div>
+                                <div class="desc">Lorem ipsum dolor sit amet, consecte adipiscing elit. Nulla neque
+                                    quam, maxim us ut accumsan ut, posuere sit Lorem ipsum adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="feature-item">
+                                <div class="icon">
+                                    <img src="{{asset('/images/landing-page/f6.png')}}" alt="">
+                                </div>
+                                <div class="title">Fast Easy CV and Resume Formatting</div>
+                                <div class="desc">Lorem ipsum dolor sit amet, consecte adipiscing elit. Nulla neque
+                                    quam, maxim us ut accumsan ut, posuere sit Lorem ipsum adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{--features section end--}}
+
+
+        {{--testimonial section start--}}
+        <section class="testimonial">
+            <div class="container">
+                <div class="header">
+                    <div class="colors">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="section-title">Your Success, Our Inspiration</div>
+                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut
+                        ut felis congue nisl hendrerit commodo.
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="testimonial-slider owl-carousel">
+                        <div class="testimonial-item">
+                            <div class="icon">
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <div class="img">
+                                <img src="{{asset('/images/landing-page/t1.jpg')}}" alt="">
+                            </div>
+                            <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nostrum adipisci
+                                porro quisquam. Rem, earum, tenetur? Architecto et, earum repudiandae.
+                            </div>
+                            <div class="name">Sunny Khan</div>
+                            <div class="role">One of our clients</div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="icon">
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <div class="img">
+                                <img src="{{asset('/images/landing-page/t1.jpg')}}" alt="">
+                            </div>
+                            <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nostrum adipisci
+                                porro quisquam. Rem, earum, tenetur? Architecto et, earum repudiandae.
+                            </div>
+                            <div class="name">Sunny Khan</div>
+                            <div class="role">One of our clients</div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="icon">
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <div class="img">
+                                <img src="{{asset('/images/landing-page/t1.jpg')}}" alt="">
+                            </div>
+                            <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nostrum adipisci
+                                porro quisquam. Rem, earum, tenetur? Architecto et, earum repudiandae.
+                            </div>
+                            <div class="name">Sunny Khan</div>
+                            <div class="role">One of our clients</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{--testimonial section end--}}
     </div>
+
+    <script>
+        new Vue({
+            el: '#home',
+            mounted(){
+                console.log( $('.testimonial-slider'))
+                console.log( document.querySelector('.testimonial-slider'))
+                $('.testimonial-slider').owlCarousel({
+
+                    dots: false,
+                    margin: 20,
+                    autoplay: true,
+                    loop: true,
+                    animateOut: 'fadeOut',
+                    animateIn: 'fadeIn',
+                    responsive: {
+                        0: {
+                            items: 1,
+                        },
+                        768: {
+                            items: 2,
+                        },
+                        1200: {
+                            items: 3,
+                        }
+
+                    }
+                })
+            }
+        })
+    </script>
 @endsection
