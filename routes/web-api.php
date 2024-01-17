@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'auth'], function () {
     Route::post('registration', [AuthController::class, 'register'])->name('user.registration');
-    Route::post('verify/{token}', [AuthController::class, 'VerifyAccount'])->name('user.verify.account');
+    Route::get('verify/{token}', [AuthController::class, 'VerifyAccount'])->name('user.verify.account');
     Route::post('login', [AuthController::class, 'login'])->name('lvs.customer.home');
     Route::post('reset-password', [AuthController::class, 'resetPassword'])->name('lvs.customer.home');
     Route::post('update-password', [AuthController::class, 'updatePassword'])->name('lvs.customer.home');

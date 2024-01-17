@@ -18,7 +18,8 @@ class AuthRepository
     {
         $user = new User();
         $user->avatar = $userData['avatar'];
-        $user->name = $userData['name'];
+        $user->first_name = $userData['first_name'];
+        $user->last_name = $userData['last_name'];
         $user->email = $userData['email'];
         $user->phone = $userData['phone'];
         $user->password = $userData['password'];
@@ -29,7 +30,7 @@ class AuthRepository
         };
 
         Mail::send('emails.verify-account', ['user' => $user], function ($message) use ($user) {
-            $message->to($user->email, $user->name)->subject(env('APP_NAME') . 'Verify your account :');
+            $message->to($user->email, $user->first_name)->subject(env('APP_NAME') . 'Verify your account :');
             $message->from(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'));
         });
 
