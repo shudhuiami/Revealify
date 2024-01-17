@@ -35,6 +35,26 @@ footer{
             .social-links{
                 padding-left: 0;
                 margin-bottom: 0;
+                &.orange-red{
+                    li{
+                        a{
+                            &:hover{
+                                transition: 500ms;
+                                color: var(--orange-red);
+                            }
+                        }
+                    }
+                }
+                &.aqua-blue{
+                    li{
+                        a{
+                            &:hover{
+                                transition: 500ms;
+                                color: var(--aqua-blue);
+                            }
+                        }
+                    }
+                }
                 li{
                     list-style: none;
                     display: inline-block;
@@ -43,10 +63,6 @@ footer{
                         color: var(--white);
                         transition: 500ms;
                         margin-right: 10px;
-                        &:hover{
-                            transition: 500ms;
-                            color: var(--orange-red);
-                        }
                     }
                 }
             }

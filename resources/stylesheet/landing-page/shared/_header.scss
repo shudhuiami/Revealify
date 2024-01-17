@@ -12,7 +12,12 @@ header{
             &:hover{
                 span{
                     transition: 500ms;
-                    color: var(--orange-red);
+                    &.aqua-blue{
+                        color: var(--aqua-blue);
+                    }
+                    &.orange-red{
+                        color: var(--orange-red);
+                    }
                 }
             }
             span{
@@ -24,9 +29,9 @@ header{
             }
         }
         .navbar-nav{
-            .btn-orange-red{
+            .btn-orange-red, .btn-aqua-blue{
                 width: 120px;
-            }
+             }
         }
     }
 }

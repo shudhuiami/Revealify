@@ -11,7 +11,7 @@
                         <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ducimus
                             voluptatibus neque illo id repellat quisquam? Autem expedita earum quae laborum ipsum ad.
                         </div>
-                        <ul class="social-links orange-red">
+                        <ul class="social-links aqua-blue">
                             <li>
                                 <a href="">
                                     <i class="fa-brands fa-facebook-f"></i>
