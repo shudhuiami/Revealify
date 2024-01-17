@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/landing-page-two', [FrontController::class, 'landing_page'])->name('landing.page.two');
+Route::get('/landing-page-two', [FrontController::class, 'landing_page_two'])->name('landing.page.two');
 Route::get('/login', [FrontController::class, 'login'])->name('login');
 Route::get('/register', [FrontController::class, 'register'])->name('register');
 Route::get('/forgot', [FrontController::class, 'forgot'])->name('forgot');
