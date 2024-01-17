@@ -23,6 +23,10 @@ body {
     /*auth*/
     @import "auth/login";
 
+
+    /*landing page*/
+    @import "./landing-page/landing_page";
+
     /*theme selection*/
     @import "theme-selection/theme-selection";
 
