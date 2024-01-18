@@ -12,7 +12,7 @@
             <div class="auth-box-half px-lg-5">
                 <!--Authentication form start-->
                 <form action="" class="auth-form p-sm-5 p-4" @submit.prevent="register">
-                    <div class="alert-success" v-if="msg">@{{ msg }}</div>
+                    <div class="alert alert-success" v-if="message">@{{ message }}</div>
                     <div class="logo text-uppercase fs-4 fw-bold mt-3 pb-4">Revealify</div>
 
                     <h3 class="mb-3 fw-bold fs-2 auth-title text-uppercase">User Signup</h3>
@@ -102,12 +102,13 @@
                 },
                 loading:false,
                 error:null,
-                msg: ''
+                message: ''
             },
             methods:  {
                 register: function () {
                     this.loading = true;
                     this.error = null;
+                    this.message = null;
                     axios.post('{{ route('user.registration') }}', this.formData).then(response => {
                         this.loading = false;
                         const res = response.data;

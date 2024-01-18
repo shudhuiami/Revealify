@@ -69,7 +69,7 @@ class AuthController extends Controller
 
         // Request Validation
         $validator = Validator::make($input, [
-            'username' => 'required|min:3',
+            'email' => 'required|min:3',
             'password' => 'required|min:6'
         ]);
 
@@ -78,15 +78,15 @@ class AuthController extends Controller
         }
 
         try {
-            $userInfo = User::where('username', $input['username'])->orWhere('email', $input['username'])->first();
+            $userInfo = User::where('email', $input['email'])->first();
 
             if ($userInfo == null) {
-                return ['status' => 500, 'error' => ['username' => 'The user does not exist. Please re-check your credentials.']];
+                return ['status' => 500, 'error' => ['email' => ['The user does not exist. Please re-check your credentials.']]];
             }
 
             if (Hash::check($input['password'], $userInfo['password'])) {
                 $credential = [
-                    'username' => $userInfo->username,
+                    'email' => $userInfo->email,
                     'password' => $input['password']
                 ];
                 $remember = isset($input['remember']) && $input['remember'] == 1;
@@ -94,7 +94,7 @@ class AuthController extends Controller
                     return ['status' => 200, 'msg' => 'Login Successful.'];
                 }
             }
-            return ['status' => 500, 'error' => ['password' => 'The credentials are invalid! Try again.']];
+            return ['status' => 500, 'error' => ['password' => ['The credentials are invalid! Try again.']]];
 
         } catch (\Exception $e) {
             return response()->json(['status' => 500, 'error' => $e->getMessage()],200);
@@ -106,13 +106,13 @@ class AuthController extends Controller
     {
         $input = $request->input();
         // Request Validation
-        $validator = Validator::make($input, ['username' => 'required']);
+        $validator = Validator::make($input, ['email' => 'required']);
         if ($validator->fails()) {
             return response()->json(['status' => 500, 'error' => $validator->errors()],200);
         }
         try {
             // Find User Details
-            $user = User::where('username', $input['username'])->orWhere('email', $input['username'])->first();
+            $user = User::where('email', $input['email'])->first();
 
             if ($user != null) {
 
@@ -121,14 +121,14 @@ class AuthController extends Controller
                 $user->updated_at = Carbon::now('UTC');
                 $user->save();
 
-                Mail::send('emails.reset-password', ['user' => $user], function ($message) use ($user) {
+                Mail::send('emails.forgot-request', ['user' => $user], function ($message) use ($user) {
                     $message->to($user->email, $user->name)->subject(env('APP_NAME').': Reset Password Code');
                     $message->from(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'));
                 });
                 return response()->json(['status' => 200, 'msg' => 'A 6-digit password reset code has been sent to your email.'],200);
 
             } else {
-                return response()->json(['status' => 500, 'error' => ['username' => ['User not found. Provide valid username/email.']]],200);
+                return response()->json(['status' => 500, 'error' => ['email' => ['User not found. Provide valid username/email.']]],200);
             }
 
         } catch (\Exception $e) {
@@ -142,7 +142,7 @@ class AuthController extends Controller
         // Request Validation
         $validator = Validator::make($input, [
             'code' => 'required|integer|min:6',
-            'username' => 'required',
+            'email' => 'required',
             'password' => 'required|min:6|confirmed'
         ]);
         if ($validator->fails()) {
@@ -153,8 +153,7 @@ class AuthController extends Controller
             // Find User Details
             $user = User::where('reset_code', $input['code'])
                 ->where(function ($q) use($input){
-                    $q->where('username', $input['username']);
-                    $q->orWhere('email', $input['username']);
+                    $q->where('email', $input['email']);
                 })
                 ->first();
             if ($user != null) {

@@ -18,6 +18,7 @@ Route::get('/landing-page-two', [FrontController::class, 'landing_page_two'])->n
 Route::get('/login', [FrontController::class, 'login'])->name('login');
 Route::get('/register', [FrontController::class, 'register'])->name('register');
 Route::get('/forgot', [FrontController::class, 'forgot'])->name('forgot');
+Route::get('/reset', [FrontController::class, 'reset'])->name('reset');
 
 Route::get('/generate', [FrontController::class, 'generate'])->name('generate');
 
