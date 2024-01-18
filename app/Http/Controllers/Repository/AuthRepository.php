@@ -37,24 +37,4 @@ class AuthRepository
         return $user;
     }
 
-
-    /**
-     * @throws Exception
-     */
-    public static function forgotRequest(Users $userInfo):bool
-    {
-
-        $activation_token = md5(uniqid(uniqid(), true));
-        $userInfo->reset_code = $activation_token;
-        if (!$userInfo->save()){
-            throw new Exception('Cannot update user', 422);
-        };
-
-        Mail::send('emails.forgot-request', ['user' => $userInfo], function ($message) use ($userInfo) {
-            $message->to($userInfo->email, $userInfo->first_name)->subject(env('APP_NAME') . 'Forgot Request :');
-            $message->from(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'));
-        });
-        return true;
-    }
-
 }

@@ -21,5 +21,9 @@ Route::group(['prefix' => 'auth'], function () {
     Route::post('login', [AuthController::class, 'login'])->name('lvs.customer.home');
     Route::post('reset-password', [AuthController::class, 'resetPassword'])->name('lvs.customer.home');
     Route::post('update-password', [AuthController::class, 'updatePassword'])->name('lvs.customer.home');
-}
-);
+});
+
+Route::group(['prefix' => 'resume'], function () {
+    Route::post('generate', [AuthController::class, 'resumeGenerator'])->name('user.registration');
+});
+
