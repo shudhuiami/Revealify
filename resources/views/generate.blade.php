@@ -25,7 +25,7 @@
                 <header class="py-3 px-3 px-sm-5 shadow-sm fixed-top bg-white">
                     <div class="d-flex align-items-center justify-content-between">
                         <h2>Generate Form</h2>
-                        <button type="submit" class="btn btn-orange-red rounded-pill">Generate</button>
+                        <button type="submit" class="btn btn-aqua-blue rounded-pill rounded-pill">Generate</button>
                     </div>
                 </header>
 
@@ -34,7 +34,7 @@
                     <div class="mb-5 avatar">
                         <div class="img" v-if="formData.avatar != null">
                             <img :src="formData.avatar" alt="avatar">
-                            <button type="button" class="btn btn-orange-red btn-sm remove-avatar" @click="avatar = null">
+                            <button type="button" class="btn btn-aqua-blue btn-sm remove rounded-circle-avatar" @click="avatar = null">
                                 <img src="/images/generate-form/delete.png" alt="">
                             </button>
                         </div>
@@ -108,14 +108,14 @@
                     <div class="mb-5">
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             <div class="fw-bold">Education</div>
-                            <button type="button" class="btn btn-orange-red btn-sm add rounded-pill" @click="addEducationFields">
+                            <button type="button" class="btn btn-aqua-blue btn-sm add" @click="addEducationFields">
                                 <img src="/images/generate-form/add.png" alt="" height="20" width="20" class="me-0 me-sm-2">
                                 <span class="d-none d-sm-inline-block">Add one more row</span>
                             </button>
                         </div>
                         <div v-for="(each, index) in formData.education">
                             <div class="mb-3 text-end" v-if="index != 0">
-                                <button type="button" class="btn btn-orange-red btn-sm remove" @click="formData.education.splice(index, 1)">
+                                <button type="button" class="btn btn-aqua-blue btn-sm remove rounded-circle" @click="formData.education.splice(index, 1)">
                                     <img src="/images/generate-form/remove.png" alt="" height="20" width="20">
                                 </button>
                             </div>
@@ -152,14 +152,14 @@
                     <div class="mb-5">
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             <div class="fw-bold">Skills</div>
-                            <button type="button" class="btn btn-orange-red btn-sm add" @click="addSkillFields">
+                            <button type="button" class="btn btn-aqua-blue btn-sm add" @click="addSkillFields">
                                 <img src="/images/generate-form/add.png" alt="" height="20" width="20" class="me-0 me-sm-2">
                                 <span class="d-none d-sm-inline-block">Add one more row</span>
                             </button>
                         </div>
                         <div v-for="(each, index) in  formData.skills">
                             <div class="mb-2 text-end" v-if="index != 0">
-                                <button type="button" class="btn btn-orange-red btn-sm remove" @click="formData.skills.splice(index, 1)">
+                                <button type="button" class="btn btn-aqua-blue btn-sm remove rounded-circle" @click="formData.skills.splice(index, 1)">
                                     <img src="/images/generate-form/remove.png" alt="" height="20" width="20">
                                 </button>
                             </div>
@@ -190,14 +190,14 @@
                     <div class="mb-5">
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             <div class="fw-bold">Job Experience</div>
-                            <button type="button" class="btn btn-orange-red btn-sm add" @click="addJobExperienceFields">
+                            <button type="button" class="btn btn-aqua-blue btn-sm add" @click="addJobExperienceFields">
                                 <img src="/images/generate-form/add.png" alt="" height="20" width="20" class="me-0 me-sm-2">
                                 <span class="d-none d-sm-inline-block">Add one more row</span>
                             </button>
                         </div>
                         <div v-for="(each, index) in formData.experience">
                             <div class="mb-2 text-end" v-if="index != 0">
-                                <button type="button" class="btn btn-orange-red btn-sm remove" @click="formData.experience.splice(index, 1)">
+                                <button type="button" class="btn btn-aqua-blue btn-sm remove rounded-circle" @click="formData.experience.splice(index, 1)">
                                     <img src="/images/generate-form/remove.png" alt="" height="20" width="20">
                                 </button>
                             </div>
@@ -240,14 +240,14 @@
                     <div class="mb-5">
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             <div class="fw-bold">Reference</div>
-                            <button type="button" class="btn btn-orange-red btn-sm add" @click="addReferenceFields">
+                            <button type="button" class="btn btn-aqua-blue btn-sm add" @click="addReferenceFields">
                                 <img src="/images/generate-form/add.png" alt="" height="20" width="20" class="me-0 me-sm-2">
                                 <span class="d-none d-sm-inline-block">Add one more row</span>
                             </button>
                         </div>
                         <div v-for="(each, index) in formData.reference">
                             <div class="mb-2 text-end" v-if="index != 0">
-                                <button type="button" class="btn btn-orange-red btn-sm remove" @click="formData.reference.splice(index, 1)">
+                                <button type="button" class="btn btn-aqua-blue btn-sm remove rounded-circle" @click="formData.reference.splice(index, 1)">
                                     <img src="/images/generate-form/remove.png" alt="" height="16" width="16">
                                 </button>
                             </div>
@@ -342,6 +342,7 @@
             methods: {
                 generateForm(){
                     console.log(this.formData)
+                    window.location.href = "{{route('template.download')}}"
                 },
               addEducationFields(){
                   if(this.formData.education.length < 3){
@@ -351,7 +352,7 @@
                           start_date: '',
                           end_date: ''
                       });
-                      this.initFlat(this.education.length - 1)
+                      this.initFlat(this.formData.education.length - 1)
                   }
               },
                 addSkillFields(){
@@ -373,6 +374,7 @@
                               short_description: '',
                           });
                   }
+                    this.initFlat(this.formData.experience.length - 1)
               },
                 addReferenceFields(){
                   if(this.formData.reference.length < 3){
@@ -389,7 +391,7 @@
                   this.avatar = URL.createObjectURL(e.target.files[0]);
               },
                 initFlat(id){
-                    console.log(id)
+                    console.log(document.getElementById(`#start_date_${id}`))
                     setTimeout(() => {
                         flatpickr(`#start_date_${id}`, {
                             plugins: [
