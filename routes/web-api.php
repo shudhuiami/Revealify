@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\ResumeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +25,6 @@ Route::group(['prefix' => 'auth'], function () {
 });
 
 Route::group(['prefix' => 'resume'], function () {
-    Route::post('generate', [AuthController::class, 'resumeGenerator'])->name('user.registration');
+    Route::post('generate', [ResumeController::class, 'resumeGenerator'])->name('user.registration');
 });
 
