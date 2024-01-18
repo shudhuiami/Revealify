@@ -28,7 +28,7 @@ class ResumeController extends Controller
             'education.*.title' => 'required',
             'education.*.school' => 'required',
             'education.*.start_date' => 'required|date',
-            'education.*.end_date' => 'required|date',
+            'education.*.end_date' => 'required|date|after_or_equal:education.*.start_date',
 
             'skills' => 'required|array|min:1',
             'skills.*.title' => 'required',
@@ -39,7 +39,7 @@ class ResumeController extends Controller
             'experience.*.designation' => 'required',
             'experience.*.company' => 'required',
             'experience.*.start_date' => 'required|date',
-            'experience.*.end_date' => 'required|date',
+            'experience.*.end_date' => 'required|date|after_or_equal:experience.*.start_date',
             'experience.*.short_description' => 'required',
 
             'reference' => 'sometimes|array',
@@ -53,7 +53,7 @@ class ResumeController extends Controller
         if ($validator->fails()) {
             return response()->json(['errors' => $validator->errors()], 422);
         }
-        $pdf = Pdf::loadView('templates.template_'.$inputData['template']);
+        $pdf = Pdf::loadView('templates.template_'.$inputData['template'], $inputData);
 
         // Generate a unique filename for the PDF (you can customize this as needed)
         $filename = 'resume_' . time() . '.pdf';
@@ -64,6 +64,6 @@ class ResumeController extends Controller
         // Return the downloadable link
         $downloadLink = Storage::disk('public')->url($filename);
 
-        return response()->json(['download_link' => $downloadLink]);
+        return response()->json(['status' => 200, 'download_link' => $downloadLink]);
     }
 }

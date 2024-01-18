@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\MediaController;
 use App\Http\Controllers\ResumeController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,12 +20,16 @@ use Illuminate\Support\Facades\Route;
 Route::group(['prefix' => 'auth'], function () {
     Route::post('registration', [AuthController::class, 'register'])->name('user.registration');
     Route::get('verify/{token}', [AuthController::class, 'VerifyAccount'])->name('user.verify.account');
-    Route::post('login', [AuthController::class, 'login'])->name('lvs.customer.home');
-    Route::post('reset-password', [AuthController::class, 'resetPassword'])->name('lvs.customer.home');
-    Route::post('update-password', [AuthController::class, 'updatePassword'])->name('lvs.customer.home');
+    Route::post('login', [AuthController::class, 'login'])->name('user.login');
+    Route::post('reset-password', [AuthController::class, 'resetPassword'])->name('user.reset.password');
+    Route::post('update-password', [AuthController::class, 'updatePassword'])->name('user.update.password');
 });
 
 Route::group(['prefix' => 'resume'], function () {
     Route::post('generate', [ResumeController::class, 'resumeGenerator'])->name('user.registration');
+});
+
+Route::group(['prefix'=>'media'], function (){
+    Route::post('upload', [MediaController::class, 'uploadMedia'])->name('global.media.upload');
 });
 
