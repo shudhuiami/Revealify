@@ -23,7 +23,7 @@
             </div>
             <br><br>
             <div style="font-weight: bold; text-align: center;">
-                <a href="{{route('change.password',['token' => $user->reset_code])}}" style="text-decoration: none; color: #ffffff; background-color: #000000; display: inline-block; padding: 12px 20px; border-radius: 5px;">
+                <a href="{{route('reset',['token' => $user->reset_code])}}" style="text-decoration: none; color: #ffffff; background-color: #000000; display: inline-block; padding: 12px 20px; border-radius: 5px;">
                     Change Password
                 </a>
             </div>

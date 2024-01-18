@@ -31,7 +31,6 @@ class FrontController extends Controller
     {
         return view('auth.forgot');
     }
-
     public static function reset()
     {
         return view('auth.reset');
