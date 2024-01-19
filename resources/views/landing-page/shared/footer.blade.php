@@ -1,12 +1,12 @@
 <footer style="background-image: url('{{asset('/images/landing-page/footer-bg.png')}}')">
     <div class="container">
         <div class="content">
-            <div class="row">
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="row justify-content-between">
+                <div class="col-md-6 mb-4 mb-md-0">
                     <div class="about">
                         <a href="" class="logo">
-                            <img src="{{asset('/images/landing-page/logo.png')}}" alt="">
-                            Revealify
+                            <img src="{{asset('/images/landing-page/revealify.png')}}" alt="">
+{{--                            Revealify--}}
                         </a>
                         <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ducimus
                             voluptatibus neque illo id repellat quisquam? Autem expedita earum quae laborum ipsum ad.
@@ -40,51 +40,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="privacy">
-                        <div class="title">PRIVACY & TOS</div>
-                        <ul class="menu">
-                            <li>
-                                <a href="">Advertiser Agreement</a>
-                            </li>
-                            <li>
-                                <a href="">Acceptable Use Policy</a>
-                            </li>
-                            <li>
-                                <a href="">Privacy Policy</a>
-                            </li>
-                            <li>
-                                <a href="">Technology Privacy</a>
-                            </li>
-                            <li>
-                                <a href="">Developer Agreement</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-2 mb-4 mb-lg-0">
-                    <div class="navigate">
-                        <div class="title">NAVIGATE</div>
-                        <ul class="menu">
-                            <li>
-                                <a href="">Advertisers</a>
-                            </li>
-                            <li>
-                                <a href="">Developers</a>
-                            </li>
-                            <li>
-                                <a href="">Resources</a>
-                            </li>
-                            <li>
-                                <a href="">Company</a>
-                            </li>
-                            <li>
-                                <a href="">Connect</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="col-md-6 mb-4 mb-md-0 d-flex justify-content-start justify-content-md-end">
                     <div class="contact">
                         <div class="title">CONTACT US</div>
                         <div class="info">

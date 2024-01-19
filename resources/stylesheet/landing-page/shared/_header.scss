@@ -1,9 +1,10 @@
 header{
     background-color: var(--white);
+    box-shadow: none;
     transition: 500ms;
     &.active{transition: 500ms;
         transition: 500ms;
-        background-color: #ccd7e8;
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     }
     .navbar{
         .navbar-brand{
@@ -18,6 +19,12 @@ header{
                     &.orange-red{
                         color: var(--orange-red);
                     }
+                }
+            }
+            img{
+                width: 200px;
+                @media screen and (max-width: 991px) {
+                    width: 150px;
                 }
             }
             span{
