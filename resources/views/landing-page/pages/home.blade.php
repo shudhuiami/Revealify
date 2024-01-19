@@ -12,21 +12,20 @@
                                     <img src="{{asset('/images/landing-page/dollar.svg')}}" alt="">
                                     <span>Discover The Easiest ways to Build Your CV!</span>
                                 </div>
-                                <div class="title">Online CV Builder With Creative Templates.</div>
-                                <div class="desc">Our Perfect resume builder takes the hassle out of resume writing.
-                                    Choose
-                                    from several templates and follow easy prompts to create the perfect job-ready
-                                    resume.
+                                <div class="title">Welcome to Revealify - Unveil Your Professional Potential</div>
+                                <div class="desc">Ready to showcase your skills and experience in style? Welcome to
+                                    Revealify, where we empower you to create stunning resumes that captivate employers.
                                 </div>
                                 <div class="buttons">
-                                    <a href="{{route('theme.selection')}}" class="btn btn-aqua-blue me-3">choose template</a>
+                                    <a href="{{route('theme.selection')}}" class="btn btn-aqua-blue me-3">choose
+                                        template</a>
                                     <button class="btn btn-aqua-blue">contact us</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 mt-4 mt-lg-0">
-                            <div class="right-content">
-                                <img src="{{asset('/images/landing-page/banner.png')}}" alt="">
+                        <div class="col-lg-6 mt-5 mt-lg-0">
+                            <div class="right-content text-center text-lg-end">
+                                <img src="{{asset('/images/landing-page/banner.svg')}}" alt="">
                             </div>
                         </div>
                     </div>
@@ -45,34 +44,46 @@
                             <div class="left-content">
                                 <div class="service-item">
                                     <div class="icon">
-                                        <img src="{{asset('/images/landing-page/d1.png')}}" alt="">
+                                        <img src="{{asset('/images/landing-page/f1.png')}}" alt="">
                                     </div>
                                     <div class="info">
-                                        <div class="title">Easy Online Resume Builder</div>
-                                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Laudantium modi assumenda.
+                                        <div class="title">Dazzling Templates:</div>
+                                        <div class="desc">Explore our curated collection of captivating and
+                                            sophisticated templates designed to make your resume unforgettable.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="service-item">
                                     <div class="icon">
-                                        <img src="{{asset('/images/landing-page/d2.png')}}" alt="">
+                                        <img src="{{asset('/images/landing-page/f2.png')}}" alt="">
                                     </div>
                                     <div class="info">
-                                        <div class="title">Step By Step Expert Tips</div>
-                                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit skaj
-                                            gjska consectetur adipisicing elit.
+                                        <div class="title">Monthly Revelations:</div>
+                                        <div class="desc">Stay ahead of the curve! We unveil new templates every month
+                                            to keep your options fresh and on-trend.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="service-item">
                                     <div class="icon">
-                                        <img src="{{asset('/images/landing-page/d3.png')}}" alt="">
+                                        <img src="{{asset('/images/landing-page/f3.png')}}" alt="">
                                     </div>
                                     <div class="info">
-                                        <div class="title">Recruiter Approved Phrases</div>
-                                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Laudantium modi.
+                                        <div class="title">Intuitive Interface:</div>
+                                        <div class="desc">Crafting a professional resume is a breeze with our
+                                            user-friendly platform. Experience seamless design and hassle-free
+                                            customization.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="icon">
+                                        <img src="{{asset('/images/landing-page/f4.png')}}" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <div class="title">Account Benefits:</div>
+                                        <div class="desc">Elevate your experience by creating an account. Save your
+                                            resumes and access them anytime, anywhere.
                                         </div>
                                     </div>
                                 </div>
@@ -89,14 +100,14 @@
                                     <span></span>
                                     <span></span>
                                 </div>
-                                <div class="section-title">Why Choose Our Platform?</div>
+                                <div class="section-title">Why Choose Revealify?</div>
                                 <div class="desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non
-                                    suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque
-                                    in. <br> <br>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molestiae
-                                    facere, natus reprehenderit eaque eum, autem ipsam. Magni, error. Tempora odit
-                                    laborum iure inventore possimus laboriosam qui nam. Fugit!
+                                    Unleash the power of Revealify to transform your resume into a work of art! With
+                                    dazzling templates, monthly revelations of new designs, an intuitive interface, and
+                                    exclusive account benefits, Revealify offers a seamless and stylish resume-building
+                                    experience. <br> <br>
+                                    Elevate your professional presence and make a lasting impression with
+                                    Revealify – where your potential gets the spotlight it deserves.
                                 </div>
                                 <button class="btn btn-aqua-blue">lets build your cv</button>
                             </div>
@@ -186,77 +197,6 @@
         {{--subscribe section end--}}
 
 
-        {{--pricing section start--}}
-        <section class="pricing">
-            <div class="container">
-                <div class="content">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4 mb-4 mb-md-3 mb-lg-0">
-                            <div class="left-content">
-                                <div class="colors">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                                <div class="section-title">Our Pricing</div>
-                                <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-                                    dictum risus, non
-                                    suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque
-                                    in.
-                                </div>
-                                <div class="free-trial">
-                                    <div class="title">Lets Build CV</div>
-                                    <div class="sub-title">with 7days of Free Trial</div>
-                                </div>
-                                <div class="policy">
-                                    <div class="title">Terms & Conditions</div>
-                                    <div class="sub-title">subject to change with perior notice</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
-                            <div class="pricing-item">
-                                <div class="package"
-                                     style="background-image: url('{{asset('/images/landing-page/price.png')}}')">
-                                    <div class="amount">$9.99</div>
-                                    <div class="type">/ month</div>
-                                </div>
-                                <div class="px-4">
-                                    <div class="section-title">Monthly Pack</div>
-                                    <div class="desc">You will be billed per month, and get unlimited access to all
-                                        resume Templates and new added ones
-                                    </div>
-                                    <button class="btn btn-aqua-blue-outline">Get Started</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
-                            <div class="pricing-item">
-                                <div class="package"
-                                     style="background-image: url('{{asset('/images/landing-page/price.png')}}')">
-                                    <div class="amount">$9.99</div>
-                                    <div class="type">/ month</div>
-                                </div>
-                                <div class="px-4">
-                                    <div class="section-title">Monthly Pack</div>
-                                    <div class="desc">You will be billed per month, and get unlimited access to all
-                                        resume Templates and new added ones
-                                    </div>
-                                    <button class="btn btn-aqua-blue-outline">Get Started</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        {{--pricing section end--}}
-
-
         {{--cv template section start--}}
         <section class="cv-template" style="background-image: url('{{asset('/images/landing-page/ring-bg.png')}}')">
             <div class="container">
@@ -342,9 +282,10 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <div class="section-title">Our Main Features</div>
-                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut
-                        ut felis congue nisl hendrerit commodo.
+                    <div class="section-title">Main Features of Revealify</div>
+                    <div class="desc">Join Revealify and experience these standout features that set us apart in the
+                        world of resume building. Elevate your career journey with a platform designed to reveal your
+                        true professional potential.
                     </div>
                 </div>
                 <div class="content">
@@ -354,9 +295,10 @@
                                 <div class="icon">
                                     <img src="{{asset('/images/landing-page/f1.png')}}" alt="">
                                 </div>
-                                <div class="title">Proven CV Templates to increase Hiring Chance</div>
-                                <div class="desc">Lorem ipsum dolor sit amet, consecte adipiscing elit. Nulla neque
-                                    quam, maxim us ut accumsan ut, posuere sit Lorem ipsum adipiscing elit.
+                                <div class="title">Dazzling Templates:</div>
+                                <div class="desc">Choose from a curated selection of stunning and professionally
+                                    designed templates that cater to various industries. Make a visual impact with
+                                    styles that reveal your unique professional personality.
                                 </div>
                             </div>
                         </div>
@@ -365,9 +307,10 @@
                                 <div class="icon">
                                     <img src="{{asset('/images/landing-page/f2.png')}}" alt="">
                                 </div>
-                                <div class="title">Creative, Modern and Clean Templates Design</div>
-                                <div class="desc">Lorem ipsum dolor sit amet, consecte adipiscing elit. Nulla neque
-                                    quam, maxim us ut accumsan ut, posuere sit Lorem ipsum adipiscing elit.
+                                <div class="title">Monthly Revelations:</div>
+                                <div class="desc">Stay ahead of the competition with our commitment to constant
+                                    innovation. Every month, we unveil new templates, ensuring that your resume reflects
+                                    the latest trends and captures attention.
                                 </div>
                             </div>
                         </div>
@@ -376,9 +319,10 @@
                                 <div class="icon">
                                     <img src="{{asset('/images/landing-page/f3.png')}}" alt="">
                                 </div>
-                                <div class="title">Easy and Intuitive Online CV and Resume Builder</div>
-                                <div class="desc">Lorem ipsum dolor sit amet, consecte adipiscing elit. Nulla neque
-                                    quam, maxim us ut accumsan ut, posuere sit Lorem ipsum adipiscing elit.
+                                <div class="title">Intuitive Interface:</div>
+                                <div class="desc">Crafting your resume is a breeze with our user-friendly interface.
+                                    Effortlessly input your details, customize layouts, and preview your changes in
+                                    real-time. No design skills required – just reveal your best self effortlessly.
                                 </div>
                             </div>
                         </div>
@@ -387,9 +331,10 @@
                                 <div class="icon">
                                     <img src="{{asset('/images/landing-page/f4.png')}}" alt="">
                                 </div>
-                                <div class="title">Free to use. Developed by hiring professionals.</div>
-                                <div class="desc">Lorem ipsum dolor sit amet, consecte adipiscing elit. Nulla neque
-                                    quam, maxim us ut accumsan ut, posuere sit Lorem ipsum adipiscing elit.
+                                <div class="title">Account Benefits:</div>
+                                <div class="desc">Unlock a personalized experience by creating a Revealify account. Save
+                                    multiple resumes, access them from any device, and enjoy exclusive features tailored
+                                    to enhance your resume-building journey.
                                 </div>
                             </div>
                         </div>
@@ -398,9 +343,10 @@
                                 <div class="icon">
                                     <img src="{{asset('/images/landing-page/f5.png')}}" alt="">
                                 </div>
-                                <div class="title">Recruiter Approved Phrases with Module Notification</div>
-                                <div class="desc">Lorem ipsum dolor sit amet, consecte adipiscing elit. Nulla neque
-                                    quam, maxim us ut accumsan ut, posuere sit Lorem ipsum adipiscing elit.
+                                <div class="title">Customization Options:</div>
+                                <div class="desc">Tailor your resume to perfection with a range of customization
+                                    options. Adjust colors, fonts, and layouts to match your personal brand. Revealify
+                                    puts you in control of your professional narrative.
                                 </div>
                             </div>
                         </div>
@@ -409,9 +355,10 @@
                                 <div class="icon">
                                     <img src="{{asset('/images/landing-page/f6.png')}}" alt="">
                                 </div>
-                                <div class="title">Fast Easy CV and Resume Formatting</div>
-                                <div class="desc">Lorem ipsum dolor sit amet, consecte adipiscing elit. Nulla neque
-                                    quam, maxim us ut accumsan ut, posuere sit Lorem ipsum adipiscing elit.
+                                <div class="title">One-Click Downloads:</div>
+                                <div class="desc">Transform your masterpiece into a polished PDF with just one click.
+                                    Download and share your professionally crafted resume seamlessly, ready to impress
+                                    recruiters and hiring managers.
                                 </div>
                             </div>
                         </div>
@@ -423,7 +370,7 @@
 
 
         {{--testimonial section start--}}
-        <section class="testimonial">
+        <section class="testimonial d-none">
             <div class="container">
                 <div class="header">
                     <div class="colors">
@@ -494,7 +441,7 @@
     <script>
         new Vue({
             el: '#home',
-            mounted(){
+            mounted() {
                 $('.testimonial-slider').owlCarousel({
 
                     dots: false,
