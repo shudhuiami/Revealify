@@ -19,7 +19,7 @@
                                     resume.
                                 </div>
                                 <div class="buttons">
-                                    <button class="btn btn-aqua-blue me-3">choose template</button>
+                                    <a href="{{route('theme.selection')}}" class="btn btn-aqua-blue me-3">choose template</a>
                                     <button class="btn btn-aqua-blue">contact us</button>
                                 </div>
                             </div>

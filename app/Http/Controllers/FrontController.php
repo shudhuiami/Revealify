@@ -46,6 +46,11 @@ class FrontController extends Controller
         return view('generate');
     }
 
+    public static function template_download()
+    {
+        return view('template-download');
+    }
+
     public static function template_1()
     {
         $pdf = Pdf::loadView('templates.template_1');

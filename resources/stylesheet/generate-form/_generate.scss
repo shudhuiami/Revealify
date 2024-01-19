@@ -1,19 +1,19 @@
 .generate{
-    .btn-orange-red {
-        background-color: var(--orange-red);
+    .btn-aqua-blue {
+        background-color: var(--aqua-blue);
         color: var(--white);
         font-weight: 500;
         transition: .3s all ease-in-out;
-
+        font-size: 14px;
         &:hover {
             transition: .3s all ease-in-out;
-            background-color: darken(#ff4f4f, 10%);
+            background-color: darken(#00d9e2, 10%);
         }
     }
 
     /*header*/
     header{
-        .btn-orange-red{
+        .btn-aqua-blue{
             width: 120px;
         }
     }
@@ -28,11 +28,9 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-color: #ff4f4f1c;
+                background-color: rgb(0 217 226 / 16%);
                 height: 150px;
                 width: 150px;
-                border-radius: 50%;
-                margin: 0 auto;
                 cursor: pointer;
             }
 
@@ -87,7 +85,7 @@
                 &:focus{
                     transition: 500ms;
                     box-shadow: none;
-                    border: 1px solid var(--orange-red);
+                    border: 1px solid var(--aqua-blue);
                 }
             }
 
@@ -99,13 +97,27 @@
         }
 
         .remove, .add{
-            border-radius: 50%;
-            height: 30px;
-            width: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-left: auto;
         }
+        .add{
+            padding: 8px 15px;
+            @media screen and (max-width: 575px) {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                padding: 0;
+            }
+        }
+        .remove{
+            height: 40px;
+            width: 40px;
+            padding: 0;
+        }
     }
 }
+
+
+

@@ -2,8 +2,8 @@
     header{
         z-index: 99;
         background-color: var(--white);
-        .btn-orange-red {
-            background-color: var(--orange-red);
+        .btn-aqua-blue {
+            background-color: var(--aqua-blue);
             color: var(--white);
             font-weight: 500;
             transition: .3s all ease-in-out;
@@ -11,7 +11,7 @@
 
             &:hover {
                 transition: .3s all ease-in-out;
-                background-color: darken(#ff4f4f, 10%);
+                background-color: darken(#00d9e2, 10%);
             }
         }
     }
