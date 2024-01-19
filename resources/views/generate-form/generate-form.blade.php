@@ -1,35 +1,19 @@
-<!doctype html>
-<html lang="en">
-<head   >
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Generate</title>
-
-    <link rel="stylesheet" href="{{asset('css/flatpickr.min.css')}}">
-    <script src="{{asset('js/flatpickr.min.js')}}"></script>
-    <link rel="stylesheet" href="{{asset('css/flatpickr.monthselect.css')}}">
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.js"></script>
-    <script src="{{asset('js/flatpickr.monthselect.js')}}"></script>
-
-    <script src="{{asset('js/vue.min.js')}}"></script>
-
-    @vite('resources/stylesheet/style.scss')
-</head>
-<body>
+@extends('layout.generate-layout')
+@section('content')
     <div class="generate" id="generate">
-        <div class="container">
-            <form @submit.prevent="generateForm">
-                {{--header--}}
-                <header class="py-3 px-3 px-sm-5 shadow-sm fixed-top bg-white">
+        <form @submit.prevent="generateForm">
+            {{--header--}}
+            <header class="py-3 px-3 px-sm-5 shadow-sm fixed-top bg-white">
+                <div class="container">
                     <div class="d-flex align-items-center justify-content-between">
-                        <h2>Generate Form</h2>
+                        <h2 class="mb-0">Generate Form</h2>
                         <button type="submit" class="btn btn-aqua-blue rounded-pill rounded-pill">Generate</button>
                     </div>
-                </header>
+                </div>
+            </header>
 
-                {{--form content--}}
+            {{--form content--}}
+            <div class="container">
                 <div class="form-content mx-auto py-5 px-3 px-md-0">
                     <div class="mb-5 avatar">
                         <div class="img" v-if="formData.avatar != null">
@@ -288,8 +272,8 @@
                         </div>
                     </div>
                 </div>
-            </form>
-        </div>
+            </div>
+        </form>
     </div>
 
     <script>
@@ -341,55 +325,54 @@
             },
             methods: {
                 generateForm(){
-                    console.log(this.formData)
                     window.location.href = "{{route('template.download')}}"
                 },
-              addEducationFields(){
-                  if(this.formData.education.length < 3){
-                      this.formData.education.push({
-                          title: '',
-                          school: '',
-                          start_date: '',
-                          end_date: ''
-                      });
-                      this.initFlat(this.formData.education.length - 1)
-                  }
-              },
-                addSkillFields(){
-                  if(this.formData.skills.length < 6){
-                      this.formData.skills.push({
-                              title: '',
-                              experience: '',
-                              fluent: '',
-                          });
-                  }
-              },
-                addJobExperienceFields(){
-                  if(this.formData.experience.length < 3){
-                      this.formData.experience.push({
-                              designation: '',
-                              company: '',
-                              start_date: '',
-                              end_date: '',
-                              short_description: '',
-                          });
-                  }
-                    this.initFlat(this.formData.experience.length - 1)
-              },
-                addReferenceFields(){
-                  if(this.formData.reference.length < 3){
-                      this.formData.reference.push({
-                              name: '',
-                              email: '',
-                              phone: '',
-                              company: '',
-                              address: '',
+                addEducationFields(){
+                    if(this.formData.education.length < 3){
+                        this.formData.education.push({
+                            title: '',
+                            school: '',
+                            start_date: '',
+                            end_date: ''
                         });
-                  }
-              },
+                        this.initFlat(this.formData.education.length - 1)
+                    }
+                },
+                addSkillFields(){
+                    if(this.formData.skills.length < 6){
+                        this.formData.skills.push({
+                            title: '',
+                            experience: '',
+                            fluent: '',
+                        });
+                    }
+                },
+                addJobExperienceFields(){
+                    if(this.formData.experience.length < 3){
+                        this.formData.experience.push({
+                            designation: '',
+                            company: '',
+                            start_date: '',
+                            end_date: '',
+                            short_description: '',
+                        });
+                    }
+                    this.initFlat(this.formData.experience.length - 1)
+                },
+                addReferenceFields(){
+                    if(this.formData.reference.length < 3){
+                        this.formData.reference.push({
+                            name: '',
+                            email: '',
+                            phone: '',
+                            company: '',
+                            address: '',
+                        });
+                    }
+                },
                 attachFile(e){
-                  this.avatar = URL.createObjectURL(e.target.files[0]);
-              },
+                    this.avatar = URL.createObjectURL(e.target.files[0]);
+                },
                 initFlat(id){
                     console.log(document.getElementById(`#start_date_${id}`))
                     setTimeout(() => {
@@ -423,5 +406,4 @@
             }
         })
     </script>
-</body>
-</html>
+@endsection

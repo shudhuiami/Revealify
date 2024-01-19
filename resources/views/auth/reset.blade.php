@@ -1,4 +1,4 @@
-@extends('auth')
+@extends('layout.auth')
 @section('content')
     <div class="authentication container-fluid min-vh-100" id="reset">
 
@@ -23,11 +23,13 @@
                            placeholder="Enter Your Email">
 
                     <div class="form-group form-floating mb-4 pb-2">
-                        <input type="text" class="form-control shadow-none rounded-0" id="verification_code" name="verification_code"
+                        <input type="text" class="form-control shadow-none rounded-0" id="verification_code"
+                               name="verification_code"
                                placeholder="Enter Your Verification Code" v-model="formData.code">
 
                         <label for="verification_code">Verification Code</label>
-                        <span class="invalid-feedback d-block" v-if="error != null && error.code != undefined" v-text="error.code[0]"></span>
+                        <span class="invalid-feedback d-block" v-if="error != null && error.code != undefined"
+                              v-text="error.code[0]"></span>
                     </div>
 
                     <div class="form-group form-floating mb-4 pb-2">
@@ -35,24 +37,28 @@
                                placeholder="Enter Email" v-model="formData.email">
 
                         <label for="verification_code">Email</label>
-                        <span class="invalid-feedback d-block" v-if="error != null && error.email != undefined" v-text="error.email[0]"></span>
+                        <span class="invalid-feedback d-block" v-if="error != null && error.email != undefined"
+                              v-text="error.email[0]"></span>
                     </div>
 
                     <div class="form-group form-floating mb-4">
                         <input type="password" class="form-control shadow-none rounded-0" id="password" name="password"
                                placeholder="Enter Password" v-model="formData.password">
                         <label for="password">New Password</label>
-                        <span class="invalid-feedback d-block" v-if="error != null && error.password != undefined" v-text="error.password[0]"></span>
+                        <span class="invalid-feedback d-block" v-if="error != null && error.password != undefined"
+                              v-text="error.password[0]"></span>
                     </div>
 
                     <div class="form-group form-floating mb-4">
-                        <input type="password" class="form-control shadow-none rounded-0" id="password_confirmation" name="password_confirmation"
+                        <input type="password" class="form-control shadow-none rounded-0" id="password_confirmation"
+                               name="password_confirmation"
                                placeholder="Enter Confirm Password" v-model="formData.password_confirmation">
                         <label for="password_confirmation">Confirm New Password</label>
                     </div>
 
 
-                    <button type="submit" class="btn btn-orange-red px-4 rounded-0 mt-5 mb-4" v-if="!loading">Confirm</button>
+                    <button type="submit" class="btn btn-orange-red px-4 rounded-0 mt-5 mb-4" v-if="!loading">Confirm
+                    </button>
                     <button type="button" class="btn btn-orange-red px-4 rounded-0 mt-5 mb-4" v-if="loading">
                         <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
                              stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
@@ -95,14 +101,14 @@
                 loading: false,
                 error: null
             },
-            methods:  {
+            methods: {
                 reset: function () {
                     this.loading = true;
                     this.error = null;
                     axios.post('{{ route('user.reset.password') }}', this.formData).then(response => {
                         this.loading = false;
                         const res = response.data;
-                        if(res.status === 200){
+                        if (res.status === 200) {
                             this.formData = {
                                 code: '',
                                 email: '',
@@ -110,7 +116,7 @@
                                 password_confirmation: ''
                             }
                             window.location.href = "{{route('theme.selection')}}"
-                        }else {
+                        } else {
                             this.error = res.error;
                         }
                     }).catch(err => {
@@ -124,6 +130,5 @@
             }
         })
     </script>
-
 
 @endsection

@@ -1,0 +1,103 @@
+.profile{
+    header{
+        .right{
+            position: relative;
+            .drop_down{
+                margin-bottom: 0;
+                background-color: var(--white);
+                position: absolute;
+                right: 0;
+                top: 170%;
+                width: 280px;
+                display: block;
+                padding: 20px 10px;
+                visibility: hidden;
+                opacity: 0;
+                z-index: 9999;
+                transition: 500ms;
+                &.active{
+                    transition: 500ms;
+                    visibility: visible;
+                    opacity: 1;
+                }
+                li{
+                    list-style: none;
+                    display: block;
+                    padding: 10px 20px;
+                    border-radius: 8px;
+                    transition: 500ms;
+                    &:hover{
+                        transition: 500ms;
+                        background-color: rgb(65 224 153 / 16%);
+                    }
+                    a{
+                        display: block;
+                        width: 100%;
+                        padding: 10px 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .content{
+        position: relative;
+        top: 100px;
+        table{
+            .edit_profile{
+                text-decoration: none;
+                display: inline-block;
+                color: var(--aqua-blue);
+            }
+        }
+        .list-item{
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: 500ms;
+            &:hover{
+                transition: 500ms;
+                background-color: rgb(65 224 153 / 16%);
+            }
+            .title{
+                text-decoration: none;
+                color: var(--aqua-blue);
+            }
+            .action{
+                .btn{
+                    padding: 6px;
+                }
+            }
+        }
+    }
+
+    #EditProfile{
+        .modal-body{
+            .form-group{
+                .form-control{
+                    background-color: #f8f9fa;
+                    height: 48px;
+                    border-radius: 8px;
+                    padding: 16px;
+                    border: 1px solid transparent;
+                    box-shadow: none;
+                    transition: 500ms;
+                    &:hover{
+                        transition: 500ms;
+                        box-shadow: none;
+                        border: 1px solid var(--aqua-blue);
+                    }
+                }
+            }
+        }
+        .modal-footer{
+            .btn{
+                width: 120px;
+                &.btn-orange-red{
+                    &:hover{
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+    }
+}

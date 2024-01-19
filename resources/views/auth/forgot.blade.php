@@ -1,4 +1,4 @@
-@extends('auth')
+@extends('layout.auth')
 @section('content')
     <div class="authentication container-fluid min-vh-100" id="forgot">
 
@@ -24,10 +24,12 @@
                         <input type="email" class="form-control shadow-none rounded-0" id="email" name="email"
                                placeholder="Enter Your Email" v-model="formData.email">
                         <label for="email">Email</label>
-                        <span class="invalid-feedback d-block" v-if="error != null && error.email != undefined" v-text="error.email[0]"></span>
+                        <span class="invalid-feedback d-block" v-if="error != null && error.email != undefined"
+                              v-text="error.email[0]"></span>
                     </div>
 
-                    <button type="submit" class="btn btn-orange-red px-4 rounded-0 mt-2 mb-4" v-if="!loading">Confirm</button>
+                    <button type="submit" class="btn btn-orange-red px-4 rounded-0 mt-2 mb-4" v-if="!loading">Confirm
+                    </button>
                     <button type="button" class="btn btn-orange-red px-4 rounded-0 mt-5 mb-4" v-if="loading">
                         <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
                              stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
@@ -67,7 +69,7 @@
                 error: null,
                 message: null
             },
-            methods:  {
+            methods: {
                 forgot: function () {
                     this.message = null;
                     this.loading = true;
@@ -75,12 +77,12 @@
                     axios.post('{{ route('user.forgot.password') }}', this.formData).then(response => {
                         this.loading = false;
                         const res = response.data;
-                        if(res.status === 200){
+                        if (res.status === 200) {
                             this.formData = {
                                 email: ''
                             }
                             this.message = res.msg;
-                        }else {
+                        } else {
                             console.log(res)
                             this.error = res.error;
                         }

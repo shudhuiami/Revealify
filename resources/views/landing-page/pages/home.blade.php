@@ -1,4 +1,4 @@
-@extends('landing-page.layout.layout')
+@extends('layout.landing-page')
 @section('content')
     <div class="home landing-page" id="home">
         {{--banner section start--}}
