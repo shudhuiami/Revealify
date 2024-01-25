@@ -1,18 +1,12 @@
 .generate{
-    .btn-aqua-blue {
-        background-color: var(--aqua-blue);
-        color: var(--white);
-        font-weight: 500;
-        transition: .3s all ease-in-out;
-        font-size: 14px;
-        &:hover {
-            transition: .3s all ease-in-out;
-            background-color: darken(#41e099, 10%);
-        }
-    }
 
     /*header*/
     header{
+        .title{
+            @media screen and (max-width: 420px) {
+                font-size: 20px;
+            }
+        }
         .btn-aqua-blue{
             width: 120px;
         }

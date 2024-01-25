@@ -1,4 +1,4 @@
-@extends('auth')
+@extends('layout.auth')
 @section('content')
     <div class="authentication container-fluid min-vh-100" id="login">
 
@@ -23,7 +23,8 @@
                         <input type="email" class="form-control shadow-none rounded-0" id="email" name="email"
                                placeholder="Enter Your Email" v-model="formData.email">
                         <label for="email">Email</label>
-                        <span class="invalid-feedback d-block" v-if="error != null && error.email != undefined" v-text="error.email[0]"></span>
+                        <span class="invalid-feedback d-block" v-if="error != null && error.email != undefined"
+                              v-text="error.email[0]"></span>
                     </div>
 
 
@@ -31,7 +32,8 @@
                         <input type="password" class="form-control shadow-none rounded-0" id="password" name="password"
                                placeholder="Enter Password" v-model="formData.password">
                         <label for="password">Password</label>
-                        <span class="invalid-feedback d-block" v-if="error != null && error.password != undefined" v-text="error.password[0]"></span>
+                        <span class="invalid-feedback d-block" v-if="error != null && error.password != undefined"
+                              v-text="error.password[0]"></span>
                     </div>
 
                     <div class="d-flex justify-content-between align-items-center mb-5">
@@ -87,20 +89,20 @@
                 loading: false,
                 error: null,
             },
-            methods:  {
+            methods: {
                 login: function () {
                     this.loading = true;
                     this.error = null;
                     axios.post('{{ route('user.login') }}', this.formData).then(response => {
                         this.loading = false;
                         const res = response.data;
-                        if(res.status === 200){
+                        if (res.status === 200) {
                             this.formData = {
                                 email: '',
                                 password: ''
                             }
-                            window.location.href = "{{route('theme.selection')}}"
-                        }else {
+                            window.location.href = "{{route('profile')}}"
+                        } else {
                             console.log(res)
                             this.error = res.error;
                         }

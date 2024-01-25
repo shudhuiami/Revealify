@@ -20,6 +20,8 @@ Route::get('/register', [FrontController::class, 'register'])->name('register');
 Route::get('/forgot', [FrontController::class, 'forgot'])->name('forgot');
 Route::get('/reset', [FrontController::class, 'reset'])->name('reset');
 
+Route::get('/profile', [FrontController::class, 'profile'])->name('profile')->middleware('FrontLoginCheck');;
+
 Route::get('/generate', [FrontController::class, 'generate'])->name('generate');
 Route::get('/{id}/generate', [FrontController::class, 'generate'])->name('generate.selected');
 Route::get('/template-download', [FrontController::class, 'template_download'])->name('template.download');

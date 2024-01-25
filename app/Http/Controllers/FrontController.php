@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class FrontController extends Controller
 {
@@ -31,24 +32,33 @@ class FrontController extends Controller
     {
         return view('auth.forgot');
     }
+
     public static function reset()
     {
         return view('auth.reset');
     }
 
+    public static function profile()
+    {
+        $rv = [
+            'userInfo' => Auth::user()
+        ];
+        return view('profile.pages.profile')->with($rv);
+    }
+
     public static function theme_selection()
     {
-        return view('theme-selection');
+        return view('theme-selection.theme-selection');
     }
 
     public static function generate()
     {
-        return view('generate');
+        return view('generate-form.generate-form');
     }
 
     public static function template_download()
     {
-        return view('template-download');
+        return view('template-download.template-download');
     }
 
     public static function template_1()

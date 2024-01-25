@@ -1,4 +1,4 @@
-@extends('auth')
+@extends('layout.auth')
 @section('content')
     <div class="authentication container-fluid min-vh-100" id="register">
 
@@ -23,21 +23,24 @@
                         <input type="text" class="form-control shadow-none rounded-0" id="first_name" name="first_name"
                                placeholder="Enter First Name" v-model="formData.first_name">
                         <label for="first_name">First Name</label>
-                        <span class="invalid-feedback d-block" v-if="error != null && error.first_name != undefined" v-text="error.first_name[0]"></span>
+                        <span class="invalid-feedback d-block" v-if="error != null && error.first_name != undefined"
+                              v-text="error.first_name[0]"></span>
                     </div>
 
                     <div class="form-group form-floating mb-3">
                         <input type="text" class="form-control shadow-none rounded-0" id="last_name" name="last_name"
                                placeholder="Enter Last Name" v-model="formData.last_name">
                         <label for="last_name">last Name</label>
-                        <span class="invalid-feedback d-block" v-if="error != null && error.last_name != undefined" v-text="error.last_name[0]"></span>
+                        <span class="invalid-feedback d-block" v-if="error != null && error.last_name != undefined"
+                              v-text="error.last_name[0]"></span>
                     </div>
 
                     <div class="form-group form-floating mb-3">
                         <input type="email" class="form-control shadow-none rounded-0" id="email" name="email"
                                placeholder="Enter Your Email" v-model="formData.email">
                         <label for="email">Email</label>
-                        <span class="invalid-feedback d-block" v-if="error != null && error.email != undefined" v-text="error.email[0]"></span>
+                        <span class="invalid-feedback d-block" v-if="error != null && error.email != undefined"
+                              v-text="error.email[0]"></span>
                     </div>
 
                     <div class="form-group form-floating mb-3">
@@ -50,16 +53,19 @@
                         <input type="password" class="form-control shadow-none rounded-0" id="password" name="password"
                                placeholder="Enter Password" v-model="formData.password">
                         <label for="password">Password</label>
-                        <span class="invalid-feedback d-block" v-if="error != null && error.password != undefined" v-text="error.password[0]"></span>
+                        <span class="invalid-feedback d-block" v-if="error != null && error.password != undefined"
+                              v-text="error.password[0]"></span>
                     </div>
 
                     <div class="form-group form-floating mb-3">
-                        <input type="password" class="form-control shadow-none rounded-0" id="password_confirmation" name="password_confirmation"
+                        <input type="password" class="form-control shadow-none rounded-0" id="password_confirmation"
+                               name="password_confirmation"
                                placeholder="Confirm Password" v-model="formData.password_confirmation">
                         <label for="password_confirmation">Confirm Password</label>
                     </div>
 
-                    <button type="submit" class="btn btn-orange-red px-4 rounded-0 mt-5 mb-4"  v-if="!loading">Signup</button>
+                    <button type="submit" class="btn btn-orange-red px-4 rounded-0 mt-5 mb-4" v-if="!loading">Signup
+                    </button>
                     <button type="button" class="btn btn-orange-red px-4 rounded-0 mt-5 mb-4" v-if="loading">
                         <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
                              stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
@@ -77,7 +83,7 @@
 
                     <br>
 
-                   Already have an account?  <a href="{{route('login')}}" class="text-decoration-none sub-auth-btn">Login</a>
+                    Already have an account? <a href="{{route('login')}}" class="text-decoration-none sub-auth-btn">Login</a>
 
 
                 </form>
@@ -100,11 +106,11 @@
                     password: '',
                     password_confirmation: ''
                 },
-                loading:false,
-                error:null,
+                loading: false,
+                error: null,
                 message: ''
             },
-            methods:  {
+            methods: {
                 register: function () {
                     this.loading = true;
                     this.error = null;
