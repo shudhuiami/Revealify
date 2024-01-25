@@ -3,10 +3,10 @@
     <div class="generate" id="generate">
         <form @submit.prevent="generateForm">
             {{--header--}}
-            <header class="py-3 px-3 px-sm-5 shadow-sm fixed-top bg-white">
+            <header class="py-3 px-1 px-sm-5 shadow-sm fixed-top bg-white">
                 <div class="container">
                     <div class="d-flex align-items-center justify-content-between">
-                        <h2 class="mb-0">Generate Form</h2>
+                        <h2 class="mb-0 title">Generate Form</h2>
                         <button type="submit" class="btn btn-aqua-blue rounded-pill rounded-pill">Generate</button>
                     </div>
                 </div>
@@ -374,7 +374,6 @@
                     this.avatar = URL.createObjectURL(e.target.files[0]);
                 },
                 initFlat(id){
-                    console.log(document.getElementById(`#start_date_${id}`))
                     setTimeout(() => {
                         flatpickr(`#start_date_${id}`, {
                             plugins: [
@@ -382,7 +381,7 @@
                                     shorthand: true, //defaults to false
                                     dateFormat: "F Y", //defaults to "F Y"
                                     altFormat: "F Y", //defaults to "F Y"
-                                    theme: "dark", // defaults to "light"
+                                    theme: "light", // defaults to "light"
                                     disableMobile: "true"
                                 })
                             ]
@@ -393,7 +392,7 @@
                                     shorthand: true, //defaults to false
                                     dateFormat: "F Y", //defaults to "F Y"
                                     altFormat: "F Y", //defaults to "F Y"
-                                    theme: "dark", // defaults to "light"
+                                    theme: "light", // defaults to "light"
                                     disableMobile: "true"
                                 })
                             ]

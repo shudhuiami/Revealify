@@ -5,7 +5,7 @@
                 <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <div class="about">
                         <a href="" class="logo">
-                            <img src="{{asset('/images/landing-page/logo.png')}}" alt="">
+                            <img src="{{asset('/images/landing-page/revealify.png')}}" alt="">
                             Revealify
                         </a>
                         <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ducimus

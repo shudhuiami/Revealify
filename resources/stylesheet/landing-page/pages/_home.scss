@@ -151,7 +151,7 @@
                         font-weight: 600;
                         margin-left: 10px;
                         @media screen and (max-width: 450px) {
-                            font-size: 13px;
+                            font-size: 12px;
                             margin-left: 0px;
                         }
                     }
@@ -309,50 +309,6 @@
     }
 
     /*subscribe*/
-    /*.subscribe{
-        padding-bottom: 100px;
-            .content{
-                position: relative;
-                padding: 50px 20px;
-                background: #fff;
-                border-radius: 15px;
-                overflow: hidden;
-                box-shadow: 0 5px 40px 0 rgb(0, 0, 0, .11);
-                @media screen and (max-width: 1199px) {
-                    padding: 25px 20px;
-                }
-                .custom-cv{
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    @media screen and (max-width: 767px) {
-                        display: none;
-                    }
-                }
-                .right-content{
-                    align-items: center;
-                    justify-content: space-between;
-                    margin-left: 320px;
-                    padding: 12px 0;
-                    @media screen and (max-width: 991px) {
-                        margin-left: 289px;
-                    }
-                    @media screen and (max-width: 767px) {
-                        margin-left: 0;
-                    }
-                    .section-title{
-                        @media screen and (max-width: 991px) {
-                            margin-bottom: 19px;
-                            font-size: 25px;
-                        }
-                    }
-                    .btn-aqua-blue-outline{
-                        padding: 10px 30px;
-                        text-transform: initial;
-                    }
-                }
-            }
-    }*/
     .subscribe{
         padding-bottom: 100px;
         .content{
@@ -572,7 +528,7 @@
                     align-items: center;
                     justify-content: space-between;
                     @media screen and (max-width: 991px) {
-                        padding: 20px 12px;
+                        padding: 20px 10px;
                     }
                     .btn{
                         padding: 10px 20px;

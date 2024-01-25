@@ -4,7 +4,7 @@
         <div class="container text-center">
             <div class="alert alert-success success-box">
                 <img src="{{asset('/images/generate-form/excellence.png')}}" class="mb-3" alt="">
-                <div class="mt-5">
+                <div class="mt-5 title">
                     Your template has been created successfully. Please download it.
                 </div>
 

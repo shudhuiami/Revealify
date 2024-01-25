@@ -2,9 +2,9 @@
 @section('content')
 <div class="theme-selection" id="theme-selection">
     {{--header--}}
-    <header class="shadow-sm py-3 px-3 px-sm-5 fixed-top">
+    <header class="py-3 px-1 px-sm-5 shadow-sm fixed-top bg-white">
         <div class="container d-flex align-items-center justify-content-between">
-            <h2>Theme Selection</h2>
+            <h2 class="mb-0 title">Theme Selection</h2>
             <a href="{{route('generate.selected', ['id'=> 1])}}" class="btn btn-aqua-blue rounded-pill" :disabled="!id" v-if="id">Next</a>
         </div>
     </header>
