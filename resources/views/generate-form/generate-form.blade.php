@@ -9,7 +9,7 @@
                         <h2 class="mb-0 title">Generate Form</h2>
                         <button type="submit" class="btn btn-aqua-blue rounded-pill rounded-pill" v-if="!loading">Generate</button>
                         <button type="button" class="btn btn-aqua-blue rounded-pill rounded-pill" v-if="loading">
-                            <img :src="'/images/loader.svg'" alt="loader">
+                            <img :src="'/images/loader.svg'" class="spin" alt="loader">
                         </button>
                     </div>
                 </div>
@@ -74,7 +74,7 @@
                             <div class="col-sm-6 mb-3">
                                 <div class="form-group">
                                     <label for="primary_contact">Primary Contact</label>
-                                    <input type="text" id="primary_contact" name="primary_contact"
+                                    <input type="text" id="primary_contact" name="primary_contact" autocomplete="new-primary-contact"
                                            class="form-control mt-1" v-model="formData.primary_contact" @keypress="checkNumber($event)">
                                     <div class="error-report"></div>
                                 </div>
@@ -82,7 +82,7 @@
                             <div class="col-sm-6 mb-3">
                                 <div class="form-group">
                                     <label for="secondary_contact">Secondary Contact</label>
-                                    <input type="text" id="secondary_contact" name="secondary_contact"
+                                    <input type="text" id="secondary_contact" name="secondary_contact"  autocomplete="new-secondary-contact"
                                            class="form-control mt-1" v-model="formData.secondary_contact" @keypress="checkNumber($event)">
                                     <div class="error-report"></div>
                                 </div>
@@ -306,7 +306,7 @@
                                     <div class="col-sm-6 mb-3">
                                         <div class="form-group">
                                             <label for="phone">Phone</label>
-                                            <input type="text" :name="'reference.'+index+'.phone'" class="form-control mt-1"
+                                            <input type="text" :name="'reference.'+index+'.phone'" class="form-control mt-1" autocomplete="new-phone"
                                                    v-model="each.phone" @keypress="checkNumber($event)">
                                             <div class="error-report"></div>
                                         </div>
