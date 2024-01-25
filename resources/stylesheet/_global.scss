@@ -60,6 +60,17 @@
     }
 }
 
+.form-control{
+    &.is-invalid{
+        border-color: var(--orange-red)!important;
+    }
+}
+
+.error-report{
+    font-size: 14px;
+    color: var(--orange-red);
+}
+
 img{
     max-width: 100%;
 }

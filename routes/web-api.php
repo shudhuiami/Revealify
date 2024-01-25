@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\ResumeController;
+use App\Http\Controllers\MediaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,7 +26,7 @@ Route::group(['prefix' => 'auth'], function () {
 });
 
 Route::group(['prefix' => 'resume'], function () {
-    Route::post('generate', [ResumeController::class, 'resumeGenerator'])->name('user.registration');
+    Route::post('generate', [ResumeController::class, 'resumeGenerator'])->name('user.resume');
 });
 
 Route::group(['prefix'=>'media'], function (){
