@@ -33,9 +33,12 @@ class FrontController extends Controller
         return view('auth.forgot');
     }
 
-    public static function reset()
+    public static function reset($token)
     {
-        return view('auth.reset');
+        $rv = [
+            'token' => $token
+        ];
+        return view('auth.reset')->with($rv);
     }
 
     public static function profile()

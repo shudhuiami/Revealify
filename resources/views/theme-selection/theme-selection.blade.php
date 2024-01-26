@@ -5,7 +5,8 @@
     <header class="py-3 px-1 px-sm-5 shadow-sm fixed-top bg-white">
         <div class="container d-flex align-items-center justify-content-between">
             <h2 class="mb-0 title">Theme Selection</h2>
-            <a href="{{route('generate.selected', ['id'=> 1])}}" class="btn btn-aqua-blue rounded-pill" :disabled="!id" v-if="id">Next</a>
+            <a href="{{route('generate.selected', ['id'=> 1])}}" class="btn btn-aqua-blue rounded-pill" v-if="isSelected">Next</a>
+            <button class="btn btn-aqua-blue rounded-pill disabled" v-if="!isSelected">Next</button>
         </div>
     </header>
 
@@ -15,47 +16,37 @@
                 <div class="img" @click="selectItem($event, 1)">
                     <img src="{{asset('/images/theme-selection/template-1.png')}}" class="shadow-lg theme-img" alt="">
                     <div class="select">Selected</div>
-                    <div class="action">
-                        <a href="javascript:void(0)" @click="openViewModal($event)">
-                            <img src="{{asset('/images/theme-selection/view.png')}}" alt="">
-                        </a>
-                    </div>
+                    <a href="javascript:void(0)" class="action" @click="openViewModal($event)">
+                        <img src="{{asset('/images/theme-selection/view.png')}}" alt="">
+                    </a>
                 </div>
                 <div class="img" @click="selectItem($event, 2)">
                     <div class="select">Selected</div>
                     <img src="{{asset('/images/theme-selection/template-2.png')}}" class="shadow-lg theme-img" alt="">
-                    <div class="action">
-                        <a href="javascript:void(0)" @click="openViewModal($event)">
-                            <img src="{{asset('/images/theme-selection/view.png')}}" alt="">
-                        </a>
-                    </div>
+                    <a href="javascript:void(0)" class="action" @click="openViewModal($event)">
+                        <img src="{{asset('/images/theme-selection/view.png')}}" alt="">
+                    </a>
                 </div>
                 <div class="img" @click="selectItem($event, 3)">
                     <div class="select">Selected</div>
                     <img src="{{asset('/images/theme-selection/template-3.png')}}" class="shadow-lg theme-img" alt="">
-                    <div class="action">
-                        <a href="javascript:void(0)" @click="openViewModal($event)">
-                            <img src="{{asset('/images/theme-selection/view.png')}}" alt="">
-                        </a>
-                    </div>
+                    <a href="javascript:void(0)" class="action" @click="openViewModal($event)">
+                        <img src="{{asset('/images/theme-selection/view.png')}}" alt="">
+                    </a>
                 </div>
                 <div class="img" @click="selectItem($event, 4)">
                     <div class="select">Selected</div>
                     <img src="{{asset('/images/theme-selection/template-4.png')}}" class="shadow-lg theme-img" alt="">
-                    <div class="action">
-                        <a href="javascript:void(0)" @click="openViewModal($event)">
-                            <img src="{{asset('/images/theme-selection/view.png')}}" alt="">
-                        </a>
-                    </div>
+                    <a href="javascript:void(0)" class="action" @click="openViewModal($event)">
+                        <img src="{{asset('/images/theme-selection/view.png')}}" alt="">
+                    </a>
                 </div>
                 <div class="img" @click="selectItem($event, 5)">
                     <div class="select">Selected</div>
                     <img src="{{asset('/images/theme-selection/template-5.png')}}" class="shadow-lg theme-img" alt="">
-                    <div class="action">
-                        <a href="javascript:void(0)" @click="openViewModal($event)">
-                            <img src="{{asset('/images/theme-selection/view.png')}}" alt="">
-                        </a>
-                    </div>
+                    <a href="javascript:void(0)" class="action" @click="openViewModal($event)">
+                        <img src="{{asset('/images/theme-selection/view.png')}}" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -84,11 +75,13 @@
         el: '#theme-selection',
         data: {
             img: null,
-            id: 2
+            id: 1,
+            isSelected: false
         },
 
         methods: {
             openViewModal(e){
+                e.stopPropagation();
                 const src = e.target.closest('.img').querySelector('.theme-img').src;
                 this.img = src
                 console.log(src)
@@ -107,7 +100,7 @@
                     }
                 })
                 this.id = id;
-                console.log(id, this.id)
+                this.isSelected = true;
             }
         },
 

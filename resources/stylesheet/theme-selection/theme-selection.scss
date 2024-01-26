@@ -61,8 +61,8 @@
                 }
                 .action{
                     position: absolute;
-                    left: calc(50% - 43px);
-                    top:  calc(50% - 33px);
+                    left: calc(50% - 32px);
+                    top:  calc(50% - 41px);
                     padding: 20px 30px;
                     height: auto;
                     width: auto;
@@ -74,14 +74,11 @@
                     visibility: hidden;
                     opacity: 0;
                     transition: 500ms;
-                    a{
-                        display: inline-block;
-                        img{
-                            height: 25px;
-                            width: 25px;
-                            border-radius: 0;
-                            border: 0;
-                        }
+                    img{
+                        height: 25px;
+                        width: 25px;
+                        border-radius: 0;
+                        border: 0;
                     }
                 }
                 .select{
@@ -111,6 +108,10 @@
                 text-align: center;
                 img{
                     height: 600px;
+                    object-fit: contain;
+                    @media screen and (max-width: 575px) {
+                        height: 400px;
+                    }
                 }
             }
         }
