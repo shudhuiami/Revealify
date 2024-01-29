@@ -228,6 +228,7 @@
                         margin-right: 20px;
                         @media screen and (max-width: 767px) {
                             margin-bottom: 20px;
+                            margin-right: 0;
                         }
                         img{
                             height: 50px;
@@ -262,6 +263,9 @@
                     margin-bottom: 30px;
                     line-height: 1.9;
                     padding-right: 90px;
+                    @media screen and (max-width: 1400px) {
+                        padding-right: 0;
+                    }
                     @media screen and (max-width: 767px) {
                         padding-right: 10px;
                     }
@@ -291,8 +295,11 @@
                         font-weight: 500;
                         line-height: 20px;
                         font-size: 18px;
+                        @media screen and (max-width: 510px) {
+                            font-size: 16px;
+                        }
                         @media screen and (max-width: 460px) {
-                            font-size: 14px;
+                            font-size: 12px;
                         }
                         img{
                             margin-right: 10px;
@@ -552,6 +559,9 @@
             @media screen and (max-width: 1399px) {
                 width: 100%;
             }
+            .mb-40{
+                margin-bottom: 40px;
+            }
             .feature-item{
                 position: relative;
                 z-index: 1;
@@ -561,14 +571,15 @@
                 border-radius: 15px;
                 text-align: center;
                 width: 97%;
-                margin: 0 auto 30px;
+                margin: 0 auto;
+                height: 100%;
                 @media screen and (max-width: 1399px) {
                     width: 100%;
                 }
                 .icon{
                    img{
-                       height: 80px;
-                       width: 80px;
+                       height: 60px;
+                       width: 60px;
                    }
                 }
                 .title{

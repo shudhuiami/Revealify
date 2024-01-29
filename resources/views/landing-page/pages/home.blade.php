@@ -124,7 +124,7 @@
             <div class="container">
                 <div class="content">
                     <div class="row">
-                        <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="col-lg-7 col-xl-6 mb-4 mb-lg-0">
                             <div class="left-content">
                                 <div class="colors">
                                     <span></span>
@@ -164,7 +164,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-5 col-xl-6">
                             <div class="right-content text-center">
                                 <img src="{{asset('/images/landing-page/cv.png')}}" alt="">
                             </div>
@@ -290,7 +290,7 @@
                 </div>
                 <div class="content">
                     <div class="row">
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-6 col-lg-4 mb-40">
                             <div class="feature-item">
                                 <div class="icon">
                                     <img src="{{asset('/images/landing-page/f1.png')}}" alt="">
@@ -302,7 +302,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-6 col-lg-4 mb-40">
                             <div class="feature-item">
                                 <div class="icon">
                                     <img src="{{asset('/images/landing-page/f2.png')}}" alt="">
@@ -314,7 +314,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <div class="col-md-6 col-lg-4 mb-40">
                             <div class="feature-item">
                                 <div class="icon">
                                     <img src="{{asset('/images/landing-page/f3.png')}}" alt="">
@@ -326,7 +326,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-md-6 col-lg-4 mb-40">
                             <div class="feature-item">
                                 <div class="icon">
                                     <img src="{{asset('/images/landing-page/f4.png')}}" alt="">
@@ -338,7 +338,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-md-6 col-lg-4 mb-40">
                             <div class="feature-item">
                                 <div class="icon">
                                     <img src="{{asset('/images/landing-page/f5.png')}}" alt="">
@@ -350,7 +350,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-md-6 col-lg-4 mb-40">
                             <div class="feature-item">
                                 <div class="icon">
                                     <img src="{{asset('/images/landing-page/f6.png')}}" alt="">
