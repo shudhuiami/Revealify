@@ -4,7 +4,7 @@
         {{--    {{dd($userInfo->first_name)}}--}}
         {{--    {{dd($userInfo)}}--}}
         <div class="container">
-            <div class="content py-5">
+            <div class="content py-5" v-if="profileInfo">
                 <div class="row">
                     <div class="col-lg-5 col-xxl-4">
                         <div class="card shadow-sm px-3 py-4">
@@ -14,40 +14,27 @@
                                     <tr>
                                         <th colspan="3" class="border-0">
                                             <div class="text-center mb-4">
-                                                @if($userInfo->avatar)
-                                                    <img src="{{$userInfo->avatar}}" height="80" width="80" alt="">
-                                                @else
-                                                    <img src="{{asset('/images/generate-form/profile.png')}}"
-                                                         height="80" width="80" alt="">
-                                                @endif
+                                                <img :src="profileInfo.avatar" height="80" width="80" alt="" v-if="profileInfo.avatar">
+                                                <img src="{{asset('/images/generate-form/profile.png')}}"
+                                                     height="80" width="80" alt="" v-if="!profileInfo.avatar">
                                             </div>
                                         </th>
                                     </tr>
                                     <tr>
                                         <th class="border-0">Name</th>
                                         <td class="border-0">:</td>
-                                        <td class="border-0">{{$userInfo->first_name}} {{$userInfo->last_name}}</td>
+                                        <td class="border-0">@{{ profileInfo.name }}</td>
                                     </tr>
                                     <tr>
                                         <th class="border-0">Email</th>
                                         <td class="border-0">:</td>
-                                        <td class="border-0">{{$userInfo->email}}</td>
+                                        <td class="border-0">@{{ profileInfo.email }}</td>
                                     </tr>
-                                    {{--               <tr>
-                                                       <th class="border-0">Primary Contact</th>
-                                                       <td class="border-0">:</td>
-                                                       <td class="border-0">+9999999999999</td>
-                                                   </tr>
-                                                   <tr>
-                                                       <th class="border-0">Secondary Contact</th>
-                                                       <td class="border-0">:</td>
-                                                       <td class="border-0">+9999999999999</td>
-                                                   </tr>
-                                                   <tr>
-                                                       <th class="border-0">Address</th>
-                                                       <td class="border-0">:</td>
-                                                       <td class="border-0">New York, USA</td>
-                                                   </tr>--}}
+                                    <tr>
+                                        <th class="border-0">Phone</th>
+                                        <td class="border-0">:</td>
+                                        <td class="border-0">@{{ profileInfo.phone ?? 'N/A' }}</td>
+                                    </tr>
                                     <tr>
                                         <th colspan="3" class="border-0">
                                             <a href="javascript:void(0)" class="edit_profile"
@@ -131,7 +118,9 @@
     <script>
         new Vue({
             el: '#profile',
-            data: {},
+            data: {
+                profileInfo: null
+            },
             methods: {
 
                 openModal() {
@@ -139,8 +128,21 @@
                     myModal.show()
                 },
 
+                getProfile(){
+                    this.loading = true;
+                    this.error = null;
+                    axios.get('{{ route('user.profile') }}').then(response => {
+                        const res = response.data;
+                        this.profileInfo = res.user;
+                        if(this.profileInfo){
+                            this.profileInfo.name = this.profileInfo.first_name + this.profileInfo.last_name;
+                        }
+                    })
+                }
+
             },
             mounted() {
+                this.getProfile();
             }
         })
     </script>

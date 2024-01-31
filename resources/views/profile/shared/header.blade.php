@@ -25,12 +25,17 @@
     new Vue({
         el: '#profile-header',
         data(){
-
+            return {
+                loading: false
+            }
         },
         methods: {
-
-            logout: function (){
-                window.location.href = "{{asset('login')}}"
+            logout(){
+                this.loading = true;
+                this.error = null;
+                axios.post('{{ route('logout') }}').then(response => {
+                    window.location.href = "{{route('login')}}";
+                })
             },
 
             openDropDown(){

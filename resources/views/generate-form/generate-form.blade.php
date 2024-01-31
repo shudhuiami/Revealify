@@ -1,5 +1,6 @@
 @extends('layout.generate-layout')
 @section('content')
+
     <div class="generate" id="generate">
         <form @submit.prevent="generateCV">
             {{--header--}}
