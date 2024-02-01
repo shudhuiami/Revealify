@@ -7,7 +7,9 @@
             <header class="py-3 px-1 px-sm-5 shadow-sm fixed-top bg-white">
                 <div class="container">
                     <div class="d-flex align-items-center justify-content-between">
-                        <h2 class="mb-0 title">Generate Form</h2>
+                        <a href="{{route('landing.page')}}" class="d-inline-block logo">
+                            <img src="{{asset('/images/landing-page/revealify.png')}}" alt="">
+                        </a>
                         <button type="submit" class="btn btn-aqua-blue rounded-pill rounded-pill" v-if="!loading">Generate</button>
                         <button type="button" class="btn btn-aqua-blue rounded-pill rounded-pill" v-if="loading">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff"
@@ -28,7 +30,8 @@
 
             {{--form content--}}
             <div class="container">
-                <div class="form-content mx-auto py-5 px-3 px-md-0">
+                <div class="page_content mx-auto px-3 px-md-0">
+                <h2 class="page_title">Generate Form</h2>
                     <div class="form-group mb-5 avatar">
                         <div class="img" v-if="formData.avatar != null">
                             <img :src="'/storage/media/'+formData.avatar" alt="">

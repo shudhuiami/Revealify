@@ -4,14 +4,17 @@
     {{--header--}}
     <header class="py-3 px-1 px-sm-5 shadow-sm fixed-top bg-white">
         <div class="container d-flex align-items-center justify-content-between">
-            <h2 class="mb-0 title">Theme Selection</h2>
+            <a href="{{route('landing.page')}}" class="d-inline-block logo">
+                <img src="{{asset('/images/landing-page/revealify.png')}}" width="200" alt="">
+            </a>
             <a href="{{route('generate.selected', ['id'=> 1])}}" class="btn btn-aqua-blue rounded-pill" v-if="isSelected">Next</a>
             <button class="btn btn-aqua-blue rounded-pill disabled" v-if="!isSelected">Next</button>
         </div>
     </header>
 
-    <div class="content">
+    <div class="page_content">
         <div class="container">
+            <h2 class="page_title">Theme Selection</h2>
             <div class="selection-items">
                 <div class="img" @click="selectItem($event, 1)">
                     <img src="{{asset('/images/theme-selection/template-1.png')}}" class="shadow-lg theme-img" alt="">
@@ -83,8 +86,7 @@
             openViewModal(e){
                 e.stopPropagation();
                 const src = e.target.closest('.img').querySelector('.theme-img').src;
-                this.img = src
-                console.log(src)
+                this.img = src;
                 const myModal = new bootstrap.Modal(document.getElementById('viewModal'), {})
                 myModal.show()
             },

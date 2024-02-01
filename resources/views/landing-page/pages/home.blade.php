@@ -223,12 +223,12 @@
                                     <img src="{{asset('/images/landing-page/template-1.png')}}" alt="">
                                 </div>
                                 <div class="buttons">
-                                    <button class="btn btn-aqua-blue  rounded-pill">see template
+                                    <button class="btn btn-aqua-blue  rounded-pill" @click="openViewModal($event)">see template
                                         <i class="fa-solid fa-arrow-right-long"></i>
                                     </button>
-                                    <button class="btn btn-aqua-blue-outline rounded-pill">use template
+                                    <a href="{{route('generate')}}" class="btn btn-aqua-blue-outline rounded-pill">use template
                                         <i class="fa-solid fa-arrow-right-long"></i>
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -238,12 +238,12 @@
                                     <img src="{{asset('/images/landing-page/template-2.png')}}" alt="">
                                 </div>
                                 <div class="buttons">
-                                    <button class="btn btn-aqua-blue  rounded-pill">see template
+                                    <button class="btn btn-aqua-blue  rounded-pill" @click="openViewModal($event)">see template
                                         <i class="fa-solid fa-arrow-right-long"></i>
                                     </button>
-                                    <button class="btn btn-aqua-blue-outline rounded-pill">use template
+                                    <a href="{{route('generate')}}" class="btn btn-aqua-blue-outline rounded-pill">use template
                                         <i class="fa-solid fa-arrow-right-long"></i>
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -253,12 +253,12 @@
                                     <img src="{{asset('/images/landing-page/template-3.png')}}" alt="">
                                 </div>
                                 <div class="buttons">
-                                    <button class="btn btn-aqua-blue  rounded-pill">see template
+                                    <button class="btn btn-aqua-blue  rounded-pill" @click="openViewModal($event)">see template
                                         <i class="fa-solid fa-arrow-right-long"></i>
                                     </button>
-                                    <button class="btn btn-aqua-blue-outline rounded-pill">use template
+                                    <a href="{{route('generate')}}" class="btn btn-aqua-blue-outline rounded-pill">use template
                                         <i class="fa-solid fa-arrow-right-long"></i>
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -436,33 +436,72 @@
             </div>
         </section>
         {{--testimonial section end--}}
+
+
+        <!-- Modal -->
+        <div class="modal fade view-modal" id="viewModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="img">
+                            <img :src="img" alt="template image">
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
         new Vue({
             el: '#home',
-            mounted() {
-                $('.testimonial-slider').owlCarousel({
 
-                    dots: false,
-                    margin: 20,
-                    autoplay: true,
-                    loop: true,
-                    animateOut: 'fadeOut',
-                    animateIn: 'fadeIn',
-                    responsive: {
-                        0: {
-                            items: 1,
-                        },
-                        768: {
-                            items: 2,
-                        },
-                        1200: {
-                            items: 3,
+            data(){
+                return {
+                    img: ''
+                }
+
+            },
+
+            methods: {
+                openViewModal(e){
+                    console.log(e.target.closest('.template-item'))
+                    const src = e.target.closest('.template-item').querySelector('.img img').src;
+                    this.img = src;
+                    const myModal = new bootstrap.Modal(document.getElementById('viewModal'), {})
+                    myModal.show()
+                },
+
+                testimonialSlider(){
+                    $('.testimonial-slider').owlCarousel({
+
+                        dots: false,
+                        margin: 20,
+                        autoplay: true,
+                        loop: true,
+                        animateOut: 'fadeOut',
+                        animateIn: 'fadeIn',
+                        responsive: {
+                            0: {
+                                items: 1,
+                            },
+                            768: {
+                                items: 2,
+                            },
+                            1200: {
+                                items: 3,
+                            }
+
                         }
+                    })
+                }
+            },
 
-                    }
-                })
+            mounted() {
+                this.testimonialSlider();
             }
         })
     </script>

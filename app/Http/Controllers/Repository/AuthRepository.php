@@ -36,5 +36,4 @@ class AuthRepository
 
         return $user;
     }
-
 }

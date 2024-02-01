@@ -32,6 +32,8 @@ Route::group(['prefix' => 'resume'], function () {
 
 Route::group(['prefix'=>'profile'], function (){
     Route::get('me', [ProfileController::class, 'profile'])->name('user.profile');
+    Route::post('update/profile', [ProfileController::class, 'update_profile'])->name('user.update.profile');
+    Route::post('update/password', [ProfileController::class, 'change_password'])->name('user.password');
     Route::post('logout', [ProfileController::class, 'logout'])->name('logout');
 });
 
