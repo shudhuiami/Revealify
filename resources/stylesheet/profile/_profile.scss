@@ -33,16 +33,17 @@
                     a{
                         display: block;
                         width: 100%;
-                        padding: 10px 12px;
+                        padding: 8px 12px;
+                    }
+                    .h-43{
+                        height: 43px;
                     }
                 }
             }
         }
     }
 
-    .content{
-        position: relative;
-        top: 100px;
+    .page_content{
         table{
             .edit_profile{
                 text-decoration: none;
@@ -70,14 +71,30 @@
         }
     }
 
-    #EditProfile{
+    .loader{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        .card{
+            height: 400px;
+            width: 700px;
+            max-width: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    #EditProfile, #ChangePassword{
         .modal-body{
             .form-group{
                 .form-control{
                     background-color: #f8f9fa;
                     height: 48px;
                     border-radius: 8px;
-                    padding: 16px;
                     border: 1px solid transparent;
                     box-shadow: none;
                     transition: 500ms;

@@ -11,8 +11,7 @@
 
             <div class="auth-box-half px-lg-5">
                 <!--Authentication form start-->
-                <form action="" class="auth-form p-sm-5 p-4" @submit.prevent="register">
-                    <div class="alert alert-success" v-if="message">@{{ message }}</div>
+                <form action="" class="auth-form p-sm-5 p-4" @submit.prevent="register" v-if="!isRegistrationSuccess">
                     <div class="logo text-uppercase fs-4 fw-bold mt-3 pb-4">Revealify</div>
 
                     <h3 class="mb-3 fw-bold fs-2 auth-title text-uppercase">User Signup</h3>
@@ -45,7 +44,7 @@
 
                     <div class="form-group form-floating mb-3">
                         <input type="text" class="form-control shadow-none rounded-0" id="phone" name="phone"
-                               placeholder="Enter Mobile Number" v-model="formData.phone">
+                               placeholder="Enter Mobile Number" v-model="formData.phone" @keypress="checkNumber($event)">
                         <label for="phone">Mobile</label>
                     </div>
 
@@ -86,6 +85,18 @@
 
 
                 </form>
+                <div class="success-wrapper p-sm-5 py-lg-4 px-md-2 p-xl-4" v-if="isRegistrationSuccess">
+                    <div class="success-box text-center">
+                        <img src="{{asset('/images/auth/image/success.png')}}" class="mb-3" alt="success">
+                        <div class="mt-5 title">
+                            Registration has been completed successfully.
+                        </div>
+                        <div class="switch">
+                            <span>Please back to</span>
+                             <a href="{{route('login')}}" class="btn btn-aqua-blue">Login</a>
+                        </div>
+                    </div>
+                </div>
                 <!--Authentication form end  -->
             </div>
 
@@ -107,17 +118,14 @@
                 },
                 loading: false,
                 error: null,
-                message: ''
+                isRegistrationSuccess: false
             },
             methods: {
                 register: function () {
                     this.loading = true;
                     this.error = null;
-                    this.message = null;
                     axios.post('{{ route('user.registration') }}', this.formData).then(response => {
                         this.loading = false;
-                        const res = response.data;
-                        this.msg = res.message + ' ' + 'Please check email to verify your account.';
                         this.formData = {
                             first_name: '',
                             last_name: '',
@@ -126,12 +134,33 @@
                             password: '',
                             password_confirmation: ''
                         }
+                        this.isRegistrationSuccess = true;
                     }).catch(err => {
                         // Error Handling here
                         this.loading = false
                         this.error = err.response.data.errors;
                     })
-                }
+                },
+
+                /*Number Validation*/
+                checkNumber(evt) {
+                    var theEvent = evt || window.event;
+
+                    // Handle paste
+                    if (theEvent.type === 'paste') {
+                        // @ts-ignore
+                        key = event.clipboardData.getData('text/plain');
+                    } else {
+                        // Handle key press
+                        var key = theEvent.keyCode || theEvent.which;
+                        key = String.fromCharCode(key);
+                    }
+                    var regex = /^\d*\.?\d*$/;
+                    if (!regex.test(key)) {
+                        theEvent.returnValue = false;
+                        if (theEvent.preventDefault) theEvent.preventDefault();
+                    }
+                },
             },
             mounted() {
             }

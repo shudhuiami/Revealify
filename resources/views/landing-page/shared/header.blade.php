@@ -13,7 +13,7 @@
                     </button>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a href="{{route('landing.page')}}" class="navbar-brand d-none d-lg-inline-flex" href="#">
+                    <a href="{{route('landing.page')}}" class="navbar-brand d-none d-lg-inline-flex">
                         <img src="{{asset('/images/landing-page/revealify.png')}}" alt="">
                     </a>
                     <ul class="navbar-nav me-auto flex-grow-1 justify-content-center justify-content-lg-end flex-row mb-4 mb-lg-0 mt-4 mt-lg-0">

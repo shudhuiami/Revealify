@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ResumeController;
 use App\Http\Controllers\MediaController;
 use Illuminate\Support\Facades\Route;
@@ -27,6 +28,13 @@ Route::group(['prefix' => 'auth'], function () {
 
 Route::group(['prefix' => 'resume'], function () {
     Route::post('generate', [ResumeController::class, 'resumeGenerator'])->name('user.resume');
+});
+
+Route::group(['prefix'=>'profile'], function (){
+    Route::get('me', [ProfileController::class, 'profile'])->name('user.profile');
+    Route::post('update/profile', [ProfileController::class, 'update_profile'])->name('user.update.profile');
+    Route::post('update/password', [ProfileController::class, 'change_password'])->name('user.password');
+    Route::post('logout', [ProfileController::class, 'logout'])->name('logout');
 });
 
 Route::group(['prefix'=>'media'], function (){

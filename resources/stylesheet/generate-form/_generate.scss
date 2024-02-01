@@ -2,21 +2,13 @@
 
     /*header*/
     header{
-        .title{
-            @media screen and (max-width: 420px) {
-                font-size: 20px;
-            }
-        }
         .btn-aqua-blue{
             width: 120px;
         }
     }
 
     /*form content*/
-    .form-content{
-        position: relative;
-        top: 80px;
-
+    .page_content{
         .avatar{
             .avatar_label{
                 display: flex;

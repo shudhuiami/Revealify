@@ -1,4 +1,3 @@
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -6,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Revealify</title>
     <!--google montserrat font-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
     {{--font awesome--}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -17,12 +18,16 @@
 
 
     {{--flat pickr--}}
-    <link rel="stylesheet" href="{{asset('css/flatpickr.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/flatpickr.monthselect.css')}}">
-    <script src="{{asset('js/flatpickr.min.js')}}"></script>
-    <script src="{{asset('js/flatpickr.monthselect.js')}}"></script>
+        <link rel="stylesheet" href="{{asset('css/flatpickr.min.css')}}">
+        <link rel="stylesheet" href="{{asset('css/flatpickr.monthselect.css')}}">
+        <script src="{{asset('js/flatpickr.min.js')}}"></script>
+        <script src="{{asset('js/flatpickr.monthselect.js')}}"></script>
 
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
+    <!-- Flatpickr JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 

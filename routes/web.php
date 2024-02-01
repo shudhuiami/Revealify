@@ -13,14 +13,19 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+Route::group(['prefix' => 'auth', 'middleware' => ['FrontLoginCheck']], function () {
+    Route::get('/login', [FrontController::class, 'login'])->name('login');
+    Route::get('/register', [FrontController::class, 'register'])->name('register');
+    Route::get('/forgot', [FrontController::class, 'forgot'])->name('forgot');
+    Route::get('/reset/{token}', [FrontController::class, 'reset'])->name('reset');
+});
+
 Route::get('/', [FrontController::class, 'landing_page'])->name('landing.page');
 Route::get('/landing-page-two', [FrontController::class, 'landing_page_two'])->name('landing.page.two');
-Route::get('/login', [FrontController::class, 'login'])->name('login');
-Route::get('/register', [FrontController::class, 'register'])->name('register');
-Route::get('/forgot', [FrontController::class, 'forgot'])->name('forgot');
-Route::get('/reset/{token}', [FrontController::class, 'reset'])->name('reset');
 
-Route::get('/profile', [FrontController::class, 'profile'])->name('profile')->middleware('FrontLoginCheck');;
+
+Route::get('/profile', [FrontController::class, 'profile'])->name('profile')->middleware('FrontLoginReq');
 
 Route::get('/generate', [FrontController::class, 'generate'])->name('generate');
 Route::get('/{id}/generate', [FrontController::class, 'generate'])->name('generate.selected');

@@ -51,7 +51,7 @@
 
 
                     <button type="submit" class="btn btn-orange-red px-4 rounded-0 mb-4" v-if="!loading">Login</button>
-                    <button type="button" class="btn btn-orange-red px-4 rounded-0 mt-5 mb-4" v-if="loading">
+                    <button type="button" class="btn btn-orange-red px-4 rounded-0 mb-4" v-if="loading">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff"
                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spin feather feather-loader">
                             <line x1="12" y1="2" x2="12" y2="6"></line>
@@ -102,7 +102,6 @@
                             }
                             window.location.href = "{{route('profile')}}"
                         } else {
-                            console.log(res)
                             this.error = res.error;
                         }
                     }).catch(err => {
