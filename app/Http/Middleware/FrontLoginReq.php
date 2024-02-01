@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 
 
-class FrontLoginCheck
+class FrontLoginReq
 {
     /**
      * Handle an incoming request.
@@ -21,10 +21,10 @@ class FrontLoginCheck
      */
     public function handle($request, Closure $next)
     {
-        if (!Auth::check()) {
+        if (Auth::check()) {
             return $next($request);
         } else {
-            return redirect()->route('profile');
+            return redirect()->route('login');
         }
     }
 }

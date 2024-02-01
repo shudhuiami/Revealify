@@ -3,6 +3,7 @@
 namespace App\Http;
 
 use App\Http\Middleware\FrontLoginCheck;
+use App\Http\Middleware\FrontLoginReq;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -77,5 +78,6 @@ class Kernel extends HttpKernel
      */
     protected $routeMiddleware = [
         'FrontLoginCheck' => FrontLoginCheck::class,
+        'FrontLoginReq' => FrontLoginReq::class,
     ];
 }
